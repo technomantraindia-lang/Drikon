@@ -257,4 +257,5 @@ document.addEventListener('DOMContentLoaded', () => {
       updateCarousel();
     });
   }
+
 });
