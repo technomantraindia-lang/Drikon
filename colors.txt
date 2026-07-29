@@ -1,0 +1,58 @@
+DRIKON Website Color Palette
+Primary Brand Colors
+Color	HEX	Recommended Use
+Corporate Navy Blue	#063B78	Headings, footer, header accents, icons
+Industrial Blue	#0D5FA8	Buttons, links, section highlights
+Bright Orange	#F36A16	Primary CTA buttons, hover effects, key labels
+Deep Orange	#D9540D	Button hover, active states, strong accents
+Supporting Colors
+Color	HEX	Recommended Use
+Sky Blue	#DCEEFF	Light section backgrounds and decorative shapes
+Steel Grey	#66717D	Paragraph text and secondary information
+Light Grey	#F4F6F8	Alternate section backgrounds and cards
+Border Grey	#D9E0E7	Card borders, dividers and form fields
+Dark Charcoal	#16202A	Main text and strong headings
+Pure White	#FFFFFF	Main website background and card surfaces
+Recommended Colour Combination
+Header
+Background: #FFFFFF
+Menu text: #16202A
+Active/hover: #F36A16
+Quote button: #F36A16
+Hero Section
+Main heading: #063B78
+Highlight words: #F36A16
+Description: #66717D
+Primary button: #F36A16
+Secondary button: white with #063B78 border
+Product Cards
+Background: #FFFFFF
+Border: #D9E0E7
+Heading: #063B78
+Link/arrow: #F36A16
+Hover border: #0D5FA8
+Dark CTA and Footer
+Background: #052E5C
+Secondary gradient: #063B78
+Heading: #FFFFFF
+Paragraph: #DCE6F0
+Buttons and accents: #F36A16
+Suggested Gradient
+background: linear-gradient(135deg, #052E5C 0%, #063B78 55%, #0D5FA8 100%);
+CSS Variables
+:root {
+  --primary-navy: #063B78;
+  --primary-blue: #0D5FA8;
+  --accent-orange: #F36A16;
+  --dark-orange: #D9540D;
+
+  --sky-blue: #DCEEFF;
+  --light-bg: #F4F6F8;
+  --border-color: #D9E0E7;
+
+  --heading-color: #16202A;
+  --text-color: #66717D;
+  --white: #FFFFFF;
+}
+
+Use approximately 65% white/light grey, 25% blue and 10% orange. Orange should remain an accent colour, not the main background colour.
