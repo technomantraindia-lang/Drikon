@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore DRIKON Infratech's complete product range — PEB Systems, Roofing Sheets, PUF Panels, Decking Sheets, C&Z Purlins, Ventilators, Insulation and more.">
+  <title>Products &amp; Solutions | DRIKON Infratech Pvt. Ltd.</title>
+  
+  <!-- Modern Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+
+  <style>
+    /* ============================================================
+       PRODUCTS PAGE REDESIGNED PREMIUM STYLES
+       ============================================================ */
+    :root {
+      --glow-orange: rgba(243, 106, 22, 0.15);
+      --glass-bg: rgba(255, 255, 255, 0.85);
+      --card-border: rgba(11, 79, 147, 0.08);
+    }
+
+    /* Redesigned Hero Banner */
+    .products-hero {
+      position: relative;
+      padding: 180px 0 120px;
+      background: linear-gradient(135deg, rgba(6, 59, 120, 0.95) 0%, rgba(8, 43, 85, 0.95) 100%), url('hero-section.png') no-repeat center center/cover;
+      color: var(--white);
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .products-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 80% 20%, rgba(243, 106, 22, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .products-hero-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 25px;
+      background: rgba(255, 255, 255, 0.06);
+      padding: 6px 16px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+    }
+    
+    .products-hero-breadcrumb a {
+      color: var(--white);
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+    
+    .products-hero-breadcrumb a:hover {
+      color: var(--accent-orange);
+    }
+
+    .products-hero-title {
+      font-size: clamp(38px, 5vw, 60px);
+      font-weight: 900;
+      letter-spacing: -2px;
+      line-height: 1.1;
+      margin-bottom: 20px;
+      font-family: 'Outfit', sans-serif;
+      text-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .products-hero-tagline {
+      font-size: clamp(16px, 2.2vw, 21px);
+      font-weight: 400;
+      color: #E2ECF5;
+      max-width: 650px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+
+    /* Redesigned Floating Sticky Tabs Bar */
+    .glass-tabs-container {
+      position: sticky;
+      top: 90px;
+      z-index: 950;
+      margin-top: -35px; /* Pull tab bar up over hero banner */
+      padding: 0 15px;
+    }
+
+    .glass-tabs {
+      background: var(--glass-bg);
+      backdrop-filter: blur(16px) saturate(120%);
+      -webkit-backdrop-filter: blur(16px) saturate(120%);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(8, 43, 85, 0.1);
+      padding: 10px;
+    }
+
+    .tabs-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .tab-btn {
+      padding: 12px 22px;
+      border-radius: 14px;
+      font-weight: 700;
+      font-size: 13.5px;
+      color: var(--primary-navy);
+      background: transparent;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .tab-btn span.tab-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--primary-blue);
+      border-radius: 50%;
+      opacity: 0.5;
+      transition: all 0.3s ease;
+    }
+
+    .tab-btn:hover {
+      background: rgba(13, 95, 168, 0.05);
+      color: var(--primary-blue);
+    }
+
+    .tab-btn:hover span.tab-dot {
+      background-color: var(--accent-orange);
+      opacity: 1;
+    }
+
+    .tab-btn.active {
+      background: var(--accent-orange);
+      color: var(--white);
+      border-color: var(--accent-orange);
+      box-shadow: 0 8px 20px rgba(243, 106, 22, 0.25);
+    }
+
+    .tab-btn.active span.tab-dot {
+      background-color: var(--white);
+      opacity: 1;
+    }
+
+    /* Redesigned Product Sections */
+    .product-section {
+      padding: 120px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .product-section.alt-bg {
+      background-color: #F8FAFC;
+      border-top: 1px solid #EEF2F6;
+      border-bottom: 1px solid #EEF2F6;
+    }
+
+    /* Subtle ray effect behind Polycarbonate Skylights */
+    .polycarbonate-glow-bg {
+      background: radial-gradient(circle at 90% 30%, rgba(243, 106, 22, 0.05) 0%, transparent 60%);
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      pointer-events: none;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-orange);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .section-eyebrow::before {
+      content: '';
+      width: 15px;
+      height: 2px;
+      background-color: var(--accent-orange);
+    }
+
+    .section-title {
+      font-size: clamp(30px, 4vw, 44px);
+      color: var(--primary-navy);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+      margin-bottom: 25px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .section-desc {
+      font-size: 16.5px;
+      line-height: 1.7;
+      color: var(--text-color);
+      margin-bottom: 35px;
+    }
+
+    /* Redesigned 2-Column Product Grid */
+    .product-detail-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    
+    .product-detail-grid.reverse {
+      grid-template-columns: 1.1fr 1fr;
+    }
+
+    /* Floating Image Card with Decorative Accents */
+    .product-image-card {
+      position: relative;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(8, 43, 85, 0.08);
+      z-index: 10;
+    }
+
+    /* Outer wireframe border */
+    .product-image-card::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      left: -20px;
+      width: 100%;
+      height: 100%;
+      border: 3px solid rgba(13, 95, 168, 0.12);
+      border-radius: 20px;
+      z-index: -1;
+      pointer-events: none;
+      transition: all 0.4s ease;
+    }
+    
+    .product-detail-grid.reverse .product-image-card::after {
+      left: 20px;
+      border-color: rgba(243, 106, 22, 0.12);
+    }
+
+    .product-image-card:hover::after {
+      transform: translate(5px, -5px);
+    }
+
+    .product-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.8);
+      display: block;
+      transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .product-image-card:hover .product-img {
+      transform: scale(1.02);
+    }
+
+    /* Technical Specifications Table block */
+    .tech-specs-card {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.02);
+      margin-top: 30px;
+    }
+
+    .tech-specs-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: var(--primary-navy);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .tech-specs-title::before {
+      content: '⚙️';
+      font-size: 16px;
+    }
+
+    .tech-specs-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .spec-item {
+      border-bottom: 1px dashed rgba(8, 43, 85, 0.08);
+      padding-bottom: 10px;
+    }
+    
+    .spec-item:nth-last-child(-n+2) {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .spec-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--text-color);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .spec-value {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--heading-color);
+    }
+
+    /* Redesigned CTAs */
+    .actions-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .btn-action-primary {
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14.5px;
+      background: var(--accent-orange);
+      color: var(--white);
+      text-decoration: none;
+      transition: all var(--transition-smooth);
+      box-shadow: 0 6px 18px rgba(243, 106, 22, 0.2);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-action-primary:hover {
+      background: var(--dark-orange);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(217, 84, 13, 0.3);
+    }
+
+    .btn-action-secondary {
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      font-size: 14.5px;
+      border: 2px solid rgba(13, 95, 168, 0.15);
+      color: var(--primary-blue);
+      text-decoration: none;
+      transition: all var(--transition-smooth);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-action-secondary:hover {
+      border-color: var(--primary-blue);
+      background: rgba(13, 95, 168, 0.03);
+      transform: translateY(-2px);
+    }
+
+    /* Redesigned Split CTA Inquiry Form Section */
+    .premium-cta-section {
+      padding: 120px 0;
+      background: linear-gradient(135deg, var(--primary-navy) 0%, #031D3A 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .premium-cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 10% 90%, rgba(243, 106, 22, 0.1) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .cta-split-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .cta-left-form-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    }
+
+    .form-group-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12.5px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.85);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      padding: 12px 16px;
+      color: var(--white);
+      font-size: 14.5px;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--accent-orange);
+      background: rgba(255, 255, 255, 0.12);
+      box-shadow: 0 0 12px rgba(243, 106, 22, 0.25);
+    }
+
+    .form-select option {
+      color: var(--heading-color);
+      background: var(--white);
+    }
+
+    .btn-form-submit {
+      width: 100%;
+      background: var(--accent-orange);
+      color: var(--white);
+      border: none;
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all var(--transition-smooth);
+      box-shadow: 0 6px 18px rgba(243, 106, 22, 0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-form-submit:hover {
+      background: var(--dark-orange);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(217, 84, 13, 0.35);
+    }
+
+    .cta-right-content h2 {
+      font-size: clamp(32px, 4.5vw, 48px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.15;
+      margin-bottom: 25px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .cta-right-content p {
+      font-size: 17.5px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.85);
+      margin-bottom: 45px;
+    }
+
+    /* Trust factors grid */
+    .trust-factors {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .trust-factor-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+
+    .trust-factor-icon {
+      font-size: 24px;
+      background: rgba(243, 106, 22, 0.15);
+      color: var(--accent-orange);
+      width: 50px;
+      height: 50px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(243, 106, 22, 0.2);
+    }
+
+    .trust-factor-title {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 5px;
+      color: var(--white);
+    }
+
+    .trust-factor-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      line-height: 1.5;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+      .product-detail-grid, .product-detail-grid.reverse, .cta-split-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+      .product-image-card {
+        order: -1;
+      }
+      .product-img {
+        height: 380px;
+      }
+      .glass-tabs-container {
+        top: 70px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .tech-specs-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+      }
+      .form-group-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .cta-left-form-card {
+        padding: 25px;
+      }
+      .glass-tabs {
+        padding: 5px;
+      }
+      .tab-btn {
+        padding: 8px 14px;
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Premium Header -->
+  <header class="header">
+    <!-- Header Top Bar -->
+    <div class="header-top-bar">
+      <div class="top-bar-container">
+        <div class="top-bar-left">
+          <a href="mailto:info@drikon.in" class="top-bar-link">
+            <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            info@drikon.in
+          </a>
+          <span class="top-bar-separator">|</span>
+          <a href="tel:+919978387298" class="top-bar-link">
+            <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            +91 99783 87298
+          </a>
+        </div>
+        <div class="top-bar-right">
+          <span>Industrial PEB & Steel Roofing Experts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <img src="Drikon Infratech Logo Final_1.png" alt="Drikon Infratech Logo" class="logo-img">
+      </a>
+      
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link active">Products <span class="dropdown-arrow"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="products.html#peb-systems">Pre-Engineered Buildings</a></li>
+              <li><a href="products.html#roofing-sheets">Roofing Sheets</a></li>
+              <li><a href="products.html#puf-panels">Insulated PUF Panels</a></li>
+              <li><a href="products.html#polycarbonate">Polycarbonate Sheets</a></li>
+              <li><a href="products.html#decking-sheets">Decking Sheet Systems</a></li>
+              <li><a href="products.html#cz-purlins">Structural C &amp; Z Purlins</a></li>
+              <li><a href="products.html#ventilators">Air Ventilation Systems</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-cta">
+        <a href="tel:+919978387298" class="cta-btn">
+          <span class="phone-icon-wrapper">
+            <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="cta-phone">Call Drikon</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html" class="btn-quote">Get a Quote</a>
+  </nav>
+
+  <!-- ===================== 1. PRODUCTS HERO BANNER ===================== -->
+  <section class="products-hero">
+    <div class="container">
+      <div class="products-hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Products</span>
+      </div>
+      <h1 class="products-hero-title">Industrial Steel Products</h1>
+      <p class="products-hero-tagline">Engineered for absolute structural integrity and lifetime weather resistance.</p>
+    </div>
+  </section>
+
+  <!-- ===================== FLOATING GLASS STICKY TABS ===================== -->
+  <div class="glass-tabs-container">
+    <div class="container">
+      <div class="glass-tabs">
+        <div class="tabs-wrapper">
+          <a href="#peb-systems" class="tab-btn"><span class="tab-dot"></span>PEB Systems</a>
+          <a href="#roofing-sheets" class="tab-btn"><span class="tab-dot"></span>Roofing Sheets</a>
+          <a href="#puf-panels" class="tab-btn"><span class="tab-dot"></span>PUF Panels</a>
+          <a href="#polycarbonate" class="tab-btn"><span class="tab-dot"></span>Polycarbonate</a>
+          <a href="#decking-sheets" class="tab-btn"><span class="tab-dot"></span>Decking Sheets</a>
+          <a href="#cz-purlins" class="tab-btn"><span class="tab-dot"></span>C &amp; Z Purlins</a>
+          <a href="#ventilators" class="tab-btn"><span class="tab-dot"></span>Ventilation</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== SECTION 1: PEB SYSTEMS ===================== -->
+  <section class="product-section" id="peb-systems">
+    <div class="container">
+      <div class="product-detail-grid">
+        <div class="product-image-card">
+          <img src="images/Pre-Engineered Buildings.png" alt="Pre-Engineered Building Systems" class="product-img">
+        </div>
+        <div>
+          <span class="section-eyebrow">Primary Structural Framing</span>
+          <h2 class="section-title">Pre-Engineered Building (PEB) Systems</h2>
+          <p class="section-desc">
+            DRIKON designs, engineers, and manufactures industrial PEB structures that deliver exceptional spans, rapid construction speeds, and lower overall maintenance costs. Our systems are optimized to handle severe heavy dead loads, machinery vibrations, and local wind speeds.
+          </p>
+          
+          <div class="tech-specs-card">
+            <h3 class="tech-specs-title">Technical Specifications</h3>
+            <div class="tech-specs-grid">
+              <div class="spec-item">
+                <div class="spec-label">Material Grade</div>
+                <div class="spec-value">ASTM A572 Grade 50 / IS 2062</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Yield Strength</div>
+                <div class="spec-value">345 MPa / 50,000 PSI</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Structural Protection</div>
+                <div class="spec-value">Double Epoxy Primer Red Oxide</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Span Capability</div>
+                <div class="spec-value">Up to 90m Clear Span</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="actions-row">
+            <a href="contact.html" class="btn-action-primary">Request Project Quote</a>
+            <a href="contact.html" class="btn-action-secondary">Get Catalog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 2: ROOFING SHEETS ===================== -->
+  <section class="product-section alt-bg" id="roofing-sheets">
+    <div class="container">
+      <div class="product-detail-grid reverse">
+        <div>
+          <span class="section-eyebrow">External Cladding Profiles</span>
+          <h2 class="section-title">Roofing Sheets</h2>
+          <p class="section-desc">
+            We manufacture vibrant, weather-resilient profiling sheets. Engineered for superior structural strength, durability, and corrosion resistance under severe monsoon and industrial environments.
+          </p>
+          
+          <div class="tech-specs-card">
+            <h3 class="tech-specs-title">Technical Specifications</h3>
+            <div class="tech-specs-grid">
+              <div class="spec-item">
+                <div class="spec-label">Base Metal Coating</div>
+                <div class="spec-value">Galvalume AZ150 (Alu-Zinc)</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Thickness Range</div>
+                <div class="spec-value">0.45 mm - 0.80 mm</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Color Standard</div>
+                <div class="spec-value">Standard RAL Chart / Custom</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Tensile Strength</div>
+                <div class="spec-value">550 MPa (G550)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <a href="contact.html" class="btn-action-primary">Request Project Quote</a>
+            <a href="contact.html" class="btn-action-secondary">Get Catalog</a>
+          </div>
+        </div>
+        <div class="product-image-card">
+          <img src="images/Premium Roofing Sheets.png" alt="Roofing Sheets" class="product-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3: PUF PANELS ===================== -->
+  <section class="product-section" id="puf-panels">
+    <div class="container">
+      <div class="product-detail-grid">
+        <div class="product-image-card">
+          <img src="images/Insulated PUF Panels.png" alt="Insulated PUF Panels" class="product-img">
+        </div>
+        <div>
+          <span class="section-eyebrow">Thermal Insulation Systems</span>
+          <h2 class="section-title">Insulated PUF Panels</h2>
+          <p class="section-desc">
+            High thermal efficiency polyurethane foam (PUF) sandwich panels engineered to deliver outstanding insulation for cold storage, clean rooms, and temperature-sensitive facilities.
+          </p>
+          
+          <div class="tech-specs-card">
+            <h3 class="tech-specs-title">Technical Specifications</h3>
+            <div class="tech-specs-grid">
+              <div class="spec-item">
+                <div class="spec-label">Core Material</div>
+                <div class="spec-value">Rigid Polyurethane Foam</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Density</div>
+                <div class="spec-value">40 ± 2 Kg/m³</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Panel Thickness</div>
+                <div class="spec-value">50 mm - 150 mm</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Joint Type</div>
+                <div class="spec-value">Tongue &amp; Groove Interlock</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <a href="contact.html" class="btn-action-primary">Request Project Quote</a>
+            <a href="contact.html" class="btn-action-secondary">Get Catalog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 4: POLYCARBONATE SHEETS ===================== -->
+  <section class="product-section alt-bg" id="polycarbonate">
+    <div class="polycarbonate-glow-bg"></div>
+    <div class="container">
+      <div class="product-detail-grid reverse">
+        <div>
+          <span class="section-eyebrow">Skylights &amp; Daylight Panels</span>
+          <h2 class="section-title">Polycarbonate Sheets</h2>
+          <p class="section-desc">
+            Our Polycarbonate Sheets combine exceptional transparency and strength, making them ideal for B2B applications that require both durability and natural light transmission. These high-impact, weather-resistant sheets are perfect for skylights, canopies, and architectural features, offering natural light without sacrificing structural integrity.
+          </p>
+          
+          <div class="tech-specs-card">
+            <h3 class="tech-specs-title">Technical Specifications</h3>
+            <div class="tech-specs-grid">
+              <div class="spec-item">
+                <div class="spec-label">Core Performance</div>
+                <div class="spec-value">Durability &amp; Clarity Combined</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">UV Protection</div>
+                <div class="spec-value">Coextruded UV Barrier Coat</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Impact Resistance</div>
+                <div class="spec-value">250 Times Stronger than Glass</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Daylight Pass</div>
+                <div class="spec-value">Up to 85% Light Transmission</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <a href="contact.html" class="btn-action-primary">Request Project Quote</a>
+            <a href="contact.html" class="btn-action-secondary">Get Catalog</a>
+          </div>
+        </div>
+        <div class="product-image-card">
+          <img src="images/Polycarbonate Sheets.png" alt="Polycarbonate Sheets" class="product-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 5: DECKING SHEETS ===================== -->
+  <section class="product-section" id="decking-sheets">
+    <div class="container">
+      <div class="product-detail-grid">
+        <div class="product-image-card">
+          <img src="images/Decking Sheet Systems.png" alt="Decking Sheet Systems" class="product-img">
+        </div>
+        <div>
+          <span class="section-eyebrow">Composite Structural Slab</span>
+          <h2 class="section-title">Decking Sheet Systems</h2>
+          <p class="section-desc">
+            Robust composite steel floor decking offering supreme load distribution, ease of concrete pouring, and high structural stability. Essential for rapid multi-storey construction.
+          </p>
+          
+          <div class="tech-specs-card">
+            <h3 class="tech-specs-title">Technical Specifications</h3>
+            <div class="tech-specs-grid">
+              <div class="spec-item">
+                <div class="spec-label">Profile Depth</div>
+                <div class="spec-value">44 mm / 52 mm / 75 mm</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Cover Width</div>
+                <div class="spec-value">980 mm / 1020 mm</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Steel Material</div>
+                <div class="spec-value">High Tensile Galvanized G350</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Thickness</div>
+                <div class="spec-value">0.80 mm - 1.20 mm</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <a href="contact.html" class="btn-action-primary">Request Project Quote</a>
+            <a href="contact.html" class="btn-action-secondary">Get Catalog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 6: C & Z PURLINS ===================== -->
+  <section class="product-section alt-bg" id="cz-purlins">
+    <div class="container">
+      <div class="product-detail-grid reverse">
+        <div>
+          <span class="section-eyebrow">Secondary Steel Support</span>
+          <h2 class="section-title">Structural C &amp; Z Purlins</h2>
+          <p class="section-desc">
+            Cold roll-formed high-tensile galvanized steel purlins providing crucial secondary support for wall cladding and roofing sheets.
+          </p>
+          
+          <div class="tech-specs-card">
+            <h3 class="tech-specs-title">Technical Specifications</h3>
+            <div class="tech-specs-grid">
+              <div class="spec-item">
+                <div class="spec-label">Zinc Coating</div>
+                <div class="spec-value">120 GSM - 275 GSM Galv</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Base Metal Strength</div>
+                <div class="spec-value">345 MPa / G345</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Thickness</div>
+                <div class="spec-value">1.50 mm - 3.00 mm</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Pre-Punching</div>
+                <div class="spec-value">Pre-punched customized holes</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <a href="contact.html" class="btn-action-primary">Request Project Quote</a>
+            <a href="contact.html" class="btn-action-secondary">Get Catalog</a>
+          </div>
+        </div>
+        <div class="product-image-card">
+          <img src="images/Structural C & Z Purlins.png" alt="C & Z Purlins" class="product-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 7: VENTILATION SYSTEMS ===================== -->
+  <section class="product-section" id="ventilators">
+    <div class="container">
+      <div class="product-detail-grid">
+        <div class="product-image-card">
+          <img src="images/Air Ventilation Systems.png" alt="Air Ventilation Systems" class="product-img">
+        </div>
+        <div>
+          <span class="section-eyebrow">Natural Air Environment</span>
+          <h2 class="section-title">Air Ventilation Systems</h2>
+          <p class="section-desc">
+            Natural, electricity-free wind-driven roof turbine exhaust ventilators and ridge ventilators engineered to maintain fresh airflow and exhaust ambient heat from industrial work areas.
+          </p>
+          
+          <div class="tech-specs-card">
+            <h3 class="tech-specs-title">Technical Specifications</h3>
+            <div class="tech-specs-grid">
+              <div class="spec-item">
+                <div class="spec-label">Vane Material</div>
+                <div class="spec-value">High Grade Aluminum Al.5052</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Bearing Core</div>
+                <div class="spec-value">Double Sealed Stainless Steel</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Size Diameter</div>
+                <div class="spec-value">21" / 24" / 30" Neck Size</div>
+              </div>
+              <div class="spec-item">
+                <div class="spec-label">Operating Cost</div>
+                <div class="spec-value">Zero Power Consumption</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="actions-row">
+            <a href="contact.html" class="btn-action-primary">Request Project Quote</a>
+            <a href="contact.html" class="btn-action-secondary">Get Catalog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 — Brand -->
+        <div>
+          <img src="Drikon Infratech Logo Final_1.png" alt="DRIKON Infratech Logo" class="footer-logo-img">
+          <p class="footer-brand-desc">DRIKON Infratech Pvt. Ltd. delivers end-to-end Pre-Engineered Building, roofing and infrastructure solutions engineered for strength, efficiency and long-term performance.</p>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <a href="tel:+918140904857">+91 81409 04857</a> &nbsp;|&nbsp;
+                <a href="tel:+919016440187">+91 90164 40187</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:drikoninfratech2026@gmail.com">drikoninfratech2026@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FF 412, S9 Square, Sama Savli Road, Vadodara - 390024, Gujarat, India.</span>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 — Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3 — Our Products -->
+        <div>
+          <h4 class="footer-col-title">Our Products</h4>
+          <div class="footer-links">
+            <a href="products.html#peb-systems">PEB Systems</a>
+            <a href="products.html#roofing-sheets">Roofing Sheets</a>
+            <a href="products.html#puf-panels">Roof PUF Panels</a>
+            <a href="products.html#decking-sheets">Decking Sheets</a>
+            <a href="products.html#cz-purlins">C &amp; Z Purlins</a>
+            <a href="products.html#ventilators">Turbo Ventilators</a>
+            <a href="products.html#polycarbonate">Polycarbonate Sheets</a>
+            <a href="products.html#insulation">Insulation Solutions</a>
+          </div>
+        </div>
+
+        <!-- Col 4 — Our Services -->
+        <div>
+          <h4 class="footer-col-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="products.html">PEB Design &amp; Engineering</a>
+            <a href="products.html">Structural Fabrication</a>
+            <a href="products.html">PEB Manufacturing</a>
+            <a href="products.html">Roofing &amp; Cladding</a>
+            <a href="products.html">Installation &amp; Erection</a>
+            <a href="products.html">Turnkey Execution</a>
+            <a href="products.html">Ventilation Solutions</a>
+            <a href="contact.html">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 DRIKON Infratech Pvt. Ltd. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger / Mobile Nav
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn = document.getElementById('mobileNavClose');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+    closeBtn.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+
+    // Smooth scrolling for sticky navigation tabs
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        // Remove active class from all tabs
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        // Add active class to clicked tab
+        this.classList.add('active');
+
+        if (targetElement) {
+          const headerOffset = 180;
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Update active tab on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('.product-section');
+      const tabs = document.querySelectorAll('.tab-btn');
+      let currentSectionId = '';
+
+      sections.forEach(sec => {
+        const rect = sec.getBoundingClientRect();
+        if (rect.top <= 200 && rect.bottom >= 200) {
+          currentSectionId = sec.getAttribute('id');
+        }
+      });
+
+      if (currentSectionId) {
+        tabs.forEach(tab => {
+          tab.classList.remove('active');
+          if (tab.getAttribute('href') === `#${currentSectionId}`) {
+            tab.classList.add('active');
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html>

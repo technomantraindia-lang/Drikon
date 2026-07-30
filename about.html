@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About DRIKON Infratech Pvt. Ltd. — Engineering-led infrastructure and Pre-Engineered Building solutions company in Vadodara, Gujarat, India.">
+  <title>About Us | DRIKON Infratech Pvt. Ltd.</title>
+  
+  <!-- Modern Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+
+  <style>
+    /* ============================================================
+       ABOUT PAGE CUSTOM PREMIUM STYLES
+       ============================================================ */
+    .about-banner {
+      position: relative;
+      padding: 160px 0 100px;
+      background: linear-gradient(135deg, rgba(8, 43, 85, 0.92) 0%, rgba(11, 79, 147, 0.85) 100%), url('hero-section.png') no-repeat center center/cover;
+      color: var(--white);
+      text-align: center;
+    }
+    
+    .about-banner-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+    }
+    
+    .about-banner-breadcrumb a {
+      color: var(--white);
+      transition: color var(--transition);
+    }
+    
+    .about-banner-breadcrumb a:hover {
+      color: var(--orange);
+    }
+
+    .about-banner-title {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 15px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .about-banner-tagline {
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: 400;
+      color: #EAF3FB;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Section Utilities */
+    .about-section {
+      padding: 100px 0;
+    }
+
+    .about-section.alt-bg {
+      background-color: var(--light-grey);
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      font-size: clamp(28px, 3.5vw, 40px);
+      color: var(--navy);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .section-desc {
+      font-size: 16px;
+      line-height: 1.65;
+      color: #5A6A7A;
+      margin-bottom: 30px;
+    }
+
+    /* 2. Company Overview */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .overview-image-wrapper {
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .overview-image {
+      width: 100%;
+      height: 450px;
+      object-fit: cover;
+    }
+
+    .capabilities-tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 25px;
+    }
+
+    .cap-tag {
+      background: var(--soft-blue);
+      color: var(--blue);
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    /* 3. Achievements */
+    .achievements-section {
+      background: var(--navy);
+      color: var(--white);
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+
+    .achievement-card {
+      padding: 20px;
+    }
+
+    .achievement-number {
+      font-size: clamp(36px, 4.5vw, 52px);
+      font-weight: 800;
+      color: var(--orange);
+      margin-bottom: 8px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .achievement-label {
+      font-size: 15px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* 4. Capabilities */
+    .capabilities-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .capability-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 30px 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+      border: 1px solid rgba(8, 43, 85, 0.05);
+      transition: all var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+    }
+
+    .capability-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--blue);
+      box-shadow: var(--shadow);
+    }
+
+    .capability-step {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--soft-blue);
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .capability-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .capability-desc {
+      font-size: 13px;
+      line-height: 1.5;
+      color: #6C7A89;
+    }
+
+    /* 5. Manufacturing Infrastructure */
+    .infra-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .infra-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 25px;
+    }
+
+    .infra-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .infra-icon-wrapper {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--soft-orange);
+      color: var(--orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .infra-item-text {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--navy);
+      line-height: 1.3;
+    }
+
+    .infra-item-desc {
+      font-size: 13px;
+      color: #6C7A89;
+      margin-top: 4px;
+    }
+
+    /* 6. Why DRIKON */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .why-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 40px 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+      border-left: 4px solid var(--blue);
+      transition: all var(--transition);
+    }
+
+    .why-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow);
+      border-left-color: var(--orange);
+    }
+
+    .why-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+    }
+
+    .why-desc {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #5A6A7A;
+    }
+
+    /* 7. Industries & Applications */
+    .ind-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .ind-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.02);
+      border: 1px solid rgba(8, 43, 85, 0.04);
+      transition: all var(--transition);
+    }
+
+    .ind-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+      border-color: var(--orange);
+    }
+
+    .ind-icon {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 20px;
+      background: var(--soft-blue);
+      color: var(--blue);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .ind-card:hover .ind-icon {
+      background: var(--soft-orange);
+      color: var(--orange);
+    }
+
+    .ind-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    /* 8. Final Enquiry CTA */
+    .about-cta {
+      background: linear-gradient(135deg, var(--navy) 0%, #052446 100%);
+      color: var(--white);
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .about-cta-content {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .about-cta-title {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800;
+      margin-bottom: 20px;
+      letter-spacing: -1px;
+    }
+
+    .about-cta-desc {
+      font-size: 17px;
+      color: rgba(255, 255, 255, 0.85);
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    .about-cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .about-btn {
+      padding: 15px 32px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all var(--transition);
+    }
+
+    .about-btn-primary {
+      background: var(--orange);
+      color: var(--white);
+    }
+
+    .about-btn-primary:hover {
+      background: #e06915;
+      transform: translateY(-2px);
+    }
+
+    .about-btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .about-btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 1024px) {
+      .capabilities-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .ind-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .overview-grid, .infra-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .capabilities-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .why-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .ind-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-section {
+        padding: 70px 0;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .achievements-grid {
+        grid-template-columns: 1fr;
+      }
+      .capabilities-grid {
+        grid-template-columns: 1fr;
+      }
+      .why-grid {
+        grid-template-columns: 1fr;
+      }
+      .ind-grid {
+        grid-template-columns: 1fr;
+      }
+      .overview-image {
+        height: 300px;
+      }
+    }
+
+    /* Merger Diagram Section Styles */
+    .merger-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .merger-diagram-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 40px 30px;
+      box-shadow: 0 10px 30px rgba(8, 43, 85, 0.05);
+      border: 1px solid rgba(8, 43, 85, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .merger-diagram-nodes {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+      position: relative;
+    }
+    .merger-node-card {
+      flex: 1;
+      padding: 18px 12px;
+      border-radius: 6px;
+      font-weight: 800;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: var(--white);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    }
+    .merger-node-card.patel {
+      background-color: #063b78; /* Deep Blue from brochure */
+    }
+    .merger-node-card.vardayini {
+      background-color: #f47a20; /* Vibrant Orange from brochure */
+    }
+    .merger-diagram-connectors {
+      position: relative;
+      width: 100%;
+      height: 50px;
+      margin: 10px 0;
+    }
+    .merger-svg-line {
+      width: 100%;
+      height: 100%;
+    }
+    .merger-diagram-result {
+      background: var(--white);
+      border: 1px solid rgba(8, 43, 85, 0.1);
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(8, 43, 85, 0.06);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 250px;
+    }
+    .merger-result-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+    }
+    .merger-result-label {
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--navy);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 768px) {
+      .merger-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .merger-diagram-card {
+        padding: 30px 20px;
+      }
+      .merger-node-card {
+        font-size: 11px;
+        padding: 14px 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Premium Header -->
+  <header class="header">
+    <!-- Header Top Bar -->
+    <div class="header-top-bar">
+      <div class="top-bar-container">
+        <div class="top-bar-left">
+          <a href="mailto:info@drikon.in" class="top-bar-link">
+            <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            info@drikon.in
+          </a>
+          <span class="top-bar-separator">|</span>
+          <a href="tel:+919978387298" class="top-bar-link">
+            <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            +91 99783 87298
+          </a>
+        </div>
+        <div class="top-bar-right">
+          <span>Industrial PEB & Steel Roofing Experts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <img src="Drikon Infratech Logo Final_1.png" alt="Drikon Infratech Logo" class="logo-img">
+      </a>
+      
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link active">About Us</a></li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products <span class="dropdown-arrow"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="products.html#peb-systems">Pre-Engineered Buildings</a></li>
+              <li><a href="products.html#roofing-sheets">Roofing Sheets</a></li>
+              <li><a href="products.html#puf-panels">Insulated PUF Panels</a></li>
+              <li><a href="products.html#polycarbonate">Polycarbonate Sheets</a></li>
+              <li><a href="products.html#decking-sheets">Decking Sheet Systems</a></li>
+              <li><a href="products.html#cz-purlins">Structural C &amp; Z Purlins</a></li>
+              <li><a href="products.html#ventilators">Air Ventilation Systems</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-cta">
+        <a href="tel:+919978387298" class="cta-btn">
+          <span class="phone-icon-wrapper">
+            <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="cta-phone">Call Drikon</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html" class="btn-quote">Get a Quote</a>
+  </nav>
+
+  <!-- ===================== 1. INNER PAGE BANNER ===================== -->
+  <section class="about-banner">
+    <div class="container">
+      <div class="about-banner-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>About Us</span>
+      </div>
+      <h1 class="about-banner-title">About DRIKON Infratech</h1>
+      <p class="about-banner-tagline">Strength in Steel. Precision in Every Structure.</p>
+    </div>
+  </section>
+
+  <!-- ===================== 2. COMPANY OVERVIEW ===================== -->
+  <section class="about-section">
+    <div class="container">
+      <div class="overview-grid">
+        <div>
+          <span class="section-eyebrow">Who We Are</span>
+          <h2 class="section-title">Engineering Future-Ready Infrastructure</h2>
+          <p class="section-desc">
+            DRIKON PVT LTD is a forward-thinking infrastructure and Pre-Engineered Building (PEB) solutions company dedicated to delivering robust, efficient and future-ready structural systems. We specialize in designing, engineering, fabricating and executing industrial, commercial, and institutional projects with a strong emphasis on quality, precision and innovation.
+          </p>
+          <p class="section-desc">
+            By integrating advanced engineering practices with modern construction techniques, we create structures that offer exceptional strength, long-term durability and cost-effective performance.
+          </p>
+          <p class="section-desc">
+            From concept and planning to fabrication, installation and project completion, DRIKON PVT LTD provides comprehensive end-to-end solutions tailored to every client's unique requirements. Our commitment to excellence, timely execution and uncompromising safety standards enables us to deliver reliable infrastructure that supports business growth and sustainable development.
+          </p>
+        </div>
+        <div class="overview-image-wrapper">
+          <img src="hero-section.png" alt="Pre-Engineered Building Infrastructure" class="overview-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== COMPANY ORIGIN (MERGER) ===================== -->
+  <section class="about-section alt-bg">
+    <div class="container">
+      <div class="merger-grid">
+        <div class="merger-diagram-card">
+          <div class="merger-diagram-nodes">
+            <div class="merger-node-card patel">Patel Engineering</div>
+            <div class="merger-node-card vardayini">Vardayini Infratech</div>
+          </div>
+          <div class="merger-diagram-connectors">
+            <svg class="merger-svg-line" viewBox="0 0 300 50" preserveAspectRatio="none">
+              <path d="M 75 0 L 75 25 L 225 25 L 225 0 M 150 25 L 150 50" fill="none" stroke="#CCD7E2" stroke-width="2" />
+            </svg>
+          </div>
+          <div class="merger-diagram-result">
+            <img src="Drikon Infratech Logo Final_1.png" alt="DRIKON Infratech Pvt Ltd Logo" class="merger-result-logo">
+            <span class="merger-result-label">DRIKON Infratech Pvt. Ltd.</span>
+          </div>
+        </div>
+        <div>
+          <span class="section-eyebrow">Our Origin Story</span>
+          <h2 class="section-title">The Genesis of DRIKON: A Strategic Merger</h2>
+          <p class="section-desc">
+            DRIKON Infratech Pvt. Ltd. was established through the strategic merger of two industry-leading enterprises: **Patel Engineering** and **Vardayini Infratech**.
+          </p>
+          <p class="section-desc">
+            Prior to the merger, **Patel Engineering** operated as a premier structural engineering consultancy, managing complex high-load design calculations, drafting, and planning. Simultaneously, **Vardayini Infratech** served as a high-capacity steel fabrication facility, manufacturing roofing sheets, roll-formed purlins, and structural columns.
+          </p>
+          <p class="section-desc">
+            Recognizing the rising demand for a single-source turnkey contractor, the two organizations consolidated. This merger combined engineering design accuracy with raw production capacity under a single, unified leadership.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 3. OUR ACHIEVEMENTS ===================== -->
+  <section class="achievements-section">
+    <div class="container">
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-number">100+</div>
+          <div class="achievement-label">Projects Delivered</div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-number">50+</div>
+          <div class="achievement-label">Satisfied Clients</div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-number">7+</div>
+          <div class="achievement-label">Years of Expertise</div>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-number">100%</div>
+          <div class="achievement-label">Quality Commitment</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 4. END-TO-END CAPABILITIES ===================== -->
+  <section class="about-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+        <span class="section-eyebrow">Our Process</span>
+        <h2 class="section-title">From Concept to Completion</h2>
+        <p class="section-desc" style="margin-bottom: 0;">We oversee every stage of the project lifecycle to ensure structural accuracy, code compliance, and timely project delivery.</p>
+      </div>
+
+      <div class="capabilities-grid">
+        <div class="capability-card">
+          <div class="capability-step">01</div>
+          <h3 class="capability-title">Project Planning</h3>
+          <p class="capability-desc">Detailed requirements analysis, load assessments, site evaluations, and budgeting to outline a clear project framework.</p>
+        </div>
+        <div class="capability-card">
+          <div class="capability-step">02</div>
+          <h3 class="capability-title">Design & Engineering</h3>
+          <p class="capability-desc">Advanced drafting, structural calculations, and shop drawings matching national standards for safety and wind resilience.</p>
+        </div>
+        <div class="capability-card">
+          <div class="capability-step">03</div>
+          <h3 class="capability-title">Manufacturing</h3>
+          <p class="capability-desc">State-of-the-art factory fabrication using high-grade steel, automated machinery, and quality checks at every weld.</p>
+        </div>
+        <div class="capability-card">
+          <div class="capability-step">04</div>
+          <h3 class="capability-title">Supply & Installation</h3>
+          <p class="capability-desc">Safe delivery of ready-to-assemble structural components, followed by precision erection by technical site teams.</p>
+        </div>
+        <div class="capability-card">
+          <div class="capability-step">05</div>
+          <h3 class="capability-title">Handover</h3>
+          <p class="capability-desc">Final safety inspection, structural alignment checks, clearing project metrics, and handover of the fully completed facility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HOW WE WORK ===================== -->
+  <section class="about-section alt-bg">
+    <div class="container">
+      <div class="overview-grid" style="align-items: center;">
+        <div>
+          <span class="section-eyebrow">Our Methodology</span>
+          <h2 class="section-title">How We Work</h2>
+          <p class="section-desc">
+            We streamline coordination, design engineering, fabrication, and execution to minimize project downtime and ensure maximum structural integrity.
+          </p>
+          
+          <div class="merger-flow" style="margin-top: 20px;">
+            <div class="merger-box" style="padding: 20px;">
+              <h3 style="font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px;">1. Consult &amp; Design (📐)</h3>
+              <p style="font-size: 13px; line-height: 1.5; color: #5A6A7A; margin: 0;">We collaborate with your project planners to analyze site criteria, compute precise dead/live load requirements, and draft 3D structural blueprints aligned with national safety codes.</p>
+            </div>
+            <div class="merger-box" style="padding: 20px; border-left-color: var(--orange);">
+              <h3 style="font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px;">2. Manufacture &amp; QA (⚙️)</h3>
+              <p style="font-size: 13px; line-height: 1.5; color: #5A6A7A; margin: 0;">Components are fabricated in our high-capacity facility using automated purlin and sheet roll-formers. Every rafter and column undergoes strict thickness and weld checks.</p>
+            </div>
+            <div class="merger-box" style="padding: 20px; border-left-color: var(--navy);">
+              <h3 style="font-size: 16px; font-weight: 700; color: var(--navy); margin-bottom: 8px;">3. Deliver &amp; Erect (🏗️)</h3>
+              <p style="font-size: 13px; line-height: 1.5; color: #5A6A7A; margin: 0;">Ready-to-assemble members are transported safely to the site. Our technical erection crews execute the assembly using strict safety gear and crane alignment checks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="overview-image-wrapper">
+          <img src="images/Pre-Engineered Buildings.png" alt="How We Work - PEB Structural Assembly" class="overview-image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. MANUFACTURING INFRASTRUCTURE ===================== -->
+  <section class="infra-section-v3" id="infrastructure">
+    <div class="container">
+      <div class="infra-v3-grid">
+        <!-- Left Image Section with Floating Stat -->
+        <div class="infra-v3-visual">
+          <div class="infra-v3-img-wrapper">
+            <img src="peb shade.png" alt="DRIKON Manufacturing Facility Shed">
+            <div class="infra-v3-stat-card">
+              <div class="infra-v3-stat-num">100%</div>
+              <div>
+                <div class="infra-v3-stat-title">Quality Assured Facility</div>
+                <div class="infra-v3-stat-desc">Rajli Gam, Dabhoi Road, Vadodara</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Content: Staggered Numbered Flow (No Boxes) -->
+        <div class="infra-v3-content">
+          <span class="infra-v3-tag">Infrastructure Strength</span>
+          <h2 class="infra-v3-title">Robust Manufacturing &amp; Production Capabilities</h2>
+          
+          <div class="infra-v3-flow">
+            <div class="infra-v3-step">
+              <span class="infra-v3-step-num">01</span>
+              <div>
+                <h3 class="infra-v3-step-heading">Advanced Production Machinery</h3>
+                <p class="infra-v3-step-text">High-performance machinery and precise automated fabrication tooling ensuring exact structural member tolerances.</p>
+              </div>
+            </div>
+
+            <div class="infra-v3-step">
+              <span class="infra-v3-step-num">02</span>
+              <div>
+                <h3 class="infra-v3-step-heading">PEB Heavy Structural Framing</h3>
+                <p class="infra-v3-step-text">Precision primary rafters, columns, crane runway beams, and secondary framing built for extreme load capacity.</p>
+              </div>
+            </div>
+
+            <div class="infra-v3-step">
+              <span class="infra-v3-step-num">03</span>
+              <div>
+                <h3 class="infra-v3-step-heading">Roofing Sheets &amp; Insulated PUF Panels</h3>
+                <p class="infra-v3-step-text">Weather-resilient Galvalume profiling sheets, C &amp; Z purlins, and high-efficiency PUF thermal insulation panels.</p>
+              </div>
+            </div>
+
+            <div class="infra-v3-step">
+              <span class="infra-v3-step-num">04</span>
+              <div>
+                <h3 class="infra-v3-step-heading">Certified Engineering Workforce</h3>
+                <p class="infra-v3-step-text">Expert certified fabricators, machine operators, and specialized site erection teams managing turnkey projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 6. WHY DRIKON ===================== -->
+  <section class="about-section alt-bg">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+        <span class="section-eyebrow">Our Strengths</span>
+        <h2 class="section-title">Built on Precision, Quality and Reliability</h2>
+        <p class="section-desc" style="margin-bottom: 0;">Our business partners choose us because we construct buildings that endure the test of time, weather, and heavy usage.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <h3 class="why-title">Precision Engineering</h3>
+          <p class="why-desc">We use advanced structural designing and mapping tools to ensure that every bolt, column, and rafter fits flawlessly.</p>
+        </div>
+        <div class="why-card">
+          <h3 class="why-title">Advanced Manufacturing</h3>
+          <p class="why-desc">Our manufacturing infrastructure ensures continuous production of high-tensile purlins, sheets, and PEB components.</p>
+        </div>
+        <div class="why-card">
+          <h3 class="why-title">Consistent Quality</h3>
+          <p class="why-desc">Every component goes through severe structural stress, dimensions, and coating testing before leaving the factory floor.</p>
+        </div>
+        <div class="why-card">
+          <h3 class="why-title">Timely Project Delivery</h3>
+          <p class="why-desc">We streamline scheduling, component manufacturing, and site transport to keep critical timelines on track.</p>
+        </div>
+        <div class="why-card">
+          <h3 class="why-title">Safe On-Site Execution</h3>
+          <p class="why-desc">Our site engineers and installation crews follow zero-compromise safety protocols to achieve hazard-free on-site erection.</p>
+        </div>
+        <div class="why-card">
+          <h3 class="why-title">Reliable Performance</h3>
+          <p class="why-desc">We deliver structural systems designed to handle severe wind loads, heavy dead weights, and seismic factors safely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 7. INDUSTRIES & APPLICATIONS ===================== -->
+  <section class="about-section">
+    <div class="container">
+      <div style="text-align: center; max-width: 700px; margin: 0 auto 50px;">
+        <span class="section-eyebrow">Market Sectors</span>
+        <h2 class="section-title">Industries &amp; Applications We Support</h2>
+        <p class="section-desc" style="margin-bottom: 0;">Our steel structural systems serve diverse sectors with customized building sizes, load profiles, and height designs.</p>
+      </div>
+
+      <div class="ind-grid">
+        <div class="ind-card">
+          <div class="ind-icon">🏭</div>
+          <span class="ind-name">Industrial Buildings</span>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon">⚙️</div>
+          <span class="ind-name">Manufacturing Plants</span>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon">📦</div>
+          <span class="ind-name">Warehouses</span>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon">🏢</div>
+          <span class="ind-name">Commercial Infrastructure</span>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon">🏫</div>
+          <span class="ind-name">Institutional Buildings</span>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon">❄️</div>
+          <span class="ind-name">Cold Storage Facilities</span>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon">🔬</div>
+          <span class="ind-name">Clean Rooms</span>
+        </div>
+        <div class="ind-card">
+          <div class="ind-icon">🏙️</div>
+          <span class="ind-name">Multi-Storey Developments</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 8. FINAL ENQUIRY CTA ===================== -->
+  <section class="about-cta">
+    <div class="container">
+      <div class="about-cta-content">
+        <h2 class="about-cta-title">Let’s Build Stronger Infrastructure Together</h2>
+        <p class="about-cta-desc">
+          Partner with DRIKON Infratech for precision-engineered PEB systems, industrial roofing solutions and dependable project execution.
+        </p>
+        <div class="about-cta-buttons">
+          <a href="contact.html" class="about-btn about-btn-primary">Request a Project Quote</a>
+          <a href="contact.html" class="about-btn about-btn-secondary">Contact Our Team</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 — Brand -->
+        <div>
+          <img src="Drikon Infratech Logo Final_1.png" alt="DRIKON Infratech Logo" class="footer-logo-img">
+          <p class="footer-brand-desc">DRIKON Infratech Pvt. Ltd. delivers end-to-end Pre-Engineered Building, roofing and infrastructure solutions engineered for strength, efficiency and long-term performance.</p>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <a href="tel:+918140904857">+91 81409 04857</a> &nbsp;|&nbsp;
+                <a href="tel:+919016440187">+91 90164 40187</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:drikoninfratech2026@gmail.com">drikoninfratech2026@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FF 412, S9 Square, Sama Savli Road, Vadodara - 390024, Gujarat, India.</span>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/918140904857" class="social-icon" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 — Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3 — Products -->
+        <div>
+          <h4 class="footer-col-title">Our Products</h4>
+          <div class="footer-links">
+            <a href="products.html#peb-systems">PEB Systems</a>
+            <a href="products.html#roofing-sheets">Roofing Sheets</a>
+            <a href="products.html#puf-panels">Roof PUF Panels</a>
+            <a href="products.html#decking-sheets">Decking Sheets</a>
+            <a href="products.html#cz-purlins">C &amp; Z Purlins</a>
+            <a href="products.html#ventilators">Turbo Ventilators</a>
+            <a href="products.html#polycarbonate">Polycarbonate Sheets</a>
+            <a href="products.html#insulation">Insulation Solutions</a>
+          </div>
+        </div>
+
+        <!-- Col 4 — Services -->
+        <div>
+          <h4 class="footer-col-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="products.html">PEB Design &amp; Engineering</a>
+            <a href="products.html">Structural Fabrication</a>
+            <a href="products.html">PEB Manufacturing</a>
+            <a href="products.html">Roofing &amp; Cladding</a>
+            <a href="products.html">Installation &amp; Erection</a>
+            <a href="products.html">Turnkey Execution</a>
+            <a href="products.html">Ventilation Solutions</a>
+            <a href="contact.html">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 DRIKON Infratech Pvt. Ltd. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger / Mobile Nav
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn = document.getElementById('mobileNavClose');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+    closeBtn.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  </script>
+</body>
+</html>

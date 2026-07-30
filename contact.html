@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact DRIKON Infratech Pvt. Ltd. — Get in touch for PEB solutions, roofing, structural fabrication and infrastructure projects in Vadodara, Gujarat, India.">
+  <title>Contact Us | DRIKON Infratech Pvt. Ltd.</title>
+  
+  <!-- Modern Premium Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+
+  <style>
+    /* ============================================================
+       CONTACT PAGE CUSTOM PREMIUM STYLES
+       ============================================================ */
+    .contact-hero {
+      position: relative;
+      padding: 160px 0 120px;
+      background: linear-gradient(135deg, rgba(8, 43, 85, 0.92) 0%, rgba(11, 79, 147, 0.85) 100%), url('hero-section.png') no-repeat center center/cover;
+      color: var(--white);
+      text-align: center;
+    }
+    .contact-hero-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+    }
+    .contact-hero-breadcrumb a {
+      color: var(--white);
+      transition: color var(--transition);
+    }
+    .contact-hero-breadcrumb a:hover {
+      color: var(--orange);
+    }
+    .contact-hero-title {
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 800;
+      letter-spacing: -1.5px;
+      line-height: 1.1;
+      margin-bottom: 15px;
+      font-family: 'Outfit', sans-serif;
+    }
+    .contact-hero-desc {
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: 400;
+      color: #EAF3FB;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Contact Details Grid */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 25px;
+      margin-top: -60px;
+      position: relative;
+      z-index: 10;
+      padding-bottom: 80px;
+    }
+    .contact-card {
+      background: var(--white);
+      border-radius: 10px;
+      padding: 35px 25px;
+      box-shadow: 0 10px 30px rgba(8, 43, 85, 0.06);
+      border: 1px solid rgba(8, 43, 85, 0.05);
+      text-align: center;
+      transition: all var(--transition);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(8, 43, 85, 0.12);
+      border-color: var(--orange);
+    }
+    .contact-card-icon {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--soft-blue);
+      color: var(--blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .contact-card:hover .contact-card-icon {
+      background: var(--soft-orange);
+      color: var(--orange);
+    }
+    .contact-card-title {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .contact-card-detail {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #5A6A7A;
+    }
+    .contact-card-detail a {
+      color: inherit;
+      transition: color var(--transition);
+      font-weight: 600;
+    }
+    .contact-card-detail a:hover {
+      color: var(--orange);
+    }
+
+    /* Main Section Layout */
+    .contact-main-section {
+      padding: 80px 0;
+      background: var(--light-grey);
+    }
+    .contact-main-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 50px;
+    }
+
+    /* Contact Form */
+    .inquiry-form-card {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 50px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      border: 1px solid rgba(8, 43, 85, 0.05);
+    }
+    .inquiry-form-title {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+    .inquiry-form-desc {
+      font-size: 14px;
+      color: #6C7A89;
+      margin-bottom: 30px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .form-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .form-control {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 6px;
+      border: 1px solid #D1Dbe5;
+      font-family: inherit;
+      font-size: 14px;
+      color: var(--navy);
+      transition: all var(--transition);
+      background-color: #FAFBFD;
+    }
+    .form-control:focus {
+      outline: none;
+      border-color: var(--blue);
+      background-color: var(--white);
+      box-shadow: 0 0 0 3px rgba(11, 79, 147, 0.1);
+    }
+    textarea.form-control {
+      resize: vertical;
+      min-height: 140px;
+    }
+    .btn-submit {
+      width: 100%;
+      background: var(--orange);
+      color: var(--white);
+      border: none;
+      padding: 16px;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all var(--transition);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+    .btn-submit:hover {
+      background: #e06915;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(244, 122, 32, 0.3);
+    }
+
+    /* Map side card */
+    .map-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    .map-container-box {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+      border: 1px solid rgba(8, 43, 85, 0.05);
+      display: flex;
+      flex-direction: column;
+      height: 380px;
+    }
+    .map-box-header {
+      padding: 18px 24px;
+      background: var(--navy);
+      color: var(--white);
+    }
+    .map-box-title {
+      font-size: 15px;
+      font-weight: 700;
+      margin-bottom: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .map-box-address {
+      font-size: 12px;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.4;
+    }
+    .map-box-iframe {
+      width: 100%;
+      flex: 1;
+      border: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -35px;
+      }
+      .contact-main-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 768px) {
+      .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .inquiry-form-card {
+        padding: 30px 20px;
+      }
+      .contact-hero {
+        padding: 140px 0 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Premium Header -->
+  <header class="header">
+    <!-- Header Top Bar -->
+    <div class="header-top-bar">
+      <div class="top-bar-container">
+        <div class="top-bar-left">
+          <a href="mailto:info@drikon.in" class="top-bar-link">
+            <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            info@drikon.in
+          </a>
+          <span class="top-bar-separator">|</span>
+          <a href="tel:+919978387298" class="top-bar-link">
+            <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            +91 99783 87298
+          </a>
+        </div>
+        <div class="top-bar-right">
+          <span>Industrial PEB & Steel Roofing Experts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <img src="Drikon Infratech Logo Final_1.png" alt="Drikon Infratech Logo" class="logo-img">
+      </a>
+      
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link">Products <span class="dropdown-arrow"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="products.html#peb-systems">Pre-Engineered Buildings</a></li>
+              <li><a href="products.html#roofing-sheets">Roofing Sheets</a></li>
+              <li><a href="products.html#puf-panels">Insulated PUF Panels</a></li>
+              <li><a href="products.html#polycarbonate">Polycarbonate Sheets</a></li>
+              <li><a href="products.html#decking-sheets">Decking Sheet Systems</a></li>
+              <li><a href="products.html#cz-purlins">Structural C &amp; Z Purlins</a></li>
+              <li><a href="products.html#ventilators">Air Ventilation Systems</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link active">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-cta">
+        <a href="tel:+919978387298" class="cta-btn">
+          <span class="phone-icon-wrapper">
+            <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="cta-phone">Call Drikon</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="mobile-nav-close" id="mobileNavClose" aria-label="Close menu">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html" class="btn-quote">Get a Quote</a>
+  </nav>
+
+  <!-- ===================== 1. INNER PAGE HERO ===================== -->
+  <section class="contact-hero">
+    <div class="container">
+      <div class="contact-hero-breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Contact Us</span>
+      </div>
+      <h1 class="contact-hero-title">Contact DRIKON Infratech</h1>
+      <p class="contact-hero-desc">Let's build stronger, future-ready structures together.</p>
+    </div>
+  </section>
+
+  <!-- ===================== 2. CONTACT DETAILS GRID ===================== -->
+  <section class="container" style="background: transparent;">
+    <div class="contact-grid">
+      <!-- Phone Details -->
+      <div class="contact-card">
+        <div class="contact-card-icon">📞</div>
+        <h3 class="contact-card-title">Call Us</h3>
+        <div class="contact-card-detail">
+          <p><a href="tel:+918140904857">+91 81409 04857</a><br><span style="font-size: 12px; color: #8B949A;">(Kautik Patel)</span></p>
+          <p style="margin-top: 8px;"><a href="tel:+919016440187">+91 90164 40187</a><br><span style="font-size: 12px; color: #8B949A;">(Indresh Patel)</span></p>
+        </div>
+      </div>
+
+      <!-- Email Details -->
+      <div class="contact-card">
+        <div class="contact-card-icon">✉️</div>
+        <h3 class="contact-card-title">Email Us</h3>
+        <div class="contact-card-detail">
+          <p><a href="mailto:drikoninfratech2026@gmail.com">drikoninfratech2026@gmail.com</a></p>
+          <p style="margin-top: 8px; font-size: 13px; color: #8B949A;">For inquiries, design support &amp; pricing estimation.</p>
+        </div>
+      </div>
+
+      <!-- Office Location -->
+      <div class="contact-card">
+        <div class="contact-card-icon">🏢</div>
+        <h3 class="contact-card-title">Registered Office</h3>
+        <div class="contact-card-detail">
+          <p>FF 412, S9 Square,<br>Sama Savli Road,<br>Vadodara - 390024,<br>Gujarat, India.</p>
+        </div>
+      </div>
+
+      <!-- Facility Location -->
+      <div class="contact-card">
+        <div class="contact-card-icon">🏭</div>
+        <h3 class="contact-card-title">Manufacturing Unit</h3>
+        <div class="contact-card-detail">
+          <p>Survey No. 209,<br>Rajli Gam, Dabhoi Road,<br>Vadodara - 391107,<br>Gujarat, India.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 3. INQUIRY FORM & MAPS ===================== -->
+  <section class="contact-main-section">
+    <div class="container">
+      <div class="contact-main-grid">
+        <!-- Left Column: Form -->
+        <div class="inquiry-form-card">
+          <h2 class="inquiry-form-title">Send Us a Message</h2>
+          <p class="inquiry-form-desc">Fill out the form below to receive a custom design evaluation and pricing estimation for your PEB building project.</p>
+          
+          <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for contacting DRIKON Infratech! We will get back to you shortly.');">
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="fullname">Full Name *</label>
+                <input class="form-control" type="text" id="fullname" placeholder="Enter your name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="company">Company Name</label>
+                <input class="form-control" type="text" id="company" placeholder="Enter company name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone Number *</label>
+                <input class="form-control" type="tel" id="phone" placeholder="Enter phone number" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email Address *</label>
+                <input class="form-control" type="email" id="email" placeholder="Enter email address" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="project-type">Project Solution Needed *</label>
+              <select class="form-control" id="project-type" required>
+                <option value="" disabled selected>Select solution type...</option>
+                <option value="peb-systems">Pre-Engineered Building (PEB) Shed</option>
+                <option value="roofing-sheets">Vibrant Roofing Sheets</option>
+                <option value="puf-panels">Roof PUF Insulation Panels</option>
+                <option value="purlins">High-Tensile C &amp; Z Purlins</option>
+                <option value="ventilators">Air Ventilation Systems</option>
+                <option value="other">Other Steel Structure Services</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="message">Project Requirements / Message *</label>
+              <textarea class="form-control" id="message" placeholder="Describe your structural details, length, width, location or other parameters..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">
+              Send Project Enquiry
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Right Column: Maps -->
+        <div class="map-sidebar">
+          <!-- Office Map -->
+          <div class="map-container-box">
+            <div class="map-box-header">
+              <h4 class="map-box-title">Registered Office Map</h4>
+              <p class="map-box-address">FF 412, S9 Square, Sama Savli Road, Vadodara, Gujarat</p>
+            </div>
+            <!-- Embedded Google Map centered on Vadodara -->
+            <iframe class="map-box-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118120.46197177579!2d73.11222479527588!3d22.307158826707325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8ab91a3ddab%3A0xac39d3b311572190!2sVadodara%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1722250000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+
+          <!-- Facility Map -->
+          <div class="map-container-box">
+            <div class="map-box-header">
+              <h4 class="map-box-title">Manufacturing Unit Map</h4>
+              <p class="map-box-address">Survey No. 209, Rajli Gam, Dabhoi Road, Vadodara, Gujarat</p>
+            </div>
+            <!-- Embedded Google Map centered on Vadodara -->
+            <iframe class="map-box-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14774.204558296767!2d73.23846618458925!3d22.18116531980838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc1d6f1a8e10d%3A0xc3f83eb9e0f3162b!2sDabhoi%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1722250000001!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1 — Brand -->
+        <div>
+          <img src="Drikon Infratech Logo Final_1.png" alt="DRIKON Infratech Logo" class="footer-logo-img">
+          <p class="footer-brand-desc">DRIKON Infratech Pvt. Ltd. delivers end-to-end Pre-Engineered Building, roofing and infrastructure solutions engineered for strength, efficiency and long-term performance.</p>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <a href="tel:+918140904857">+91 81409 04857</a> &nbsp;|&nbsp;
+                <a href="tel:+919016440187">+91 90164 40187</a>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:drikoninfratech2026@gmail.com">drikoninfratech2026@gmail.com</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FF 412, S9 Square, Sama Savli Road, Vadodara - 390024, Gujarat, India.</span>
+            </div>
+          </div>
+          <div class="footer-social">
+            <a href="#" class="social-icon" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-icon" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://wa.me/918140904857" class="social-icon" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 — Quick Links -->
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Col 3 — Our Products -->
+        <div>
+          <h4 class="footer-col-title">Our Products</h4>
+          <div class="footer-links">
+            <a href="products.html#peb-systems">PEB Systems</a>
+            <a href="products.html#roofing-sheets">Roofing Sheets</a>
+            <a href="products.html#puf-panels">Roof PUF Panels</a>
+            <a href="products.html#decking-sheets">Decking Sheets</a>
+            <a href="products.html#cz-purlins">C &amp; Z Purlins</a>
+            <a href="products.html#ventilators">Turbo Ventilators</a>
+            <a href="products.html#polycarbonate">Polycarbonate Sheets</a>
+            <a href="products.html#insulation">Insulation Solutions</a>
+          </div>
+        </div>
+
+        <!-- Col 4 — Our Services -->
+        <div>
+          <h4 class="footer-col-title">Our Services</h4>
+          <div class="footer-links">
+            <a href="products.html">PEB Design &amp; Engineering</a>
+            <a href="products.html">Structural Fabrication</a>
+            <a href="products.html">PEB Manufacturing</a>
+            <a href="products.html">Roofing &amp; Cladding</a>
+            <a href="products.html">Installation &amp; Erection</a>
+            <a href="products.html">Turnkey Execution</a>
+            <a href="products.html">Ventilation Solutions</a>
+            <a href="contact.html">Request a Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&copy; 2026 DRIKON Infratech Pvt. Ltd. All Rights Reserved.</p>
+        <div class="footer-legal">
+          <a href="privacy.html">Privacy Policy</a>
+          <a href="terms.html">Terms &amp; Conditions</a>
+          <a href="sitemap.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Hamburger / Mobile Nav
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const closeBtn = document.getElementById('mobileNavClose');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+      document.body.style.overflow = mobileNav.classList.contains('open') ? 'hidden' : '';
+    });
+    closeBtn.addEventListener('click', () => {
+      hamburger.classList.remove('open');
+      mobileNav.classList.remove('open');
+      document.body.style.overflow = '';
+    });
+  </script>
+</body>
+</html>
