@@ -1,0 +1,1311 @@
+[
+  {
+    "id": 1,
+    "slug": "peb-systems",
+    "name": "PEB Systems",
+    "shortName": "PEB",
+    "category": "Structural Building Systems",
+
+    "hero": {
+      "eyebrow": "Engineered Building Solutions",
+      "title": "Pre-Engineered Building Systems",
+      "highlight": "Built for Strength. Designed for Efficiency.",
+      "description": "Advanced pre-engineered steel building systems developed for industrial, commercial, warehouse and infrastructure applications.",
+      "backgroundImage": "hero-section.png",
+      "foregroundImage": "adtionalimages/peb shade.mp4",
+      "primaryButton": {
+        "label": "Request a Quote",
+        "link": "contact.html"
+      },
+      "secondaryButton": {
+        "label": "Explore Features",
+        "link": "#features"
+      }
+    },
+
+    "overview": {
+      "label": "About the Solution",
+      "title": "Efficient Steel Structures Engineered Around Your Requirements",
+      "description": [
+        "Drikon PEB Systems provide a reliable and efficient solution for constructing durable steel buildings with optimized material usage and faster project execution.",
+        "Every system is engineered according to project span, height, load, usage and environmental requirements to ensure long-term structural integrity and cost effectiveness."
+      ],
+      "image": "images/Pre-Engineered Buildings.png",
+      "stats": [
+        {
+          "value": "40%",
+          "label": "Faster Execution"
+        },
+        {
+          "value": "Custom",
+          "label": "Design Flexibility"
+        },
+        {
+          "value": "100%",
+          "label": "Quality Assurance"
+        }
+      ]
+    },
+
+    "features": {
+      "label": "Key Features",
+      "title": "Engineered for Long-Term Structural Performance",
+      "description": "A complete system designed to improve construction speed, structural reliability and operational value.",
+      "items": [
+        {
+          "title": "Precision Engineering",
+          "description": "Every structural component is designed and manufactured according to approved engineering specifications.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z'/></svg>"
+        },
+        {
+          "title": "Faster Installation",
+          "description": "Factory-prepared components reduce on-site fabrication and accelerate construction timelines.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='10'/><polyline points='12 6 12 12 16 14'/></svg>"
+        },
+        {
+          "title": "Flexible Configuration",
+          "description": "Building dimensions, roof profiles, openings and accessories can be configured according to application needs.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><rect x='3' y='3' width='7' height='7'/><rect x='14' y='3' width='7' height='7'/><rect x='14' y='14' width='7' height='7'/><rect x='3' y='14' width='7' height='7'/></svg>"
+        },
+        {
+          "title": "Long-Term Durability",
+          "description": "High-quality structural steel and protective finishes support reliable long-term performance.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>"
+        }
+      ]
+    },
+
+    "benefits": {
+      "label": "Core Advantages",
+      "title": "Better Construction Efficiency from Design to Installation",
+      "image": "peb shade.png",
+      "items": [
+        "Substantially reduced construction time compared to conventional buildings",
+        "Optimized structural weight through tapered beam design",
+        "Future expandable building architecture with clear span designs",
+        "Lower long-term maintenance requirements and high weather resistance",
+        "Clean, modern industrial aesthetic and high interior height clearance",
+        "Ideal for wide-span structures without center columns"
+      ]
+    },
+
+    "applications": {
+      "label": "Applications",
+      "title": "Suitable for Diverse Industrial and Commercial Projects",
+      "items": [
+        {
+          "title": "Heavy PEB Structural Framing",
+          "image": "images/Pre-Engineered Buildings.png"
+        },
+        {
+          "title": "Industrial Factory Sheds",
+          "image": "adtionalimages/Pre-Engineered Buildings.png"
+        },
+        {
+          "title": "Complete PEB Shed Anatomy",
+          "image": "peb shade.png"
+        },
+        {
+          "title": "Multi-Story Mezzanine Floors",
+          "image": "adtionalimages/Decking Sheet Systems.jpg"
+        }
+      ]
+    },
+
+    "specifications": {
+      "label": "System Options",
+      "title": "Customizable According to Project Requirements",
+      "items": [
+        {
+          "label": "Building Type",
+          "value": "Clear Span (CS), Multispan (MS-1, MS-2, MS-3), Multi-Gable, Mono-Slope"
+        },
+        {
+          "label": "Primary Framing",
+          "value": "High-yield built-up I-sections, hot rolled steel plates"
+        },
+        {
+          "label": "Secondary Framing",
+          "value": "Galvanized C & Z Purlins (245 to 345 MPa)"
+        },
+        {
+          "label": "Roof & Wall Cladding",
+          "value": "High-tensile Bare Galvalume / PPGL sheets, Sandwich PUF Panels"
+        },
+        {
+          "label": "Accessories",
+          "value": "Turbo ventilators, ridge vents, skylights, gutters, canopies, insulation"
+        }
+      ],
+      "note": "Final specifications depend on structural design, project location, clear span, crane loads, wind speed and client requirements."
+    },
+
+    "whyChoose": {
+      "label": "Why Drikon",
+      "title": "One Partner for Complete PEB and Building Solutions",
+      "description": "From planning and material selection to manufacturing support and installation, Drikon provides coordinated solutions designed around project requirements.",
+      "items": [
+        "Engineering-focused design approach tailored to IS codes",
+        "Strict quality-controlled structural materials and fabrication",
+        "Application-based custom structural recommendations",
+        "Turnkey project coordination from design to erection",
+        "Precision execution with certified safety compliance",
+        "Comprehensive after-sales technical support and warranty"
+      ]
+    },
+
+    "gallery": [
+      "images/Pre-Engineered Buildings.png",
+      "adtionalimages/Pre-Engineered Buildings.png",
+      "peb shade.png"
+    ],
+
+    "relatedServices": [
+      "roofing-sheets",
+      "puf-panels",
+      "cz-purlins"
+    ],
+
+    "cta": {
+      "eyebrow": "Planning a New Structure?",
+      "title": "Build a Stronger, Smarter and More Efficient Structure",
+      "description": "Share your project requirements with our engineering team for customized design recommendations and a competitive quote.",
+      "buttonLabel": "Discuss Your PEB Project",
+      "buttonLink": "contact.html"
+    },
+
+    "seo": {
+      "metaTitle": "PEB Systems Manufacturer & Structural Engineer | DRIKON Infratech",
+      "metaDescription": "Explore DRIKON Pre-Engineered Building (PEB) systems designed for warehouses, industrial sheds, factories and commercial structures with fast execution.",
+      "keywords": [
+        "PEB systems",
+        "pre-engineered building",
+        "industrial shed manufacturer",
+        "steel building systems",
+        "PEB contractor Gujarat"
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "slug": "roofing-sheets",
+    "name": "Roofing Sheets",
+    "shortName": "Roofing",
+    "category": "Metal Cladding & Roofing",
+
+    "hero": {
+      "eyebrow": "Weather-Resistant Cladding",
+      "title": "High-Performance Industrial Roofing Sheets",
+      "highlight": "Superior Protection. Unmatched Durability.",
+      "description": "Engineered metal roofing and wall cladding sheets designed for high corrosion resistance, structural strength, and clean architectural appearance.",
+      "backgroundImage": "hero-section.png",
+      "foregroundImage": "images/Premium Roofing Sheets.png",
+      "primaryButton": {
+        "label": "Get Sheet Pricing",
+        "link": "contact.html"
+      },
+      "secondaryButton": {
+        "label": "Technical Specs",
+        "link": "#specifications"
+      }
+    },
+
+    "overview": {
+      "label": "Overview",
+      "title": "Durable Metal Roofing Solutions for Extreme Environments",
+      "description": [
+        "DRIKON industrial roofing sheets are precision-profiled from high-tensile Galvalume, Bare Galvalume, and pre-painted galvanized iron (PPGI/PPGL) steel coils.",
+        "Engineered with anti-capillary grooves and deep ribs, our roofing profiles ensure complete leak protection, superior water drainage, and outstanding resistance to wind uplift."
+      ],
+      "image": "adtionalimages/Premium Roofing Sheets.avif",
+      "stats": [
+        {
+          "value": "AZ150",
+          "label": "Galvalume Coating"
+        },
+        {
+          "value": "550 MPa",
+          "label": "Tensile Strength"
+        },
+        {
+          "value": "20+ Yrs",
+          "label": "Design Life"
+        }
+      ]
+    },
+
+    "features": {
+      "label": "Key Features",
+      "title": "Designed for Maximum Weathering & Load Resistance",
+      "description": "Premium alloy coatings and precision rib geometries ensure peak performance across all industrial facilities.",
+      "items": [
+        {
+          "title": "Anti-Capillary Side-Lap",
+          "description": "Engineered capillary groove prevents water siphoning through panel overlaps during torrential rain.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z'/></svg>"
+        },
+        {
+          "title": "High Load Bearing",
+          "description": "Deep trapezoidal profile ribs provide optimum section modulus and purlin spacing economy.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><line x1='12' y1='20' x2='12' y2='10'/><line x1='18' y1='20' x2='18' y2='4'/><line x1='6' y1='20' x2='6' y2='16'/></svg>"
+        },
+        {
+          "title": "Thermal Reflectivity",
+          "description": "Galvalume aluminum-zinc coating reflects heat energy, significantly lowering internal building temperature.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='5'/><line x1='12' y1='1' x2='12' y2='3'/><line x1='12' y1='21' x2='12' y2='23'/><line x1='4.22' y1='4.22' x2='5.64' y2='5.64'/><line x1='18.36' y1='18.36' x2='19.78' y2='19.78'/></svg>"
+        },
+        {
+          "title": "Corrosion Shield",
+          "description": "Advanced 55% Al-Zn alloy coating offers up to 4x better atmospheric life than standard galvanizing.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>"
+        }
+      ]
+    },
+
+    "benefits": {
+      "label": "Why Choose DRIKON Roofing",
+      "title": "Unrivaled Structural Economy and Weather Protection",
+      "image": "images/Premium Roofing Sheets.png",
+      "items": [
+        "Custom cut-to-length sheets minimize site cutting and material wastage",
+        "Vibrant color options with weather-resistant RMP/SMP paint systems",
+        "Excellent crest height ensures rapid discharge of rainwater",
+        "Lightweight construction reduces purlin load and structural cost",
+        "Suitable for curved roofing, wall cladding, and perimeter flashing",
+        "Complete accessories available: ridge caps, flashings, gutting, fasteners"
+      ]
+    },
+
+    "applications": {
+      "label": "Applications",
+      "title": "Versatile Solutions for Industrial & Infrastructure Cladding",
+      "items": [
+        {
+          "title": "Profiled Galvalume Roof Cladding",
+          "image": "images/Premium Roofing Sheets.png"
+        },
+        {
+          "title": "PPGL Industrial Wall Panels",
+          "image": "adtionalimages/Premium Roofing Sheets.avif"
+        },
+        {
+          "title": "PEB Roof & Canopy Structures",
+          "image": "peb shade.png"
+        },
+        {
+          "title": "Large Span Warehouse Roofing",
+          "image": "images/Pre-Engineered Buildings.png"
+        }
+      ]
+    },
+
+    "specifications": {
+      "label": "Technical Specifications",
+      "title": "Precision Profile Specifications",
+      "items": [
+        {
+          "label": "Base Metal",
+          "value": "Bare Galvalume (GL), Pre-Painted Galvalume (PPGL), PPGI"
+        },
+        {
+          "label": "Thickness Range",
+          "value": "0.40 mm to 0.80 mm TCT"
+        },
+        {
+          "label": "Coating Mass",
+          "value": "AZ-70 / AZ-150 gsm Al-Zn coating"
+        },
+        {
+          "label": "Profile Width",
+          "value": "1000 mm effective cover width / 1060 mm overall"
+        },
+        {
+          "label": "Yield Strength",
+          "value": "Hi-Tensile Steel 550 MPa (Grade 550)"
+        }
+      ],
+      "note": "Custom sheet lengths up to 13 meters manufactured to order. Special protective organic film optional."
+    },
+
+    "whyChoose": {
+      "label": "The Drikon Edge",
+      "title": "Certified Quality with Modern Profiling Machinery",
+      "description": "Every coil undergoes rigorous micrometer and coating thickness testing to guarantee long-lasting performance.",
+      "items": [
+        "High-precision computerized roll forming line",
+        "Authentic coil test certificates supplied with material",
+        "Complete color match for trims and ridge accessories",
+        "Fast turnaround times for large industrial order volumes",
+        "On-site roll forming availability for continuous long spans",
+        "Expert assistance for fastener and sealing layout"
+      ]
+    },
+
+    "gallery": [
+      "images/Premium Roofing Sheets.png",
+      "adtionalimages/Premium Roofing Sheets.avif",
+      "peb shade.png"
+    ],
+
+    "relatedServices": [
+      "peb-systems",
+      "puf-panels",
+      "cz-purlins"
+    ],
+
+    "cta": {
+      "eyebrow": "Require Roofing Material?",
+      "title": "Get Custom Cut Roofing Sheets Delivered Direct to Site",
+      "description": "Contact our sales team today with your roof layout dimensions for exact sheet schedules and competitive per-sqm pricing.",
+      "buttonLabel": "Request Sheet Quote",
+      "buttonLink": "contact.html"
+    },
+
+    "seo": {
+      "metaTitle": "Galvalume & PPGL Roofing Sheets Manufacturer | DRIKON Infratech",
+      "metaDescription": "Supplier of premium Bare Galvalume and PPGL metal roofing sheets, trapezoidal wall cladding sheets for industrial structures across India.",
+      "keywords": [
+        "roofing sheets manufacturer",
+        "Galvalume sheets",
+        "PPGL roofing sheet",
+        "industrial roof cladding",
+        "metal roof profile"
+      ]
+    }
+  },
+  {
+    "id": 3,
+    "slug": "puf-panels",
+    "name": "Insulated PUF Panels",
+    "shortName": "PUF Panels",
+    "category": "Thermal & Acoustic Insulation",
+
+    "hero": {
+      "eyebrow": "Thermal Energy Efficiency",
+      "title": "Insulated Roof & Wall PUF Panels",
+      "highlight": "Maximum Thermal Insulation. Zero Air Leakage.",
+      "description": "High-density polyurethane foam (PUF) sandwich panels for cold storages, clean rooms, food processing, and climate-controlled industrial facilities.",
+      "backgroundImage": "hero-section.png",
+      "foregroundImage": "images/Insulated PUF Panels.png",
+      "primaryButton": {
+        "label": "Inquire PUF Panels",
+        "link": "contact.html"
+      },
+      "secondaryButton": {
+        "label": "View Specs",
+        "link": "#specifications"
+      }
+    },
+
+    "overview": {
+      "label": "About PUF Panels",
+      "title": "Energy-Saving Composite Sandwich Panels for Controlled Environments",
+      "description": [
+        "DRIKON PUF Insulation Panels consist of a rigid polyurethane foam core sandwiched between high-grade prepainted steel metal facings.",
+        "Featuring tongue-and-groove tongue locking and cam-lock joints, these panels provide extreme thermal efficiency, airtight sealing, and reduced HVAC energy consumption."
+      ],
+      "image": "adtionalimages/Insulated PUF Panels.jpg",
+      "stats": [
+        {
+          "value": "0.022 W/mK",
+          "label": "Thermal Conductivity"
+        },
+        {
+          "value": "40 kg/m³",
+          "label": "PUF Density"
+        },
+        {
+          "value": "30-50%",
+          "label": "Energy Savings"
+        }
+      ]
+    },
+
+    "features": {
+      "label": "Key Features",
+      "title": "Unrivaled Insulation and Structural Rigidity",
+      "description": "Seamless insulated panel systems that satisfy severe thermal barrier requirements.",
+      "items": [
+        {
+          "title": "Low Thermal Conductivity",
+          "description": "Best-in-class insulation value reduces heat transfer and maintains precise ambient temperature.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6'/></svg>"
+        },
+        {
+          "title": "Tongue & Groove Jointing",
+          "description": "Precision interlocking joint system prevents thermal bridging and moisture penetration.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71'/><path d='M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71'/></svg>"
+        },
+        {
+          "title": "Fire Retardant Grade",
+          "description": "Available in self-extinguishing B2/B1 fire performance insulation foam grades.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z'/></svg>"
+        },
+        {
+          "title": "Structural Sandwich Strength",
+          "description": "High composite strength allows long spans with minimal intermediate purlin support.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><rect x='2' y='7' width='20' height='10' rx='2'/><line x1='12' y1='7' x2='12' y2='17'/></svg>"
+        }
+      ]
+    },
+
+    "benefits": {
+      "label": "Core Advantages",
+      "title": "Continuous Comfort and Substantial Power Savings",
+      "image": "adtionalimages/Insulated PUF Panels2.jpg",
+      "items": [
+        "Cuts air conditioning and refrigeration power consumption up to 40%",
+        "Rapid modular assembly speeds up project handover dramatically",
+        "Aesthetic internal and external surface finish with micro-ribbing",
+        "Non-hygroscopic core does not absorb water or support fungal growth",
+        "High acoustic sound dampening against rainfall and external noise",
+        "Suitable for roof cladding, wall partition, and ceiling systems"
+      ]
+    },
+
+    "applications": {
+      "label": "Applications",
+      "title": "Ideal for Temperature-Controlled Facilities",
+      "items": [
+        {
+          "title": "Cold Storage & Chiller Rooms",
+          "image": "images/Insulated PUF Panels.png"
+        },
+        {
+          "title": "Pharma Cleanroom Wall Panels",
+          "image": "adtionalimages/Insulated PUF Panels.jpg"
+        },
+        {
+          "title": "Thermal Roof Sandwich Panels",
+          "image": "adtionalimages/Insulated PUF Panels2.jpg"
+        },
+        {
+          "title": "Insulated PEB Factory Enclosures",
+          "image": "images/Pre-Engineered Buildings.png"
+        }
+      ]
+    },
+
+    "specifications": {
+      "label": "Technical Specifications",
+      "title": "PUF Panel Technical Parameters",
+      "items": [
+        {
+          "label": "Panel Thickness",
+          "value": "30 mm, 50 mm, 80 mm, 100 mm, 120 mm, 150 mm"
+        },
+        {
+          "label": "PUF Density",
+          "value": "40 kg/m³ ± 2 kg/m³ CFC/HCFC-free foam"
+        },
+        {
+          "label": "Facing Options",
+          "value": "PPGL, PPGI, Stainless Steel 304, Aluminum Foil"
+        },
+        {
+          "label": "Facing Thickness",
+          "value": "0.45 mm to 0.60 mm TCT"
+        },
+        {
+          "label": "Effective Width",
+          "value": "1000 mm (Roof profile & Wall tongue-groove profile)"
+        }
+      ],
+      "note": "Custom panel lengths up to 12 meters available. Special cam-lock integrated joints for cold room doors & corners."
+    },
+
+    "whyChoose": {
+      "label": "Why Drikon PUF",
+      "title": "High Density Foaming and Precision Lamination",
+      "description": "Manufactured using high-pressure continuous polyurethane injection tech to eliminate air pockets and void formation.",
+      "items": [
+        "100% CFC and HCFC-free environment friendly foaming agent",
+        "High dimensional accuracy for zero air-leak jointing",
+        "Turnkey installation assistance with specialized sealant tapes",
+        "Flawless surface finish suitable for clean room standards",
+        "Long warranty against foam delamination and disbonding",
+        "Custom color options for architectural branding"
+      ]
+    },
+
+    "gallery": [
+      "images/Insulated PUF Panels.png",
+      "adtionalimages/Insulated PUF Panels.jpg",
+      "adtionalimages/Insulated PUF Panels2.jpg"
+    ],
+
+    "relatedServices": [
+      "peb-systems",
+      "roofing-sheets",
+      "polycarbonate"
+    ],
+
+    "cta": {
+      "eyebrow": "Building a Cold Room or Insulated Shed?",
+      "title": "Calculate Your Insulation Thickness & Power Savings",
+      "description": "Speak with our thermal insulation experts to choose the optimal PUF panel thickness for your target operating temperature.",
+      "buttonLabel": "Contact PUF Specialist",
+      "buttonLink": "contact.html"
+    },
+
+    "seo": {
+      "metaTitle": "PUF Insulated Roof & Wall Panels Manufacturer | DRIKON Infratech",
+      "metaDescription": "High density polyurethane PUF sandwich panel manufacturer for cold storages, cleanrooms, and thermal insulated industrial PEB roofs.",
+      "keywords": [
+        "PUF panel manufacturer",
+        "insulated roof panel",
+        "cold storage PUF panel",
+        "sandwich panel PEB",
+        "polyurethane wall cladding"
+      ]
+    }
+  },
+  {
+    "id": 4,
+    "slug": "polycarbonate",
+    "name": "Polycarbonate Sheets",
+    "shortName": "Polycarbonate",
+    "category": "Daylighting & Translucent Roofing",
+
+    "hero": {
+      "eyebrow": "Natural Daylighting Systems",
+      "title": "Polycarbonate Daylight Roofing Sheets",
+      "highlight": "High Light Transmission. Virtually Unbreakable.",
+      "description": "Premium multiwall and profiled polycarbonate sheets designed for energy-saving natural daylighting in industrial, commercial, and agricultural roofs.",
+      "backgroundImage": "hero-section.png",
+      "foregroundImage": "images/Polycarbonate Sheets.png",
+      "primaryButton": {
+        "label": "Request Daylight Spec",
+        "link": "contact.html"
+      },
+      "secondaryButton": {
+        "label": "View Transmittance",
+        "link": "#specifications"
+      }
+    },
+
+    "overview": {
+      "label": "About Daylighting",
+      "title": "Natural Illumination Solutions that Lower Electrical Power Bills",
+      "description": [
+        "DRIKON Polycarbonate Sheets provide crystal-clear natural illumination for industrial shop floors, eliminating daytime artificial lighting costs.",
+        "Offered in matching metal roof profiles or multiwall cellular structures, our polycarbonate sheets feature co-extruded UV protective layers that prevent yellowing and embrittlement."
+      ],
+      "image": "adtionalimages/Polycarbonate Sheets.jpg",
+      "stats": [
+        {
+          "value": "85%",
+          "label": "Light Transmission"
+        },
+        {
+          "value": "250x",
+          "label": "Stronger Than Glass"
+        },
+        {
+          "value": "99.9%",
+          "label": "UV Blockage"
+        }
+      ]
+    },
+
+    "features": {
+      "label": "Key Features",
+      "title": "Impact-Resistant Daylighting Solutions",
+      "description": "Engineered to withstand extreme weather, hail impact, and intense UV exposure.",
+      "items": [
+        {
+          "title": "Extreme Impact Strength",
+          "description": "250 times more impact-resistant than float glass, preventing hail and debris breakage.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><polygon points='12 2 2 7 12 12 22 7 12 2'/><polyline points='2 17 12 22 22 17'/><polyline points='2 12 12 17 22 12'/></svg>"
+        },
+        {
+          "title": "Co-Extruded UV Shield",
+          "description": "Advanced dual-sided UV barrier prevents yellowing, hazing, and loss of structural strength.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='5'/><line x1='12' y1='1' x2='12' y2='3'/><line x1='12' y1='21' x2='12' y2='23'/></svg>"
+        },
+        {
+          "title": "Matching Profile Geometry",
+          "description": "Available in exact matching trapezoidal profiles to nest seamlessly with metal roofing sheets.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><polyline points='16 18 22 12 16 6'/><polyline points='8 6 2 12 8 18'/></svg>"
+        },
+        {
+          "title": "Thermal Insulation Multiwall",
+          "description": "Twin-wall and multi-wall hollow structures lock dead air pockets for superior thermal resistance.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/></svg>"
+        }
+      ]
+    },
+
+    "benefits": {
+      "label": "Core Advantages",
+      "title": "Bright Interiors with Zero Electricity Expense",
+      "image": "adtionalimages/Polycarbonate Sheets2.jpg",
+      "items": [
+        "Cuts daytime lighting electricity bills substantially in factory shopfloors",
+        "Even light diffusion minimizes glare and harsh shadows inside workplaces",
+        "Lightweight material makes installation fast, simple, and safe",
+        "High flame retardancy rated Self-Extinguishing (Class 1 / B1)",
+        "Resists temperature fluctuations from -40°C up to +120°C",
+        "Available in Clear, Opal White, Bronze, Lake Blue, and Green tints"
+      ]
+    },
+
+    "applications": {
+      "label": "Applications",
+      "title": "Wide Spectrum Industrial & Commercial Uses",
+      "items": [
+        {
+          "title": "Translucent Daylight Roof Sheets",
+          "image": "images/Polycarbonate Sheets.png"
+        },
+        {
+          "title": "Multiwall Industrial Skylights",
+          "image": "adtionalimages/Polycarbonate Sheets.jpg"
+        },
+        {
+          "title": "Warehouse Northlight Illumination",
+          "image": "adtionalimages/Polycarbonate Sheets2.jpg"
+        },
+        {
+          "title": "Architectural Canopy Daylighting",
+          "image": "images/Pre-Engineered Buildings.png"
+        }
+      ]
+    },
+
+    "specifications": {
+      "label": "Technical Specifications",
+      "title": "Polycarbonate Sheet Parameters",
+      "items": [
+        {
+          "label": "Sheet Types",
+          "value": "Embossed, Profiled Corrugated, Twin Wall, Multiwall Structure"
+        },
+        {
+          "label": "Thickness Range",
+          "value": "1.2 mm to 3.0 mm (Profiled) / 4 mm to 16 mm (Multiwall)"
+        },
+        {
+          "label": "Light Transmittance",
+          "value": "Up to 88% (Clear), 55% (Opal White), 45% (Bronze)"
+        },
+        {
+          "label": "UV Protection",
+          "value": "50 Micron co-extruded UV layer"
+        },
+        {
+          "label": "Temperature Range",
+          "value": "-40°C to +120°C continuous service"
+        }
+      ],
+      "note": "Custom sheet lengths up to 11.8 meters available. Expanded seal washers and fixings supplied to allow thermal expansion."
+    },
+
+    "whyChoose": {
+      "label": "The Drikon Standard",
+      "title": "100% Virgin Bayer / Lexan Polycarbonate Resin",
+      "description": "We use only premium grade raw resin to ensure zero hazing, crack formation, or brittle degradation over time.",
+      "items": [
+        "10-Year Limited Warranty against light transmission loss",
+        "Exact profile matching for zero-leak lap sealing",
+        "UV protective masking film on both sides for safe storage",
+        "Complete technical guidance for purlin spacing and fastening",
+        "Prompt delivery across Gujarat and pan-India sites",
+        "Supplied with EPDM neoprene washers to prevent leaks"
+      ]
+    },
+
+    "gallery": [
+      "images/Polycarbonate Sheets.png",
+      "adtionalimages/Polycarbonate Sheets.jpg",
+      "adtionalimages/Polycarbonate Sheets2.jpg"
+    ],
+
+    "relatedServices": [
+      "roofing-sheets",
+      "peb-systems",
+      "ventilators"
+    ],
+
+    "cta": {
+      "eyebrow": "Brighten Your Warehouse naturally?",
+      "title": "Incorporate Skylights for Maximum Power Savings",
+      "description": "Ask our technical advisers to calculate the optimal percentage of polycarbonate skylights required for your roof layout.",
+      "buttonLabel": "Get Daylighting Advice",
+      "buttonLink": "contact.html"
+    },
+
+    "seo": {
+      "metaTitle": "Polycarbonate Skylight Sheets Supplier | DRIKON Infratech",
+      "metaDescription": "Manufacturer and supplier of UV protected multiwall and profiled polycarbonate sheets for daylighting in industrial roofs and warehouses.",
+      "keywords": [
+        "polycarbonate sheet",
+        "skylight sheet PEB",
+        "multiwall polycarbonate",
+        "daylight roof sheet",
+        "embossed polycarbonate sheet"
+      ]
+    }
+  },
+  {
+    "id": 5,
+    "slug": "decking-sheets",
+    "name": "Composite Decking Sheets",
+    "shortName": "Decking Sheets",
+    "category": "Structural Floor Systems",
+
+    "hero": {
+      "eyebrow": "Composite Steel Floor Decking",
+      "title": "High-Strength Profiled Decking Sheets",
+      "highlight": "Faster Floor Slab Construction. High Load Capacity.",
+      "description": "High-tensile steel decking sheets serving as permanent formwork and composite tensile reinforcement for multi-story steel structures.",
+      "backgroundImage": "hero-section.png",
+      "foregroundImage": "images/Decking Sheet Systems.png",
+      "primaryButton": {
+        "label": "Request Decking Quote",
+        "link": "contact.html"
+      },
+      "secondaryButton": {
+        "label": "View Deck Specs",
+        "link": "#specifications"
+      }
+    },
+
+    "overview": {
+      "label": "About Decking",
+      "title": "Permanent Structural Formwork for Modern Multi-Story Buildings",
+      "description": [
+        "DRIKON Decking Sheets eliminate temporary timber shuttering and prop support in concrete slab casting, drastically cutting construction time.",
+        "Featuring mechanical embossed ribs that interlock with hardened concrete, the decking panel functions as composite tensile reinforcement, delivering exceptional load-bearing performance."
+      ],
+      "image": "adtionalimages/Decking Sheet Systems.jpg",
+      "stats": [
+        {
+          "value": "50%",
+          "label": "Faster Slab Casting"
+        },
+        {
+          "value": "350 MPa",
+          "label": "High Yield Steel"
+        },
+        {
+          "value": "Zero",
+          "label": "Timber Props Needed"
+        }
+      ]
+    },
+
+    "features": {
+      "label": "Key Features",
+      "title": "Engineered Composite Floor Systems",
+      "description": "Precision trapezoidal embossing anchors concrete for high shear bond performance.",
+      "items": [
+        {
+          "title": "Mechanical Embossments",
+          "description": "Raised ribs create mechanical keying between steel sheet and concrete slab for composite action.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M4 6h16M4 12h16M4 18h16'/></svg>"
+        },
+        {
+          "title": "Eliminates Propping",
+          "description": "Acts as a safe working platform during erection, eliminating costly temporary timber shores.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><rect x='3' y='3' width='18' height='18' rx='2'/><path d='M3 9h18M9 21V9'/></svg>"
+        },
+        {
+          "title": "Galvanized Corrosion Protection",
+          "description": "Z275 / Z120 zinc coating ensures decades of rust-free sub-floor performance.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>"
+        },
+        {
+          "title": "Reduced Concrete Volume",
+          "description": "Trapezoidal profile voids reduce dead load concrete volume required by up to 20%.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z'/></svg>"
+        }
+      ]
+    },
+
+    "benefits": {
+      "label": "Core Advantages",
+      "title": "Economical and Rapid Multi-Story Slab Construction",
+      "image": "adtionalimages/Decking Sheet Systems2.avif",
+      "items": [
+        "Speeds up multi-floor concrete casting cycles dramatically",
+        "Serves as an immediate safe working platform for tradesmen",
+        "Reduces structural steel beam weight due to lower concrete mass",
+        "Exceptional diaphragm action transfers lateral seismic loads",
+        "Clean soffit appearance can be painted or left exposed",
+        "Custom cut lengths fit project structural grid without waste"
+      ]
+    },
+
+    "applications": {
+      "label": "Applications",
+      "title": "Essential for High-Rise and Multi-Tier Structures",
+      "items": [
+        {
+          "title": "Composite Steel Floor Decking",
+          "image": "images/Decking Sheet Systems.png"
+        },
+        {
+          "title": "Profiled Slab Formwork Sheets",
+          "image": "adtionalimages/Decking Sheet Systems.jpg"
+        },
+        {
+          "title": "Multi-Tier Mezzanine Flooring",
+          "image": "adtionalimages/Decking Sheet Systems2.avif"
+        },
+        {
+          "title": "High-Rise Structural Floors",
+          "image": "images/Pre-Engineered Buildings.png"
+        }
+      ]
+    },
+
+    "specifications": {
+      "label": "Technical Specifications",
+      "title": "Composite Deck Profile Specifications",
+      "items": [
+        {
+          "label": "Profile Height",
+          "value": "44 mm, 52 mm, 75 mm depth options"
+        },
+        {
+          "label": "Thickness Range",
+          "value": "0.70 mm to 1.20 mm BMT"
+        },
+        {
+          "label": "Cover Width",
+          "value": "960 mm / 1000 mm effective cover width"
+        },
+        {
+          "label": "Steel Grade",
+          "value": "S350GD / S550GD Hi-Tensile Structural Steel"
+        },
+        {
+          "label": "Zinc Coating",
+          "value": "Z120 to Z275 gsm galvanized coating"
+        }
+      ],
+      "note": "Design load tables and composite slab thickness calculations available on request for structural consultants."
+    },
+
+    "whyChoose": {
+      "label": "Why Drikon Deck",
+      "title": "Precision Rib Roll-Forming for Maximum Keying Strength",
+      "description": "Manufactured using heavy-duty cold roll-forming machinery to ensure deep embossing definition and tight dimensional tolerances.",
+      "items": [
+        "Full compliance with IS 14246 & international decking standards",
+        "Complete accessories: shear studs, edge flashings, closure strips",
+        "Comprehensive structural deck load calculation support",
+        "Timely delivery to match your floor casting schedules",
+        "Pre-punched service holes optional on custom request",
+        "High tensile yield steel prevents deflection during concrete pouring"
+      ]
+    },
+
+    "gallery": [
+      "images/Decking Sheet Systems.png",
+      "adtionalimages/Decking Sheet Systems.jpg",
+      "adtionalimages/Decking Sheet Systems2.avif"
+    ],
+
+    "relatedServices": [
+      "peb-systems",
+      "cz-purlins",
+      "roofing-sheets"
+    ],
+
+    "cta": {
+      "eyebrow": "Designing a Mezzanine or Floor Slab?",
+      "title": "Get Deck Profile Recommendations & Structural Span Tables",
+      "description": "Send your mezzanine floor layout to our structural engineering team for exact sheet profile selection and pricing.",
+      "buttonLabel": "Request Decking Quote",
+      "buttonLink": "contact.html"
+    },
+
+    "seo": {
+      "metaTitle": "Composite Metal Decking Sheets Manufacturer | DRIKON Infratech",
+      "metaDescription": "High tensile galvanized steel composite floor decking sheet manufacturer for multi-story PEB structures and mezzanine floors.",
+      "keywords": [
+        "decking sheet manufacturer",
+        "composite floor deck",
+        "galvanized decking sheet",
+        "mezzanine slab decking",
+        "profiled steel deck"
+      ]
+    }
+  },
+  {
+    "id": 6,
+    "slug": "cz-purlins",
+    "name": "Structural C & Z Purlins",
+    "shortName": "C & Z Purlins",
+    "category": "Secondary Structural Framing",
+
+    "hero": {
+      "eyebrow": "Secondary Steel Structural Members",
+      "title": "Galvanized C & Z Purlins & Girts",
+      "highlight": "High Strength-to-Weight Ratio. Precision Pre-Punched.",
+      "description": "Cold-formed galvanized C and Z purlins engineered to support roof and wall cladding systems with optimum structural efficiency.",
+      "backgroundImage": "hero-section.png",
+      "foregroundImage": "images/Structural C & Z Purlins.png",
+      "primaryButton": {
+        "label": "Request Purlin Quote",
+        "link": "contact.html"
+      },
+      "secondaryButton": {
+        "label": "Purlin Dimensions",
+        "link": "#specifications"
+      }
+    },
+
+    "overview": {
+      "label": "About Purlins",
+      "title": "Cold-Formed Structural Purlins for Maximum Economy",
+      "description": [
+        "DRIKON C & Z Purlins are cold-formed secondary structural framing members rolled from high-tensile galvanized steel strip.",
+        "Z-purlins can be overlapped continuously at intermediate portal frames, significantly increasing section capacity and reducing total steel weight by up to 25% compared to hot-rolled channels."
+      ],
+      "image": "adtionalimages/Structural C & Z Purlins.jpg",
+      "stats": [
+        {
+          "value": "345 MPa",
+          "label": "High Yield Steel"
+        },
+        {
+          "value": "25%",
+          "label": "Weight Reduction"
+        },
+        {
+          "value": "CNC",
+          "label": "Pre-Punched Hole Accuracy"
+        }
+      ]
+    },
+
+    "features": {
+      "label": "Key Features",
+      "title": "Engineered for Rapid Bolted Field Assembly",
+      "description": "Automated online CNC hole punching allows instant site bolting without flame cutting or welding.",
+      "items": [
+        {
+          "title": "Continuous Lap Capability",
+          "description": "Z-profiles nest neatly for lap jointing over portal frames, maximizing moment capacity.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 2 2h3'/></svg>"
+        },
+        {
+          "title": "Precision Pre-Punching",
+          "description": "Web and flange holes pre-punched online to exact center distances for effortless erection.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='3'/><path d='M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z'/></svg>"
+        },
+        {
+          "title": "Z275 Galvanized Finish",
+          "description": "Continuous hot-dip galvanized coating guarantees outstanding atmospheric rust prevention.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z'/></svg>"
+        },
+        {
+          "title": "Custom Length Execution",
+          "description": "Cut directly to millimeter-exact lengths, completely eliminating site scrap and cutting labor.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><line x1='5' y1='12' x2='19' y2='12'/><polyline points='12 5 19 12 12 19'/></svg>"
+        }
+      ]
+    },
+
+    "benefits": {
+      "label": "Core Advantages",
+      "title": "Substantial Steel Weight Reduction & Fast Erection",
+      "image": "adtionalimages/Structural C & Z Purlins2.jpg",
+      "items": [
+        "Saves up to 25-30% weight compared to heavy hot-rolled channels",
+        "Pre-punched bolt holes allow immediate assembly upon delivery",
+        "No on-site welding or priming required—ready for instant erection",
+        "Superior section modulus for wide bay spacings up to 9+ meters",
+        "Smooth flat flanges ensure perfect fit for roof and wall cladding",
+        "Supplied with complete sag rods, cleats, and tie rods"
+      ]
+    },
+
+    "applications": {
+      "label": "Applications",
+      "title": "Primary Support Framing Across All Industrial Buildings",
+      "items": [
+        {
+          "title": "Galvanized C & Z Roof Purlins",
+          "image": "images/Structural C & Z Purlins.png"
+        },
+        {
+          "title": "CNC Pre-Punched Wall Girts",
+          "image": "adtionalimages/Structural C & Z Purlins.jpg"
+        },
+        {
+          "title": "Continuous Overlapped Purlins",
+          "image": "adtionalimages/Structural C & Z Purlins2.jpg"
+        },
+        {
+          "title": "PEB Secondary Framing Members",
+          "image": "images/Pre-Engineered Buildings.png"
+        }
+      ]
+    },
+
+    "specifications": {
+      "label": "Technical Specifications",
+      "title": "C & Z Purlin Profile Range",
+      "items": [
+        {
+          "label": "Web Depth (H)",
+          "value": "100 mm to 300 mm"
+        },
+        {
+          "label": "Flange Width (B)",
+          "value": "40 mm to 80 mm (equal / lip flanges)"
+        },
+        {
+          "label": "Thickness Range",
+          "value": "1.5 mm to 3.0 mm"
+        },
+        {
+          "label": "Steel Yield Strength",
+          "value": "245 MPa to 345 MPa Hi-Tensile Galvanized"
+        },
+        {
+          "label": "Zinc Coating Mass",
+          "value": "Z120 to Z275 gsm continuous hot-dip"
+        }
+      ],
+      "note": "Standard round and slotted holes pre-punched as per approved PEB erection drawings."
+    },
+
+    "whyChoose": {
+      "label": "The Drikon Purlin Advantage",
+      "title": "Automated High Speed Roll Forming Line",
+      "description": "Our state-of-the-art purlin mill allows quick gauge adjustments and online hydraulic punching without stopping production.",
+      "items": [
+        "High accuracy online punch positioning within ±1mm",
+        "Exact bundle packaging tagged with piece mark numbers",
+        "Fast dispatch capacity for urgent industrial shed schedules",
+        "Strict raw coil tensile and coating test certification",
+        "Complete supply of sag rods, apex cleats, and eave struts",
+        "Dedicated technical team for purlin lap and load table design"
+      ]
+    },
+
+    "gallery": [
+      "images/Structural C & Z Purlins.png",
+      "adtionalimages/Structural C & Z Purlins.jpg",
+      "adtionalimages/Structural C & Z Purlins2.jpg"
+    ],
+
+    "relatedServices": [
+      "peb-systems",
+      "roofing-sheets",
+      "decking-sheets"
+    ],
+
+    "cta": {
+      "eyebrow": "Need Secondary Structural Members?",
+      "title": "Get Quick Price Per KG / Meter for C & Z Purlins",
+      "description": "Send us your purlin schedule and hole center layout for an immediate quotation and delivery estimate.",
+      "buttonLabel": "Request Purlin Quote",
+      "buttonLink": "contact.html"
+    },
+
+    "seo": {
+      "metaTitle": "Galvanized C & Z Purlins Manufacturer | DRIKON Infratech",
+      "metaDescription": "High tensile pre-punched galvanized C and Z purlins manufacturer for PEB roof purlins and wall girts in Gujarat, India.",
+      "keywords": [
+        "C purlin manufacturer",
+        "Z purlin supplier",
+        "galvanized purlin",
+        "pre punched purlin",
+        "PEB secondary member"
+      ]
+    }
+  },
+  {
+    "id": 7,
+    "slug": "ventilators",
+    "name": "Industrial Ventilation Systems",
+    "shortName": "Ventilators",
+    "category": "Industrial Air & Climate Control",
+
+    "hero": {
+      "eyebrow": "Zero-Power Industrial Ventilation",
+      "title": "Turbo & Ridge Air Ventilation Systems",
+      "highlight": "Continuous Air Exchange. Zero Electricity Cost.",
+      "description": "Energy-free stainless steel and aluminum turbo ventilators and continuous ridge vents designed to exhaust hot air, fumes, and humidity from industrial sheds.",
+      "backgroundImage": "hero-section.png",
+      "foregroundImage": "images/Air Ventilation Systems.png",
+      "primaryButton": {
+        "label": "Inquire Ventilation",
+        "link": "contact.html"
+      },
+      "secondaryButton": {
+        "label": "View Airflow Capacity",
+        "link": "#specifications"
+      }
+    },
+
+    "overview": {
+      "label": "About Ventilation",
+      "title": "Natural Wind-Driven Exhaust Systems for Industrial Facilities",
+      "description": [
+        "DRIKON Roof Turbo Ventilators operate entirely on natural wind power and thermal convection (stack effect), continuously exhausting hot, stale air and airborne pollutants from inside factories and warehouses.",
+        "Constructed with lightweight stainless steel or aluminum vanes and double-shielded precision bearings, our ventilators run silently 24/7 with zero operating electricity expense."
+      ],
+      "image": "adtionalimages/Air Ventilation Systems.jpg",
+      "stats": [
+        {
+          "value": "0 ₹",
+          "label": "Operating Power Cost"
+        },
+        {
+          "value": "24/7",
+          "label": "Continuous Exhaust"
+        },
+        {
+          "value": "100%",
+          "label": "Weather & Leak Proof"
+        }
+      ]
+    },
+
+    "features": {
+      "label": "Key Features",
+      "title": "Maintenance-Free Exhaust Performance",
+      "description": "Aerodynamically contoured vanes rotate at the slightest breeze to extract heavy heat and humidity.",
+      "items": [
+        {
+          "title": "Zero Electricity Requirement",
+          "description": "Driven by natural wind force and interior thermal stack effect, eliminating recurring power bills.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M13 2L3 14h9l-1 8 10-12h-9l1-8z'/></svg>"
+        },
+        {
+          "title": "Dual Shielded Stainless Bearings",
+          "description": "Permanently lubricated bearings enclosed in protective housing for friction-free, silent rotation.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><circle cx='12' cy='12' r='10'/><circle cx='12' cy='12' r='3'/></svg>"
+        },
+        {
+          "title": "Vane Design & Leak-Proof Ring",
+          "description": "Specially curved vanes prevent rainwater entering the roof opening even under high winds.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><path d='M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2'/></svg>"
+        },
+        {
+          "title": "Matching FRP Base Plates",
+          "description": "Supplied with custom molded FRP base plates matching metal roof sheet profiles for leak-free installation.",
+          "icon": "<svg viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2'><rect x='3' y='3' width='18' height='18' rx='2'/><path d='M3 12h18'/></svg>"
+        }
+      ]
+    },
+
+    "benefits": {
+      "label": "Core Advantages",
+      "title": "Healthy Workplace Environment and Reduced Heat Buildup",
+      "image": "adtionalimages/Air Ventilation Systems2.jpg",
+      "items": [
+        "Rapidly exhausts oppressive heat buildup under metal roof sheets",
+        "Removes smoke, dust, moisture, and chemical fumes automatically",
+        "Prevents structural metal rust caused by internal humidity condensation",
+        "Significantly improves worker comfort, safety, and productivity",
+        "Storm-proof design withstands heavy wind velocity and rainfall",
+        "Available in 21-inch (530mm) and 24-inch (600mm) throat sizes"
+      ]
+    },
+
+    "applications": {
+      "label": "Applications",
+      "title": "Essential for Hot Industrial Sheds & Storage Warehouses",
+      "items": [
+        {
+          "title": "Stainless Steel Turbo Ventilators",
+          "image": "images/Air Ventilation Systems.png"
+        },
+        {
+          "title": "Wind-Driven Roof Air Exhaust",
+          "image": "adtionalimages/Air Ventilation Systems.jpg"
+        },
+        {
+          "title": "FRP Base Plate Mounting Vents",
+          "image": "adtionalimages/Air Ventilation Systems2.jpg"
+        },
+        {
+          "title": "Industrial Shed Heat Extraction",
+          "image": "images/Pre-Engineered Buildings.png"
+        }
+      ]
+    },
+
+    "specifications": {
+      "label": "Technical Specifications",
+      "title": "Turbo Ventilator Specifications",
+      "items": [
+        {
+          "label": "Throat Diameter",
+          "value": "530 mm (21\") / 600 mm (24\") throat options"
+        },
+        {
+          "label": "Vane Material",
+          "value": "Stainless Steel 304 / High Grade Aluminum Alloy"
+        },
+        {
+          "label": "Number of Vanes",
+          "value": "36 / 42 aerodynamic contoured vanes"
+        },
+        {
+          "label": "Base Plate",
+          "value": "Profile-matched Fiber Reinforced Plastic (FRP) base"
+        },
+        {
+          "label": "Exhaust Capacity",
+          "value": "1200 to 2200 CFM (depending on wind speed and temperature delta)"
+        }
+      ],
+      "note": "Ridge ventilators (continuous roof monitors) also manufactured to order for high-volume air turnover requirements."
+    },
+
+    "whyChoose": {
+      "label": "Why Drikon Ventilation",
+      "title": "Aerodynamically Balanced and Storm Tested",
+      "description": "Every turbine head is dynamically spin-balanced to ensure smooth, vibration-free rotation at all wind velocities.",
+      "items": [
+        "Heavy-duty marine grade aluminum / SS construction",
+        "Pre-fitted FRP base plate ensuring fast 30-minute installation",
+        "Complete roof flashing and sealant kit included",
+        "5-Year replacement warranty on bearing assembly",
+        "Free air exchange and ventilator quantity calculation service",
+        "Zero operating or maintenance costs over lifespan"
+      ]
+    },
+
+    "gallery": [
+      "images/Air Ventilation Systems.png",
+      "adtionalimages/Air Ventilation Systems.jpg",
+      "adtionalimages/Air Ventilation Systems2.jpg"
+    ],
+
+    "relatedServices": [
+      "polycarbonate",
+      "roofing-sheets",
+      "peb-systems"
+    ],
+
+    "cta": {
+      "eyebrow": "Calculated Ventilation Required?",
+      "title": "Determine How Many Ventilators Your Shed Needs",
+      "description": "Provide your shed volume and heat sources to receive an exact air exchange calculation and price quotation.",
+      "buttonLabel": "Calculate Airflow Needs",
+      "buttonLink": "contact.html"
+    },
+
+    "seo": {
+      "metaTitle": "Roof Turbo Ventilators Manufacturer | DRIKON Infratech",
+      "metaDescription": "Zero electricity industrial roof turbo ventilator and ridge ventilation system manufacturer for factories and PEB warehouses.",
+      "keywords": [
+        "turbo ventilator manufacturer",
+        "roof ventilator PEB",
+        "stainless steel wind ventilator",
+        "industrial air exhaust",
+        "ridge ventilator"
+      ]
+    }
+  }
+]

@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" id="pageMetaDescription" content="DRIKON Infratech - Industrial PEB, Steel Roofing, PUF Panels, Decking Sheets & Structural Building Solutions.">
+  <meta name="keywords" id="pageMetaKeywords" content="PEB, roofing sheets, PUF panels, decking sheets, purlins, DRIKON Infratech">
+  
+  <title id="pageTitle">Service Detail | DRIKON Infratech Pvt. Ltd.</title>
+  
+  <!-- Premium Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+
+  <style>
+    /* ============================================================
+       SERVICE DETAIL PAGE SPECIFIC STYLES
+       ============================================================ */
+    
+    /* Hero Section */
+    .service-hero {
+      position: relative;
+      padding: 160px 0 100px;
+      background: linear-gradient(135deg, rgba(6, 59, 120, 0.95) 0%, rgba(8, 43, 85, 0.97) 100%), url('hero-section.png') no-repeat center center/cover;
+      color: var(--white);
+      overflow: hidden;
+    }
+
+    .service-hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 85% 20%, rgba(243, 106, 22, 0.15) 0%, transparent 60%);
+      pointer-events: none;
+    }
+
+    .service-hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.15fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .service-hero-breadcrumb {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13.5px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 20px;
+      background: rgba(255, 255, 255, 0.08);
+      padding: 6px 16px;
+      border-radius: 30px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(4px);
+    }
+    
+    .service-hero-breadcrumb a {
+      color: var(--white);
+      transition: color 0.3s ease;
+    }
+
+    .service-hero-breadcrumb a:hover {
+      color: var(--accent-orange);
+    }
+
+    .service-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-orange);
+      font-weight: 800;
+      font-size: 12.5px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .service-hero-title {
+      font-size: clamp(34px, 4.5vw, 54px);
+      font-weight: 900;
+      letter-spacing: -1.5px;
+      line-height: 1.12;
+      margin-bottom: 16px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .service-hero-highlight {
+      display: block;
+      color: #FFA468;
+      font-size: clamp(18px, 2.2vw, 24px);
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .service-hero-desc {
+      font-size: 16.5px;
+      line-height: 1.7;
+      color: #E2ECF5;
+      margin-bottom: 32px;
+      max-width: 600px;
+    }
+
+    .service-hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .hero-img-card {
+      position: relative;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 16px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero-img-card img,
+    .hero-img-card video {
+      width: 100%;
+      height: 500px;
+      object-fit: contain;
+      border-radius: 14px;
+      display: block;
+      background: rgba(255, 255, 255, 0.04);
+      padding: 8px;
+    }
+
+    /* Floating Quick Nav Tabs Bar */
+    .service-tabs-sticky {
+      position: sticky;
+      top: 70px;
+      z-index: 950;
+      margin-top: -30px;
+      padding: 0 15px;
+    }
+
+    .service-tabs-glass {
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(13, 95, 168, 0.12);
+      border-radius: 18px;
+      box-shadow: 0 12px 35px rgba(8, 43, 85, 0.1);
+      padding: 8px 12px;
+    }
+
+    .service-tabs-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .service-tab-btn {
+      padding: 10px 18px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 13px;
+      color: var(--primary-navy);
+      background: transparent;
+      transition: all 0.3s ease;
+      white-space: nowrap;
+    }
+
+    .service-tab-btn:hover,
+    .service-tab-btn.active {
+      background: var(--accent-orange);
+      color: var(--white);
+      box-shadow: 0 6px 16px rgba(243, 106, 22, 0.25);
+    }
+
+    /* Common Section Formatting */
+    .service-section {
+      padding: 90px 0;
+      position: relative;
+    }
+
+    .service-section.alt-bg {
+      background: #F8FAFC;
+      border-top: 1px solid #EEF2F6;
+      border-bottom: 1px solid #EEF2F6;
+    }
+
+    .section-head {
+      margin-bottom: 50px;
+    }
+
+    .section-head.center {
+      text-align: center;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sub-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-orange);
+      font-weight: 800;
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .sub-eyebrow::before {
+      content: '';
+      width: 14px;
+      height: 2px;
+      background: var(--accent-orange);
+    }
+
+    .section-heading {
+      font-size: clamp(28px, 3.5vw, 40px);
+      color: var(--primary-navy);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.18;
+      margin-bottom: 15px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .section-subtext {
+      font-size: 16px;
+      color: var(--text-color);
+      line-height: 1.65;
+    }
+
+    /* Overview Section */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .overview-text p {
+      font-size: 16.5px;
+      line-height: 1.75;
+      color: var(--text-color);
+      margin-bottom: 20px;
+    }
+
+    .stats-card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .stat-card {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 20px 16px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+      transition: transform 0.3s ease;
+    }
+
+    .stat-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary-blue);
+    }
+
+    .stat-val {
+      font-size: 28px;
+      font-weight: 900;
+      color: var(--accent-orange);
+      font-family: 'Outfit', sans-serif;
+      margin-bottom: 4px;
+    }
+
+    .stat-lbl {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: var(--heading-color);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .overview-image-wrapper {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(8, 43, 85, 0.12);
+    }
+
+    .overview-image-wrapper img {
+      width: 100%;
+      height: 440px;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+      transition: transform 0.5s ease;
+    }
+
+    .overview-image-wrapper:hover img {
+      transform: scale(1.04);
+    }
+
+    /* Key Features Section */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 28px;
+    }
+
+    .feature-card {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 32px 26px;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(8, 43, 85, 0.08);
+      border-color: rgba(13, 95, 168, 0.3);
+    }
+
+    .feature-icon-box {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: rgba(13, 95, 168, 0.08);
+      color: var(--primary-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      transition: all 0.3s ease;
+    }
+
+    .feature-icon-box svg {
+      width: 28px;
+      height: 28px;
+    }
+
+    .feature-card:hover .feature-icon-box {
+      background: var(--accent-orange);
+      color: var(--white);
+    }
+
+    .feature-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: var(--primary-navy);
+      margin-bottom: 12px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .feature-desc {
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: var(--text-color);
+    }
+
+    /* Benefits Section */
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+    }
+
+    .benefit-checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--white);
+      padding: 16px 20px;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+      transition: all 0.3s ease;
+    }
+
+    .benefit-item:hover {
+      border-color: var(--accent-orange);
+      transform: translateX(4px);
+    }
+
+    .benefit-check-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(243, 106, 22, 0.15);
+      color: var(--accent-orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .benefit-text {
+      font-size: 15.5px;
+      font-weight: 600;
+      color: var(--heading-color);
+      line-height: 1.45;
+    }
+
+    /* Applications Section */
+    .applications-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 28px;
+    }
+
+    .app-card {
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+      transition: all 0.3s ease;
+    }
+
+    .app-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(8, 43, 85, 0.1);
+    }
+
+    .app-img-wrap {
+      height: 220px;
+      overflow: hidden;
+    }
+
+    .app-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .app-card:hover .app-img-wrap img {
+      transform: scale(1.08);
+    }
+
+    .app-body {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .app-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: var(--primary-navy);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    /* Specifications Section */
+    .specs-card {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.03);
+    }
+
+    .specs-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .specs-table tr {
+      border-bottom: 1px solid rgba(8, 43, 85, 0.08);
+    }
+
+    .specs-table tr:last-child {
+      border-bottom: none;
+    }
+
+    .specs-table td {
+      padding: 18px 12px;
+      font-size: 15px;
+    }
+
+    .specs-table td.spec-name {
+      font-weight: 800;
+      color: var(--primary-navy);
+      width: 35%;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .specs-table td.spec-val {
+      color: var(--heading-color);
+      font-weight: 500;
+    }
+
+    .spec-note-box {
+      margin-top: 25px;
+      padding: 16px 20px;
+      background: #FFF8F3;
+      border-left: 4px solid var(--accent-orange);
+      border-radius: 8px;
+      font-size: 14px;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    /* Why Choose Section */
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+    }
+
+    .why-item-card {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .why-item-card:hover {
+      border-color: var(--primary-blue);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(8, 43, 85, 0.05);
+    }
+
+    .why-num-badge {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: rgba(13, 95, 168, 0.08);
+      color: var(--primary-blue);
+      font-weight: 900;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .why-item-text {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--heading-color);
+      line-height: 1.4;
+    }
+
+    /* Gallery Section */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 16px;
+      overflow: hidden;
+      height: 260px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.08);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(to top, rgba(6, 59, 120, 0.8) 0%, transparent 60%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-zoom-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--accent-orange);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: auto;
+    }
+
+    /* Lightbox Modal */
+    .gallery-modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.9);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .gallery-modal.active {
+      display: flex;
+    }
+
+    .gallery-modal img {
+      max-width: 90vw;
+      max-height: 85vh;
+      border-radius: 12px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .gallery-modal-close {
+      position: absolute;
+      top: 25px;
+      right: 35px;
+      color: var(--white);
+      font-size: 38px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+    }
+
+    .gallery-modal-close:hover {
+      color: var(--accent-orange);
+    }
+
+    /* Related Services */
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .related-card {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .related-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 38px rgba(8, 43, 85, 0.08);
+      border-color: var(--primary-blue);
+    }
+
+    .related-cat {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: var(--accent-orange);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 8px;
+    }
+
+    .related-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: var(--primary-navy);
+      margin-bottom: 12px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .related-desc {
+      font-size: 14px;
+      color: var(--text-color);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+
+    .related-link {
+      font-size: 14px;
+      font-weight: 700;
+      color: var(--primary-blue);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.3s ease;
+    }
+
+    .related-card:hover .related-link {
+      color: var(--accent-orange);
+      gap: 10px;
+    }
+
+    /* Responsive */
+    @media (max-width: 991px) {
+      .service-hero-grid, .overview-grid, .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .service-hero {
+        padding: 140px 0 80px;
+      }
+      .hero-img-card img {
+        height: 300px;
+      }
+      .stats-card-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .service-tabs-sticky {
+        top: 60px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .stats-card-grid {
+        grid-template-columns: 1fr;
+      }
+      .specs-card {
+        padding: 24px 18px;
+      }
+      .specs-table td {
+        display: block;
+        width: 100% !important;
+        padding: 6px 0;
+      }
+      .specs-table tr {
+        padding: 12px 0;
+        display: block;
+      }
+      .service-tab-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+      }
+    }
+
+    /* Redesigned Split CTA Inquiry Form Section */
+    .premium-cta-section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, var(--primary-navy) 0%, #031D3A 100%);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .premium-cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(circle at 10% 90%, rgba(243, 106, 22, 0.15) 0%, transparent 50%),
+                  radial-gradient(circle at 90% 10%, rgba(13, 95, 168, 0.25) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .cta-split-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 70px;
+      align-items: center;
+    }
+
+    .cta-left-form-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 40px;
+      border-radius: 24px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-group-row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 0.85);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      width: 100%;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 10px;
+      padding: 14px 18px;
+      color: var(--white);
+      font-size: 14.5px;
+      transition: all 0.3s ease;
+      font-family: inherit;
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-input::placeholder, .form-textarea::placeholder {
+      color: rgba(255, 255, 255, 0.45);
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      outline: none;
+      border-color: var(--accent-orange);
+      background: rgba(255, 255, 255, 0.14);
+      box-shadow: 0 0 16px rgba(243, 106, 22, 0.3);
+    }
+
+    .btn-form-submit {
+      width: 100%;
+      background: var(--accent-orange);
+      color: var(--white);
+      border: none;
+      border-radius: 10px;
+      padding: 16px 24px;
+      font-size: 15.5px;
+      font-weight: 800;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 24px rgba(243, 106, 22, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .btn-form-submit:hover {
+      background: var(--dark-orange);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(217, 84, 13, 0.4);
+    }
+
+    .cta-right-content h2 {
+      font-size: clamp(30px, 4vw, 44px);
+      font-weight: 800;
+      letter-spacing: -1px;
+      line-height: 1.15;
+      margin-bottom: 20px;
+      color: var(--white);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .cta-right-content p {
+      font-size: 16.5px;
+      line-height: 1.65;
+      color: rgba(255, 255, 255, 0.82);
+      margin-bottom: 40px;
+    }
+
+    .trust-factors {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .trust-factor-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 20px;
+      border-radius: 16px;
+      backdrop-filter: blur(8px);
+    }
+
+    .trust-factor-icon {
+      font-size: 22px;
+      background: rgba(243, 106, 22, 0.15);
+      color: var(--accent-orange);
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      border: 1px solid rgba(243, 106, 22, 0.25);
+    }
+
+    .trust-factor-title {
+      font-size: 16px;
+      font-weight: 800;
+      margin-bottom: 4px;
+      color: var(--white);
+      font-family: 'Outfit', sans-serif;
+    }
+
+    .trust-factor-desc {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.72);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 991px) {
+      .cta-split-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .form-group-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+      }
+      .cta-left-form-card {
+        padding: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Premium Header -->
+  <header class="header">
+    <div class="header-top-bar">
+      <div class="top-bar-container">
+        <div class="top-bar-left">
+          <a href="mailto:drikoninfratech2026@gmail.com" class="top-bar-link">
+            <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            drikoninfratech2026@gmail.com
+          </a>
+          <span class="top-bar-separator">|</span>
+          <a href="tel:+918140904857" class="top-bar-link">
+            <svg class="top-bar-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            +91 81409 04857
+          </a>
+        </div>
+        <div class="top-bar-right">
+          <span>Pre-Engineered Steel Building & Roofing Experts</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="header-container">
+      <a href="index.html" class="logo-link">
+        <img src="Drikon Infratech Logo Final_1.png" alt="Drikon Infratech Logo" class="logo-img">
+      </a>
+      
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link active">Products <span class="dropdown-arrow"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="service-detail.html?service=peb-systems">Pre-Engineered Buildings</a></li>
+              <li><a href="service-detail.html?service=roofing-sheets">Roofing Sheets</a></li>
+              <li><a href="service-detail.html?service=puf-panels">Insulated PUF Panels</a></li>
+              <li><a href="service-detail.html?service=polycarbonate">Polycarbonate Sheets</a></li>
+              <li><a href="service-detail.html?service=decking-sheets">Decking Sheet Systems</a></li>
+              <li><a href="service-detail.html?service=cz-purlins">Structural C &amp; Z Purlins</a></li>
+              <li><a href="service-detail.html?service=ventilators">Air Ventilation Systems</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+      
+      <div class="header-cta">
+        <a href="tel:+918140904857" class="cta-btn">
+          <span class="phone-icon-wrapper">
+            <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="cta-phone">Call Drikon</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== 1. DYNAMIC HERO SECTION ===================== -->
+  <section class="service-hero">
+    <div class="container">
+      <div class="service-hero-grid">
+        <div>
+          <div class="service-hero-breadcrumb">
+            <a href="index.html">Home</a>
+            <span>›</span>
+            <a href="products.html">Products</a>
+            <span>›</span>
+            <span id="breadcrumbCurrent">PEB Systems</span>
+          </div>
+
+          <div class="service-eyebrow" id="heroEyebrow">Engineered Building Solutions</div>
+          <h1 class="service-hero-title" id="heroTitle">Pre-Engineered Building Systems</h1>
+          <div class="service-hero-highlight" id="heroHighlight">Built for Strength. Designed for Efficiency.</div>
+          <p class="service-hero-desc" id="heroDesc">Advanced pre-engineered steel building systems developed for industrial, commercial, warehouse and infrastructure applications.</p>
+
+          <div class="service-hero-actions">
+            <a href="contact.html" class="btn-action-primary" id="heroPrimaryBtn">Request a Quote</a>
+            <a href="#overview" class="btn-action-secondary" id="heroSecondaryBtn">Explore Features</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero-img-card">
+            <img src="peb shade.png" alt="Service Hero Illustration" id="heroForegroundImg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FLOATING STICKY NAVIGATION TABS ===================== -->
+  <div class="service-tabs-sticky">
+    <div class="container">
+      <div class="service-tabs-glass">
+        <div class="service-tabs-nav">
+          <a href="#overview" class="service-tab-btn active">Overview</a>
+          <a href="#features" class="service-tab-btn">Key Features</a>
+          <a href="#benefits" class="service-tab-btn">Advantages</a>
+          <a href="#applications" class="service-tab-btn">Applications</a>
+          <a href="#specifications" class="service-tab-btn">Specifications</a>
+          <a href="#why-choose" class="service-tab-btn">Why DRIKON</a>
+          <a href="#gallery" class="service-tab-btn">Gallery</a>
+          <a href="#contact" class="service-tab-btn">Inquire Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== 2. OVERVIEW SECTION ===================== -->
+  <section class="service-section" id="overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="overview-text">
+          <div class="sub-eyebrow" id="overviewLabel">About the Solution</div>
+          <h2 class="section-heading" id="overviewTitle">Efficient Steel Structures Engineered Around Your Requirements</h2>
+          <div id="overviewDescContainer">
+            <!-- Dynamic Paragraphs -->
+          </div>
+
+          <div class="stats-card-grid" id="statsGrid">
+            <!-- Dynamic Stats Cards -->
+          </div>
+        </div>
+
+        <div>
+          <div class="overview-image-wrapper">
+            <img src="images/Pre-Engineered Buildings.png" alt="Solution Overview" id="overviewImg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 3. KEY FEATURES SECTION ===================== -->
+  <section class="service-section alt-bg" id="features">
+    <div class="container">
+      <div class="section-head center">
+        <div class="sub-eyebrow" id="featuresLabel">Key Features</div>
+        <h2 class="section-heading" id="featuresTitle">Engineered for Long-Term Structural Performance</h2>
+        <p class="section-subtext" id="featuresDesc">A complete system designed to improve construction speed, structural reliability and operational value.</p>
+      </div>
+
+      <div class="features-grid" id="featuresGrid">
+        <!-- Dynamic Feature Cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 4. CORE ADVANTAGES / BENEFITS SECTION ===================== -->
+  <section class="service-section" id="benefits">
+    <div class="container">
+      <div class="benefits-grid">
+        <div>
+          <div class="sub-eyebrow" id="benefitsLabel">Core Advantages</div>
+          <h2 class="section-heading" id="benefitsTitle">Better Construction Efficiency from Design to Installation</h2>
+          
+          <div class="benefit-checklist" id="benefitsList">
+            <!-- Dynamic Benefits Items -->
+          </div>
+        </div>
+
+        <div>
+          <div class="overview-image-wrapper">
+            <img src="images/PEB Sheds.png" alt="Core Advantages" id="benefitsImg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 5. APPLICATIONS SECTION ===================== -->
+  <section class="service-section alt-bg" id="applications">
+    <div class="container">
+      <div class="section-head center">
+        <div class="sub-eyebrow" id="applicationsLabel">Applications</div>
+        <h2 class="section-heading" id="applicationsTitle">Suitable for Diverse Industrial and Commercial Projects</h2>
+      </div>
+
+      <div class="applications-grid" id="applicationsGrid">
+        <!-- Dynamic Application Cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 6. TECHNICAL SPECIFICATIONS SECTION ===================== -->
+  <section class="service-section" id="specifications">
+    <div class="container">
+      <div class="section-head center">
+        <div class="sub-eyebrow" id="specsLabel">System Options</div>
+        <h2 class="section-heading" id="specsTitle">Customizable According to Project Requirements</h2>
+      </div>
+
+      <div class="specs-card">
+        <table class="specs-table" id="specsTable">
+          <!-- Dynamic Specs Table Rows -->
+        </table>
+
+        <div class="spec-note-box" id="specNoteBox">
+          Final specifications depend on structural design, project location, dimensions, loading conditions and client requirements.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 7. WHY CHOOSE DRIKON SECTION ===================== -->
+  <section class="service-section alt-bg" id="why-choose">
+    <div class="container">
+      <div class="section-head center">
+        <div class="sub-eyebrow" id="whyLabel">Why Drikon</div>
+        <h2 class="section-heading" id="whyTitle">One Partner for Complete Building Solutions</h2>
+        <p class="section-subtext" id="whyDesc">From planning and material selection to manufacturing support and installation, Drikon provides coordinated solutions designed around project requirements.</p>
+      </div>
+
+      <div class="why-grid" id="whyGrid">
+        <!-- Dynamic Why Choose Cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 8. PROJECT GALLERY SECTION ===================== -->
+  <section class="service-section" id="gallery">
+    <div class="container">
+      <div class="section-head center">
+        <div class="sub-eyebrow">Project Gallery</div>
+        <h2 class="section-heading">Real-World Installation Showcase</h2>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <!-- Dynamic Gallery Items -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="gallery-modal" id="galleryModal">
+    <span class="gallery-modal-close" id="galleryModalClose">&times;</span>
+    <img src="" alt="Enlarged Project Photo" id="galleryModalImg">
+  </div>
+
+  <!-- ===================== 9. RELATED SERVICES SECTION ===================== -->
+  <section class="service-section alt-bg" id="related">
+    <div class="container">
+      <div class="section-head center">
+        <div class="sub-eyebrow">Related Products</div>
+        <h2 class="section-heading">Explore Complementary Systems</h2>
+      </div>
+
+      <div class="related-grid" id="relatedGrid">
+        <!-- Dynamic Related Cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== 10. INQUIRY CTA SECTION ===================== -->
+  <section class="premium-cta-section" id="contact">
+    <div class="container">
+      <div class="cta-split-grid">
+        <div class="cta-left-form-card">
+          <h3 style="font-size: 22px; font-weight: 800; margin-bottom: 20px; color: #fff; font-family: 'Outfit', sans-serif;">Request Quotation</h3>
+          <form class="enquiry-form">
+            <div class="form-group-row">
+              <div class="form-group">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-input" placeholder="Full Name" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone Number</label>
+                <input type="tel" class="form-input" placeholder="Mobile No." required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email Address</label>
+              <input type="email" class="form-input" placeholder="name@company.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Project Location / Span Size</label>
+              <input type="text" class="form-input" placeholder="City / Dimensions (e.g. 30m x 60m)">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Requirements</label>
+              <textarea class="form-textarea" rows="3" placeholder="Specify requirements or ask questions..."></textarea>
+            </div>
+            <button type="submit" class="btn-form-submit">Submit Inquiry</button>
+          </form>
+        </div>
+
+        <div class="cta-right-content">
+          <div class="sub-eyebrow" id="ctaEyebrow" style="color: var(--accent-orange);">Planning a New Project?</div>
+          <h2 id="ctaTitle">Build a Stronger, Smarter and More Efficient Structure</h2>
+          <p id="ctaDesc">Share your project requirements with our team for suitable product recommendations and a customized quotation.</p>
+
+          <div class="trust-factors">
+            <div class="trust-factor-item">
+              <div class="trust-factor-icon">⚡</div>
+              <div>
+                <div class="trust-factor-title">Rapid Response</div>
+                <div class="trust-factor-desc">Our technical estimators provide detailed structural proposals within 24 hours.</div>
+              </div>
+            </div>
+
+            <div class="trust-factor-item">
+              <div class="trust-factor-icon">🛡️</div>
+              <div>
+                <div class="trust-factor-title">Engineering Excellence</div>
+                <div class="trust-factor-desc">Designed according to IS structural codes with complete mill test certification.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="Drikon Infratech Logo Final_1.png" alt="DRIKON Logo" class="footer-logo-img" style="filter: brightness(0) invert(1);">
+          <p class="footer-brand-desc">DRIKON Infratech Pvt. Ltd. delivers robust, efficient, and future-ready Pre-Engineered Buildings, roofing systems, and structural infrastructure solutions across India.</p>
+          <div class="footer-contact-items">
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>FF 412, S9 Square, Sama Savli Road, Vadodara - 390024, Gujarat, India.</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+918140904857">+91 81409 04857</a>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:drikoninfratech2026@gmail.com">drikoninfratech2026@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Products Range</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Core Products</h4>
+          <div class="footer-links">
+            <a href="service-detail.html?service=peb-systems">PEB Systems</a>
+            <a href="service-detail.html?service=roofing-sheets">Roofing Sheets</a>
+            <a href="service-detail.html?service=puf-panels">Insulated PUF Panels</a>
+            <a href="service-detail.html?service=polycarbonate">Polycarbonate Sheets</a>
+            <a href="service-detail.html?service=decking-sheets">Decking Sheets</a>
+            <a href="service-detail.html?service=cz-purlins">C &amp; Z Purlins</a>
+            <a href="service-detail.html?service=ventilators">Air Ventilators</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Manufacturing</h4>
+          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.6;">Survey No. 209, Rajli Gam, Vadodara, Dabhoi Road - 391107, Gujarat, India.</p>
+          <div class="footer-social">
+            <a href="#" class="social-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">&copy; 2026 DRIKON Infratech Pvt. Ltd. All rights reserved.</div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919978387298?text=Hello%20Drikon%20Infratech,%20I%20would%20like%20to%20inquire%20about%20your%20PEB%20and%20Roofing%20services." 
+     class="whatsapp-float-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp with Drikon Infratech">
+    <div class="whatsapp-icon-wrapper">
+      <svg viewBox="0 0 32 32" class="whatsapp-svg">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.738 5.575 2.138 8.013L.075 31.25a.8.8 0 0 0 .975.975l7.288-2.063A15.938 15.938 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.488 0-4.913-.663-7.038-1.925a.8.8 0 0 0-.588-.088l-5.112 1.45 1.45-5.113a.8.8 0 0 0-.087-.588C3.399 20.913 2.733 18.488 2.733 16c0-7.313 5.954-13.267 13.267-13.267S29.267 8.687 29.267 16c0 7.313-5.954 13.333-13.267 13.333zm7.688-9.875c-.425-.213-2.513-1.238-2.9-1.388-.388-.15-.675-.212-.963.213-.287.425-1.112 1.388-1.362 1.675-.25.288-.5.325-.925.113-.425-.213-1.8-.663-3.425-2.113-1.275-1.137-2.138-2.537-2.388-2.962-.25-.425-.025-.65.188-.863.188-.188.425-.5.638-.75.213-.25.287-.425.425-.713.137-.287.075-.537-.038-.75s-.963-2.325-1.325-3.187c-.35-.838-.712-.725-.975-.738-.25-.012-.538-.012-.825-.012s-.75.113-1.137.538c-.388.425-1.488 1.45-1.488 3.538s1.525 4.1 1.738 4.388c.212.287 3.012 4.6 7.3 6.45 1.025.438 1.825.7 2.45.9.1.038 1.95.788 2.875.7 1.025-.1 3.163-1.288 3.6-2.538.438-1.25.438-2.313.313-2.538-.125-.225-.413-.35-.838-.563z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-tooltip">Chat with us</span>
+  </a>
+
+  <script src="script.js"></script>
+  <script src="service-detail.js"></script>
+</body>
+</html>

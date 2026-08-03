@@ -9,15 +9,11 @@
   <!-- Modern Premium Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Hanken+Grotesk:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">  
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pages.css">
 
   <style>
-    /* ============================================================
-       ABOUT PAGE CUSTOM PREMIUM STYLES
-       ============================================================ */
     .about-banner {
       position: relative;
       padding: 160px 0 100px;
@@ -820,7 +816,10 @@
         <!-- Left Image Section with Floating Stat -->
         <div class="infra-v3-visual">
           <div class="infra-v3-img-wrapper">
-            <img src="peb shade.png" alt="DRIKON Manufacturing Facility Shed">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; min-height: 560px; object-fit: cover; display: block; padding: 0; margin: 0; border-radius: 28px;">
+              <source src="adtionalimages/peb shade.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <div class="infra-v3-stat-card">
               <div class="infra-v3-stat-num">100%</div>
               <div>
@@ -1086,5 +1085,19 @@
       document.body.style.overflow = '';
     });
   </script>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919978387298?text=Hello%20Drikon%20Infratech,%20I%20would%20like%20to%20inquire%20about%20your%20PEB%20and%20Roofing%20services." 
+     class="whatsapp-float-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp with Drikon Infratech">
+    <div class="whatsapp-icon-wrapper">
+      <svg viewBox="0 0 32 32" class="whatsapp-svg">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.738 5.575 2.138 8.013L.075 31.25a.8.8 0 0 0 .975.975l7.288-2.063A15.938 15.938 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.488 0-4.913-.663-7.038-1.925a.8.8 0 0 0-.588-.088l-5.112 1.45 1.45-5.113a.8.8 0 0 0-.087-.588C3.399 20.913 2.733 18.488 2.733 16c0-7.313 5.954-13.267 13.267-13.267S29.267 8.687 29.267 16c0 7.313-5.954 13.333-13.267 13.333zm7.688-9.875c-.425-.213-2.513-1.238-2.9-1.388-.388-.15-.675-.212-.963.213-.287.425-1.112 1.388-1.362 1.675-.25.288-.5.325-.925.113-.425-.213-1.8-.663-3.425-2.113-1.275-1.137-2.138-2.537-2.388-2.962-.25-.425-.025-.65.188-.863.188-.188.425-.5.638-.75.213-.25.287-.425.425-.713.137-.287.075-.537-.038-.75s-.963-2.325-1.325-3.187c-.35-.838-.712-.725-.975-.738-.25-.012-.538-.012-.825-.012s-.75.113-1.137.538c-.388.425-1.488 1.45-1.488 3.538s1.525 4.1 1.738 4.388c.212.287 3.012 4.6 7.3 6.45 1.025.438 1.825.7 2.45.9.1.038 1.95.788 2.875.7 1.025-.1 3.163-1.288 3.6-2.538.438-1.25.438-2.313.313-2.538-.125-.225-.413-.35-.838-.563z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-tooltip">Chat with us</span>
+  </a>
 </body>
 </html>

@@ -15,6 +15,33 @@
 </head>
 <body>
 
+  <!-- Ultra-Premium Full-Screen Drikon Opening Animation Overlay -->
+  <div class="drikon-intro-curtain" id="drikonIntro" aria-hidden="true">
+    <div class="intro-shutter intro-shutter-top"></div>
+    <div class="intro-shutter intro-shutter-bottom"></div>
+
+    <div class="intro-center-stage">
+      <div class="intro-logo-card">
+        <div class="logo-shine-wrapper">
+          <img src="adtionalimages/Drikon Infratech Logo Final_1.svg" alt="Drikon Infratech Pvt. Ltd. Logo" class="intro-brand-logo">
+          <div class="logo-shine-beam"></div>
+        </div>
+      </div>
+
+      <div class="intro-progress-container">
+        <div class="intro-progress-bar" id="introProgressBar"></div>
+      </div>
+
+      <div class="intro-tagline" id="introTagline">
+        Engineered for Strength. Built for Performance.
+      </div>
+    </div>
+
+    <button class="intro-skip-btn" id="skipIntro" type="button">
+      Skip Intro
+    </button>
+  </div>
+
   <!-- Premium Header -->
   <header class="header">
     <!-- Header Top Bar -->
@@ -55,13 +82,13 @@
           <li class="nav-item">
             <a href="products.html" class="nav-link">Products <span class="dropdown-arrow"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="products.html#peb-systems">Pre-Engineered Buildings</a></li>
-              <li><a href="products.html#roofing-sheets">Roofing Sheets</a></li>
-              <li><a href="products.html#puf-panels">Insulated PUF Panels</a></li>
-              <li><a href="products.html#polycarbonate">Polycarbonate Sheets</a></li>
-              <li><a href="products.html#decking-sheets">Decking Sheet Systems</a></li>
-              <li><a href="products.html#cz-purlins">Structural C &amp; Z Purlins</a></li>
-              <li><a href="products.html#ventilators">Air Ventilation Systems</a></li>
+              <li><a href="service-detail.html?service=peb-systems">Pre-Engineered Buildings</a></li>
+              <li><a href="service-detail.html?service=roofing-sheets">Roofing Sheets</a></li>
+              <li><a href="service-detail.html?service=puf-panels">Insulated PUF Panels</a></li>
+              <li><a href="service-detail.html?service=polycarbonate">Polycarbonate Sheets</a></li>
+              <li><a href="service-detail.html?service=decking-sheets">Decking Sheet Systems</a></li>
+              <li><a href="service-detail.html?service=cz-purlins">Structural C &amp; Z Purlins</a></li>
+              <li><a href="service-detail.html?service=ventilators">Air Ventilation Systems</a></li>
             </ul>
           </li>
           <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
@@ -313,7 +340,7 @@
           <div class="card-body-v2">
             <h4>Pre-Engineered Buildings</h4>
             <p>Engineered for strength and built for performance, our PEB systems deliver superior load capacity, rapid assembly times, and lifetime durability.</p>
-            <a href="products.html#peb-systems" class="card-learn-more">Learn More <span class="arrow">↗</span></a>
+            <a href="service-detail.html?service=peb-systems" class="card-learn-more">View Details <span class="arrow">↗</span></a>
           </div>
         </div>
 
@@ -333,7 +360,7 @@
           <div class="card-body-v2">
             <h4>Roofing Sheets</h4>
             <p>High-performance profile sheet solutions combining exceptional weather resistance, structural strength, and premium colors.</p>
-            <a href="products.html#roofing-puf" class="card-learn-more red-link">Learn More <span class="arrow">↗</span></a>
+            <a href="service-detail.html?service=roofing-sheets" class="card-learn-more red-link">View Details <span class="arrow">↗</span></a>
           </div>
         </div>
 
@@ -354,7 +381,7 @@
           <div class="card-body-v2">
             <h4>Insulated PUF Panels</h4>
             <p>High thermal efficiency polyurethane foam panels engineered to deliver outstanding insulation for cold storage and clean rooms.</p>
-            <a href="products.html#roofing-puf" class="card-learn-more">Learn More <span class="arrow">↗</span></a>
+            <a href="service-detail.html?service=puf-panels" class="card-learn-more">View Details <span class="arrow">↗</span></a>
           </div>
         </div>
 
@@ -377,7 +404,7 @@
           <div class="card-body-v2">
             <h4>Decking Sheet Systems</h4>
             <p>Robust composite steel floor decking offering supreme load distribution, ease of concrete pouring, and high structural stability.</p>
-            <a href="products.html#purlins-decking" class="card-learn-more">Learn More <span class="arrow">↗</span></a>
+            <a href="service-detail.html?service=decking-sheets" class="card-learn-more">View Details <span class="arrow">↗</span></a>
           </div>
         </div>
 
@@ -397,7 +424,7 @@
           <div class="card-body-v2">
             <h4>Structural C & Z Purlins</h4>
             <p>Galvanized high-tensile steel purlins providing secondary load support for industrial structural framing profiles.</p>
-            <a href="products.html#purlins-decking" class="card-learn-more">Learn More <span class="arrow">↗</span></a>
+            <a href="service-detail.html?service=cz-purlins" class="card-learn-more">View Details <span class="arrow">↗</span></a>
           </div>
         </div>
 
@@ -418,7 +445,7 @@
           <div class="card-body-v2">
             <h4>Air Ventilation Systems</h4>
             <p>Natural, electricity-free turbo and ridge ventilators engineered to maintain fresh airflow and exhaust ambient heat.</p>
-            <a href="products.html#ventilation-insulation" class="card-learn-more">Learn More <span class="arrow">↗</span></a>
+            <a href="service-detail.html?service=ventilators" class="card-learn-more">View Details <span class="arrow">↗</span></a>
           </div>
         </div>
 
@@ -444,17 +471,11 @@
           <div class="card-body-v2">
             <h4>Polycarbonate Sheets</h4>
             <p>Outstanding clarity and strength, offering natural day-lighting and UV protection for premium architectural designs.</p>
-            <a href="products.html#polycarbonate" class="card-learn-more red-link">Learn More <span class="arrow">↗</span></a>
+            <a href="service-detail.html?service=polycarbonate" class="card-learn-more red-link">View Details <span class="arrow">↗</span></a>
           </div>
         </div>
       </div>
 
-      <!-- Carousel dots indicator -->
-      <div class="carousel-dots-wrapper">
-        <span class="dot"></span>
-        <span class="dot active-dot"></span>
-        <span class="dot"></span>
-      </div>
     </div>
   </section>
 
@@ -611,7 +632,10 @@
         <!-- Left Image Section with Floating Stat -->
         <div class="infra-v3-visual">
           <div class="infra-v3-img-wrapper">
-            <img src="peb shade.png" alt="DRIKON Manufacturing Plant Facility">
+            <video autoplay loop muted playsinline style="width: 100%; height: 100%; min-height: 560px; object-fit: cover; display: block; padding: 0; margin: 0; border-radius: 28px;">
+              <source src="adtionalimages/peb shade.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
             <div class="infra-v3-stat-card">
               <div class="infra-v3-stat-num">100+</div>
               <div>
@@ -1126,6 +1150,22 @@
     </div>
   </footer>
 
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919978387298?text=Hello%20Drikon%20Infratech,%20I%20would%20like%20to%20inquire%20about%20your%20PEB%20and%20Roofing%20services." 
+     class="whatsapp-float-btn" 
+     target="_blank" 
+     rel="noopener noreferrer" 
+     aria-label="Chat on WhatsApp with Drikon Infratech">
+    <div class="whatsapp-icon-wrapper">
+      <svg viewBox="0 0 32 32" class="whatsapp-svg">
+        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.738 5.575 2.138 8.013L.075 31.25a.8.8 0 0 0 .975.975l7.288-2.063A15.938 15.938 0 0 0 16 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.488 0-4.913-.663-7.038-1.925a.8.8 0 0 0-.588-.088l-5.112 1.45 1.45-5.113a.8.8 0 0 0-.087-.588C3.399 20.913 2.733 18.488 2.733 16c0-7.313 5.954-13.267 13.267-13.267S29.267 8.687 29.267 16c0 7.313-5.954 13.333-13.267 13.333zm7.688-9.875c-.425-.213-2.513-1.238-2.9-1.388-.388-.15-.675-.212-.963.213-.287.425-1.112 1.388-1.362 1.675-.25.288-.5.325-.925.113-.425-.213-1.8-.663-3.425-2.113-1.275-1.137-2.138-2.537-2.388-2.962-.25-.425-.025-.65.188-.863.188-.188.425-.5.638-.75.213-.25.287-.425.425-.713.137-.287.075-.537-.038-.75s-.963-2.325-1.325-3.187c-.35-.838-.712-.725-.975-.738-.25-.012-.538-.012-.825-.012s-.75.113-1.137.538c-.388.425-1.488 1.45-1.488 3.538s1.525 4.1 1.738 4.388c.212.287 3.012 4.6 7.3 6.45 1.025.438 1.825.7 2.45.9.1.038 1.95.788 2.875.7 1.025-.1 3.163-1.288 3.6-2.538.438-1.25.438-2.313.313-2.538-.125-.225-.413-.35-.838-.563z"/>
+      </svg>
+    </div>
+    <span class="whatsapp-tooltip">Chat with us</span>
+  </a>
+
+  <!-- GSAP Animation Library CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

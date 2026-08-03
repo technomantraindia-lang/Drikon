@@ -258,4 +258,98 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- Drikon Opening Animation Controller ---
+  initDrikonIntroAnimation();
 });
+
+function initDrikonIntroAnimation() {
+  const intro = document.getElementById("drikonIntro");
+  const skipButton = document.getElementById("skipIntro");
+
+  if (!intro) return;
+
+  document.body.classList.add("intro-active");
+
+  if (typeof gsap === "undefined") {
+    document.body.classList.remove("intro-active");
+    intro.remove();
+    return;
+  }
+
+  const shutterTop = document.querySelector(".intro-shutter-top");
+  const shutterBottom = document.querySelector(".intro-shutter-bottom");
+  const logoCard = document.querySelector(".intro-logo-card");
+  const shineBeam = document.querySelector(".logo-shine-beam");
+  const progressContainer = document.querySelector(".intro-progress-container");
+  const progressBar = document.getElementById("introProgressBar");
+  const tagline = document.getElementById("introTagline");
+
+  function finishIntro() {
+    document.body.classList.remove("intro-active");
+    if (intro && intro.parentNode) {
+      intro.remove();
+    }
+  }
+
+  // Initial State for Logo Creation Effect
+  gsap.set(logoCard, {
+    opacity: 0,
+    scale: 0.82,
+    clipPath: "inset(0% 0% 100% 0%)",
+    filter: "blur(12px) drop-shadow(0 0 0px rgba(6, 59, 120, 0))"
+  });
+
+  // Create GSAP Master Timeline
+  const timeline = gsap.timeline({
+    onComplete: finishIntro
+  });
+
+  timeline
+    // Step 1: Logo "Creates Itself" from top to bottom (roof down to base text)
+    .to(logoCard, {
+      opacity: 1,
+      clipPath: "inset(0% 0% 0% 0%)",
+      duration: 0.85,
+      ease: "power2.inOut"
+    })
+    // Step 2: Elastic 3D lock-in bounce & blur clear
+    .to(logoCard, {
+      scale: 1,
+      filter: "blur(0px) drop-shadow(0 14px 28px rgba(6, 59, 120, 0.15))",
+      duration: 0.5,
+      ease: "back.out(1.7)"
+    }, "-=0.3")
+    // Step 3: Metallic sheen sweeps across completed logo
+    .to(shineBeam, { left: "190%", duration: 0.85, ease: "power2.inOut" }, "-=0.2")
+    // Step 4: Progress bar fills smoothly under logo
+    .to(progressContainer, { opacity: 1, duration: 0.3 }, "-=0.6")
+    .to(progressBar, { width: "100%", duration: 1.1, ease: "power1.inOut" }, "-=0.4")
+    // Step 5: Tagline reveals
+    .to(tagline, { opacity: 1, y: 0, duration: 0.4 }, "-=0.7")
+    .to(skipButton, { opacity: 1, duration: 0.3 }, "-=0.6")
+
+    // Step 6: Grand White Curtain Split Reveal (No seam line)
+    .to([logoCard, progressContainer, tagline, skipButton], {
+      opacity: 0,
+      scale: 0.95,
+      duration: 0.38,
+      ease: "power2.in"
+    }, "+=0.15")
+    .to(shutterTop, {
+      yPercent: -100,
+      duration: 0.75,
+      ease: "power4.inOut"
+    })
+    .to(shutterBottom, {
+      yPercent: 100,
+      duration: 0.75,
+      ease: "power4.inOut"
+    }, "<");
+
+  if (skipButton) {
+    skipButton.addEventListener("click", () => {
+      timeline.progress(1);
+      finishIntro();
+    });
+  }
+}
