@@ -235,11 +235,14 @@ body {
 /* Dropdown Navigation Menu */
 .nav-item {
   position: relative;
+  /* Extend hover area downward to bridge gap between link and dropdown */
+  padding-bottom: 16px;
+  margin-bottom: -16px;
 }
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 100%;
+  top: calc(100% - 16px);
   left: 50%;
   transform: translateX(-50%);
   min-width: 250px;
@@ -249,8 +252,11 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   padding: 10px 0;
   z-index: 200;
-  margin-top: 10px;
+  opacity: 0;
+  transform: translateX(-50%) translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
 }
+
 .dropdown-menu::before {
   content: '';
   position: absolute;
@@ -262,9 +268,14 @@ body {
   background-color: var(--color-white);
   border-left: 1px solid rgba(0, 0, 0, 0.06);
   border-top: 1px solid rgba(0, 0, 0, 0.06);
+  z-index: 1;
 }
-.nav-item:hover .dropdown-menu {
+
+/* JS-controlled open state */
+.nav-item.dropdown-open .dropdown-menu {
   display: block;
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
 }
 .dropdown-menu li {
   list-style: none;
@@ -440,11 +451,11 @@ body {
 .badge-line {
   width: 50px;
   height: 2px;
-  background: linear-gradient(90deg, rgba(230, 46, 45, 0), #e62e2d);
+  background: linear-gradient(90deg, rgba(243, 106, 22, 0), #F47A20);
 }
 
 .subtitle-badge-wrapper .badge-line:last-child {
-  background: linear-gradient(90deg, #e62e2d, rgba(230, 46, 45, 0));
+  background: linear-gradient(90deg, #F47A20, rgba(243, 106, 22, 0));
 }
 
 .video-hero-subtitle {
@@ -1540,7 +1551,7 @@ body {
 }
 
 .cta-banner-card {
-  background-image: linear-gradient(to right, rgba(11, 18, 26, 0.85) 0%, rgba(11, 18, 26, 0.8) 35%, rgba(11, 18, 26, 0.6) 55%, rgba(11, 18, 26, 0.3) 75%, rgba(11, 18, 26, 0.05) 100%), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80');
+  background-image: linear-gradient(to right, rgba(11, 18, 26, 0.85) 0%, rgba(11, 18, 26, 0.8) 35%, rgba(11, 18, 26, 0.6) 55%, rgba(11, 18, 26, 0.3) 75%, rgba(11, 18, 26, 0.05) 100%), url('images/construction-high-rise-building-sunset.jpg');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
@@ -3436,5 +3447,391 @@ body.intro-active {
   }
   .whatsapp-tooltip {
     display: none !important;
+  }
+}
+
+/* ============================================================
+   OUR PRODUCTS ECOSYSTEM DIAGRAM SECTION
+   ============================================================ */
+.product-diagram-section {
+  padding: 0;
+  background: linear-gradient(135deg, #F4F7FA 0%, #E9EFF5 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.diagram-section-head {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 10px;
+}
+
+.diagram-title {
+  font-size: clamp(30px, 3.8vw, 42px);
+  font-weight: 900;
+  color: var(--primary-navy, #063B78);
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: -1.5px;
+  margin: 2px 0 4px;
+}
+
+.diagram-subtitle {
+  font-size: 15px;
+  color: #5A6A7A;
+  line-height: 1.4;
+}
+
+/* Diagram Canvas */
+.diagram-canvas {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  min-height: 370px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* SVG Connector lines overlay */
+.diagram-svg-connectors {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.connector-line {
+  fill: none;
+  stroke: #0D5FA8;
+  stroke-width: 2.8;
+  stroke-dasharray: 6 6;
+  opacity: 0.85;
+  transition: all 0.4s ease;
+}
+
+/* Central Hub Circle */
+.diagram-hub {
+  position: absolute;
+  z-index: 10;
+  width: 180px;
+  height: 180px;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #E5ECF3;
+  border: 4.5px solid #FFFFFF;
+  box-shadow: 0 14px 38px rgba(8, 43, 85, 0.16), inset 0 0 18px rgba(255, 255, 255, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.diagram-hub:hover {
+  transform: translate(-50%, -50%) scale(1.06);
+  box-shadow: 0 18px 45px rgba(243, 106, 22, 0.25);
+}
+
+.hub-inner {
+  text-align: center;
+}
+
+.hub-sub {
+  display: block;
+  font-size: 19px;
+  font-weight: 800;
+  color: #1E293B;
+  letter-spacing: 1.6px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.hub-main {
+  display: block;
+  font-size: 24px;
+  font-weight: 900;
+  color: #0F172A;
+  letter-spacing: -0.5px;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.1;
+}
+
+/* Diagram Nodes Grid */
+.diagram-nodes-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 380px;
+  z-index: 5;
+  position: relative;
+}
+
+.nodes-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.nodes-column.left-column {
+  align-items: flex-end;
+}
+
+.nodes-column.right-column {
+  align-items: flex-start;
+}
+
+.nodes-bottom {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Product Node Pill */
+.product-node-pill {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: #FFFFFF;
+  border: 3px solid #0D5FA8;
+  border-radius: 50px;
+  padding: 13px 26px;
+  text-decoration: none;
+  color: #0F172A;
+  box-shadow: 0 8px 24px rgba(8, 43, 85, 0.09);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  min-width: 300px;
+}
+
+.product-node-pill:hover {
+  transform: translateY(-4px) scale(1.03);
+  border-color: #F36A16;
+  box-shadow: 0 14px 32px rgba(243, 106, 22, 0.24);
+}
+
+.pill-text {
+  font-size: 15px;
+  font-weight: 900;
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 0.6px;
+  color: #1E293B;
+  flex: 1;
+  text-transform: uppercase;
+}
+
+.product-node-pill:hover .pill-text {
+  color: #F36A16;
+}
+
+.pill-icon-wrapper {
+  color: #0D5FA8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.product-node-pill:hover .pill-icon-wrapper {
+  color: #F36A16;
+  transform: scale(1.12);
+}
+
+/* Orange Bracket Accent Flanges */
+.pill-bracket-right {
+  position: absolute;
+  right: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 32px;
+  border-right: 4.5px solid #F36A16;
+  border-top: 4.5px solid #F36A16;
+  border-bottom: 4.5px solid #F36A16;
+  border-radius: 0 16px 16px 0;
+}
+
+.pill-bracket-left {
+  position: absolute;
+  left: -13px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 14px;
+  height: 32px;
+  border-left: 4.5px solid #F36A16;
+  border-top: 4.5px solid #F36A16;
+  border-bottom: 4.5px solid #F36A16;
+  border-radius: 16px 0 0 16px;
+}
+
+.pill-bracket-top {
+  position: absolute;
+  top: -13px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 14px;
+  border-top: 4.5px solid #F36A16;
+  border-left: 4.5px solid #F36A16;
+  border-right: 4.5px solid #F36A16;
+  border-radius: 16px 16px 0 0;
+}
+
+.product-node-pill.reverse-pill {
+  justify-content: space-between;
+}
+
+.product-node-pill.bottom-pill {
+  padding: 12px 28px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .diagram-svg-connectors {
+    display: none;
+  }
+  .diagram-canvas {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .diagram-hub {
+    position: relative;
+    margin-bottom: 40px;
+    width: 140px;
+    height: 140px;
+  }
+  .hub-sub { font-size: 15px; }
+  .hub-main { font-size: 18px; }
+
+  .diagram-nodes-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 18px;
+  }
+
+  .nodes-column.left-column,
+  .nodes-column.right-column {
+    align-items: center;
+  }
+
+  .product-node-pill {
+    min-width: 290px;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .pill-bracket-right, .pill-bracket-left, .pill-bracket-top {
+    display: none;
+  }
+}
+
+/* ============================================================
+   PEB FRAMING SYSTEMS SHOWCASE SECTION
+   ============================================================ */
+.peb-frames-section {
+  padding: 80px 0;
+  background: #FFFFFF;
+  position: relative;
+}
+
+.frames-header {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 50px;
+}
+
+.frames-main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.frame-system-card {
+  background: #F8FAFC;
+  border: 1px solid #E2E8F0;
+  border-radius: 16px;
+  padding: 24px;
+  transition: all 0.35s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.frame-system-card:hover {
+  transform: translateY(-5px);
+  border-color: #0D5FA8;
+  background: #FFFFFF;
+  box-shadow: 0 16px 36px rgba(8, 43, 85, 0.1);
+}
+
+.frame-diagram-box {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 12px;
+  overflow: hidden;
+  transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.frame-diagram-box img.frame-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.05));
+  transition: transform 0.35s ease;
+}
+
+.frame-system-card:hover .frame-diagram-box {
+  border-color: rgba(243, 106, 22, 0.4);
+  background: #FFFFFF;
+}
+
+.frame-system-card:hover .frame-diagram-box img.frame-img {
+  transform: scale(1.06);
+}
+
+.frame-system-card h4 {
+  font-size: 18px;
+  font-weight: 800;
+  color: #063B78;
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.frame-badge {
+  font-size: 11px;
+  font-weight: 800;
+  color: #F36A16;
+  background: rgba(243, 106, 22, 0.1);
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.frame-system-card p {
+  font-size: 13.5px;
+  color: #64748B;
+  line-height: 1.6;
+  margin-top: 8px;
+}
+
+@media (max-width: 991px) {
+  .frames-main-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .frames-main-grid {
+    grid-template-columns: 1fr;
   }
 }

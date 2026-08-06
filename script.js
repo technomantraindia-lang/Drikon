@@ -353,3 +353,61 @@ function initDrikonIntroAnimation() {
     });
   }
 }
+
+// Dynamic Bulletproof SVG Connector Line Anchoring for Product Ecosystem
+function updateDiagramConnectors() {
+  const canvas = document.querySelector('.diagram-canvas');
+  const hub = document.querySelector('.diagram-hub');
+  if (!canvas || !hub) return;
+
+  const canvasRect = canvas.getBoundingClientRect();
+  const hubRect = hub.getBoundingClientRect();
+
+  // Hub center relative to canvas
+  const hubX = hubRect.left + hubRect.width / 2 - canvasRect.left;
+  const hubY = hubRect.top + hubRect.height / 2 - canvasRect.top;
+
+  const connectors = [
+    { selector: '.left-column .product-node-pill:nth-child(1)', lineId: 'line-peb', type: 'left' },
+    { selector: '.left-column .product-node-pill:nth-child(2)', lineId: 'line-decking', type: 'left' },
+    { selector: '.left-column .product-node-pill:nth-child(3)', lineId: 'line-accessories', type: 'left' },
+    { selector: '.left-column .product-node-pill:nth-child(4)', lineId: 'line-ridge', type: 'left' },
+    { selector: '.right-column .product-node-pill:nth-child(1)', lineId: 'line-roofing', type: 'right' },
+    { selector: '.right-column .product-node-pill:nth-child(2)', lineId: 'line-puf', type: 'right' },
+    { selector: '.right-column .product-node-pill:nth-child(3)', lineId: 'line-cz', type: 'right' },
+    { selector: '.right-column .product-node-pill:nth-child(4)', lineId: 'line-turbo', type: 'right' },
+    { selector: '.bottom-pill', lineId: 'line-polycarbonate', type: 'bottom' }
+  ];
+
+  const svg = document.getElementById('diagramSvg');
+  if (svg) {
+    svg.setAttribute('viewBox', `0 0 ${canvasRect.width} ${canvasRect.height}`);
+  }
+
+  connectors.forEach(item => {
+    const pill = canvas.querySelector(item.selector);
+    const line = document.getElementById(item.lineId);
+    if (!pill || !line) return;
+
+    const bracket = pill.querySelector('.pill-bracket-right, .pill-bracket-left, .pill-bracket-top') || pill;
+    const bRect = bracket.getBoundingClientRect();
+
+    const targetX = bRect.left + bRect.width / 2 - canvasRect.left;
+    const targetY = bRect.top + bRect.height / 2 - canvasRect.top;
+
+    if (item.type === 'left') {
+      const midX = targetX + (hubX - targetX) * 0.45;
+      line.setAttribute('d', `M ${hubX} ${hubY} L ${midX} ${targetY} L ${targetX} ${targetY}`);
+    } else if (item.type === 'right') {
+      const midX = targetX - (targetX - hubX) * 0.45;
+      line.setAttribute('d', `M ${hubX} ${hubY} L ${midX} ${targetY} L ${targetX} ${targetY}`);
+    } else {
+      line.setAttribute('d', `M ${hubX} ${hubY} L ${targetX} ${targetY}`);
+    }
+  });
+}
+
+window.addEventListener('load', updateDiagramConnectors);
+window.addEventListener('resize', updateDiagramConnectors);
+document.addEventListener('DOMContentLoaded', updateDiagramConnectors);
+setTimeout(updateDiagramConnectors, 500);
