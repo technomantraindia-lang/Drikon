@@ -49,7 +49,6 @@ The website should communicate DRIKON's commitment to engineering excellence, ti
 | **Figure** | **Meaning**        |
 | ---------- | ------------------ |
 | **100+**   | Projects Delivered |
-| **50+**    | Satisfied Clients  |
 | **7+**     | Years of Expertise |
 | **100%**   | Quality Commitment |
 
@@ -265,7 +264,7 @@ PEB design and engineering, structural fabrication, manufacturing, roofing and c
 
 **VERIFIED FIGURES:**
 
-100+ projects delivered, 50+ satisfied clients, 7+ years of expertise and 100% quality commitment.
+100+ projects delivered, 7+ years of expertise and 100% quality commitment.
 
 **BRAND STYLE:**
 

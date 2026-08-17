@@ -1070,7 +1070,7 @@ body {
   padding: 35px 20px;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.03);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
 
