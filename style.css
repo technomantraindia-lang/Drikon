@@ -400,6 +400,9 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
+  min-height: 550px;
+  max-height: 1080px;
+  background: #03182E; /* Seamless deep navy background for uncropped video letterboxing */
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -410,13 +413,22 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
   transform: translate(-50%, -50%);
   object-fit: cover;
+  object-position: center center;
   z-index: 1;
+}
+
+/* Laptop & Desktop Uncropped Video Optimization */
+@media (min-width: 992px) {
+  .video-hero-section {
+    height: 92vh; /* Optimal height ratio for laptop viewports */
+  }
+  .hero-video-bg {
+    object-fit: contain; /* Shows 100% uncropped video on all laptop aspect ratios */
+  }
 }
 
 .video-hero-overlay {
@@ -425,7 +437,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(5, 46, 92, 0.75) 0%, rgba(6, 59, 120, 0.65) 55%, rgba(13, 95, 168, 0.55) 100%);
+  background: linear-gradient(135deg, rgba(5, 46, 92, 0.70) 0%, rgba(6, 59, 120, 0.60) 55%, rgba(13, 95, 168, 0.50) 100%);
   z-index: 2;
 }
 
