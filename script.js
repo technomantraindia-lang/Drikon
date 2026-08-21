@@ -70,15 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   achievements.forEach(ach => observer.observe(ach));
 
-  // Form submission handler
-  const form = document.querySelector('.enquiry-form');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      alert('Thank you! Your quote request has been received. Our estimating team will contact you shortly.');
-      form.reset();
-    });
-  }
+  // Form submission handler removed to allow FormSubmit handling
 
   // Force Autoplay for HTML5 Hero Video
   const heroVideo = document.querySelector('.hero-video-bg');
@@ -102,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const wrapper = document.querySelector('.projects-carousel-wrapper');
   
   if (track && slides.length > 0 && wrapper) {
-    let currentIndex = 1; // Start with the 2nd slide active
+    let currentIndex = 0; // Start with the 1st slide active
     
     const updateCarousel = () => {
       // 1. Update active slide class
@@ -129,10 +121,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const wrapperWidth = wrapper.offsetWidth;
       
       // Keep widths synchronized with CSS values
-      const isMobile = window.innerWidth <= 991;
-      const shrinkWidth = isMobile ? 260 : 280;
-      const activeWidth = isMobile ? 320 : 520;
-      const gap = 30;
+      const isMobile = window.innerWidth <= 768;
+      const isTablet = window.innerWidth > 768 && window.innerWidth <= 991;
+      const shrinkWidth = isMobile ? Math.min(260, window.innerWidth - 80) : (isTablet ? 240 : 280);
+      const activeWidth = isMobile ? Math.min(310, window.innerWidth - 40) : (isTablet ? 380 : 520);
+      const gap = isMobile ? 15 : 30;
       
       const activeLeft = currentIndex * (shrinkWidth + gap);
       const translateVal = (wrapperWidth / 2) - (activeLeft + activeWidth / 2);
@@ -411,3 +404,238 @@ window.addEventListener('load', updateDiagramConnectors);
 window.addEventListener('resize', updateDiagramConnectors);
 document.addEventListener('DOMContentLoaded', updateDiagramConnectors);
 setTimeout(updateDiagramConnectors, 500);
+
+// --- 8. PEB Framing Systems Carousel Slider ---
+function initFramesSlider() {
+  const track = document.getElementById('framesSliderTrack');
+  const wrapper = document.getElementById('framesCarouselWrapper');
+  const prevBtn = document.getElementById('framePrevBtn');
+  const nextBtn = document.getElementById('frameNextBtn');
+  const dotsWrapper = document.getElementById('framesDotsWrapper');
+
+  if (!track || !wrapper) return;
+
+  const cards = Array.from(track.querySelectorAll('.frame-system-card'));
+  if (cards.length === 0) return;
+
+  let currentIndex = 0;
+  let isDragging = false;
+  let startX = 0;
+  let currentTranslate = 0;
+  let prevTranslate = 0;
+  let animationId = 0;
+  let autoplayTimer = null;
+
+  function getCardsPerView() {
+    if (window.innerWidth <= 640) return 1;
+    if (window.innerWidth <= 991) return 2;
+    return 3;
+  }
+
+  function getMaxIndex() {
+    const cardsPerView = getCardsPerView();
+    return Math.max(0, cards.length - cardsPerView);
+  }
+
+  function updateDots() {
+    if (!dotsWrapper) return;
+    dotsWrapper.innerHTML = '';
+    const maxIdx = getMaxIndex();
+    const totalDots = maxIdx + 1;
+
+    for (let i = 0; i < totalDots; i++) {
+      const dot = document.createElement('button');
+      dot.className = `frame-dot ${i === currentIndex ? 'active-dot' : ''}`;
+      dot.setAttribute('aria-label', `Go to slide ${i + 1}`);
+      dot.addEventListener('click', () => {
+        goToSlide(i);
+      });
+      dotsWrapper.appendChild(dot);
+    }
+  }
+
+  function updateSlider() {
+    const maxIdx = getMaxIndex();
+    if (currentIndex > maxIdx) currentIndex = maxIdx;
+    if (currentIndex < 0) currentIndex = 0;
+
+    const cardWidth = cards[0].offsetWidth;
+    const gap = 24; // Synchronized with CSS gap
+    const translateVal = -(currentIndex * (cardWidth + gap));
+    currentTranslate = translateVal;
+    prevTranslate = translateVal;
+
+    track.style.transform = `translateX(${translateVal}px)`;
+
+    // Update buttons
+    if (prevBtn) {
+      prevBtn.disabled = currentIndex === 0;
+      prevBtn.classList.toggle('disabled', currentIndex === 0);
+    }
+    if (nextBtn) {
+      nextBtn.disabled = currentIndex >= maxIdx;
+      nextBtn.classList.toggle('disabled', currentIndex >= maxIdx);
+    }
+
+    // Update active dot
+    if (dotsWrapper) {
+      const dots = dotsWrapper.querySelectorAll('.frame-dot');
+      dots.forEach((d, i) => {
+        d.classList.toggle('active-dot', i === currentIndex);
+      });
+    }
+  }
+
+  function goToSlide(index) {
+    currentIndex = index;
+    updateSlider();
+    resetAutoplay();
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = getMaxIndex();
+      }
+      updateSlider();
+      resetAutoplay();
+    });
+  }
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      const maxIdx = getMaxIndex();
+      if (currentIndex < maxIdx) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      updateSlider();
+      resetAutoplay();
+    });
+  }
+
+  // Touch and Drag Handling
+  function getPositionX(e) {
+    return e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+  }
+
+  function touchStart(e) {
+    isDragging = true;
+    startX = getPositionX(e);
+    track.classList.add('dragging');
+    animationId = requestAnimationFrame(animation);
+    clearInterval(autoplayTimer);
+  }
+
+  function touchMove(e) {
+    if (!isDragging) return;
+    const currentX = getPositionX(e);
+    const diff = currentX - startX;
+    currentTranslate = prevTranslate + diff;
+  }
+
+  function touchEnd() {
+    if (!isDragging) return;
+    isDragging = false;
+    cancelAnimationFrame(animationId);
+    track.classList.remove('dragging');
+
+    const movedBy = currentTranslate - prevTranslate;
+
+    if (movedBy < -50 && currentIndex < getMaxIndex()) {
+      currentIndex++;
+    } else if (movedBy > 50 && currentIndex > 0) {
+      currentIndex--;
+    }
+
+    updateSlider();
+    resetAutoplay();
+  }
+
+  function animation() {
+    if (isDragging) {
+      track.style.transform = `translateX(${currentTranslate}px)`;
+      requestAnimationFrame(animation);
+    }
+  }
+
+  // Event Listeners for Drag
+  track.addEventListener('touchstart', touchStart, { passive: true });
+  track.addEventListener('touchmove', touchMove, { passive: true });
+  track.addEventListener('touchend', touchEnd);
+
+  track.addEventListener('mousedown', touchStart);
+  window.addEventListener('mousemove', touchMove);
+  window.addEventListener('mouseup', () => {
+    if (isDragging) touchEnd();
+  });
+
+  // Autoplay
+  function startAutoplay() {
+    autoplayTimer = setInterval(() => {
+      const maxIdx = getMaxIndex();
+      if (currentIndex < maxIdx) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
+      }
+      updateSlider();
+    }, 4500);
+  }
+
+  function resetAutoplay() {
+    clearInterval(autoplayTimer);
+    startAutoplay();
+  }
+
+  wrapper.addEventListener('mouseenter', () => clearInterval(autoplayTimer));
+  wrapper.addEventListener('mouseleave', startAutoplay);
+
+  // Resize & init
+  window.addEventListener('resize', () => {
+    updateDots();
+    updateSlider();
+  });
+
+  updateDots();
+  updateSlider();
+  startAutoplay();
+}
+
+window.addEventListener('DOMContentLoaded', initFramesSlider);
+window.addEventListener('load', initFramesSlider);
+
+// Mobile Navigation Toggle Menu
+document.addEventListener('DOMContentLoaded', () => {
+  const mobileToggleBtn = document.getElementById('mobileToggleBtn');
+  const navMenu = document.getElementById('navMenu');
+
+  if (mobileToggleBtn && navMenu) {
+    mobileToggleBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      mobileToggleBtn.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !mobileToggleBtn.contains(e.target)) {
+        mobileToggleBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+
+    // Close menu when navigation link is clicked
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileToggleBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+  }
+});
+

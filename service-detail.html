@@ -945,6 +945,7 @@
       }
     }
   </style>
+<link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
@@ -979,7 +980,7 @@
         <img src="Drikon Infratech Logo Final_1.png" alt="Drikon Infratech Logo" class="logo-img">
       </a>
       
-      <nav class="nav-menu">
+      <nav class="nav-menu" id="navMenu">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
@@ -1000,7 +1001,7 @@
         </ul>
       </nav>
       
-      <div class="header-cta">
+      <div class="header-right-actions">
         <a href="tel:+918140904857" class="cta-btn">
           <span class="phone-icon-wrapper">
             <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -1009,6 +1010,11 @@
           </span>
           <span class="cta-phone">Call Drikon</span>
         </a>
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle Navigation Menu" type="button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
     </div>
   </header>
@@ -1215,28 +1221,33 @@
       <div class="cta-split-grid">
         <div class="cta-left-form-card">
           <h3 style="font-size: 22px; font-weight: 800; margin-bottom: 20px; color: #fff; font-family: 'Outfit', sans-serif;">Request Quotation</h3>
-          <form class="enquiry-form">
+          <form action="https://formsubmit.co/drikoninfratech2026@gmail.com" method="POST" class="enquiry-form">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="New Quotation Request - DRIKON Infratech">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+
             <div class="form-group-row">
               <div class="form-group">
                 <label class="form-label">Your Name</label>
-                <input type="text" class="form-input" placeholder="Full Name" required>
+                <input type="text" name="Full Name" class="form-input" placeholder="Full Name" required>
               </div>
               <div class="form-group">
                 <label class="form-label">Phone Number</label>
-                <input type="tel" class="form-input" placeholder="Mobile No." required>
+                <input type="tel" name="Phone Number" class="form-input" placeholder="Mobile No." required>
               </div>
             </div>
             <div class="form-group">
               <label class="form-label">Email Address</label>
-              <input type="email" class="form-input" placeholder="name@company.com" required>
+              <input type="email" name="Email Address" class="form-input" placeholder="name@company.com" required>
             </div>
             <div class="form-group">
               <label class="form-label">Project Location / Span Size</label>
-              <input type="text" class="form-input" placeholder="City / Dimensions (e.g. 30m x 60m)">
+              <input type="text" name="Location & Dimensions" class="form-input" placeholder="City / Dimensions (e.g. 30m x 60m)">
             </div>
             <div class="form-group">
               <label class="form-label">Requirements</label>
-              <textarea class="form-textarea" rows="3" placeholder="Specify requirements or ask questions..."></textarea>
+              <textarea name="Requirements" class="form-textarea" rows="3" placeholder="Specify requirements or ask questions..."></textarea>
             </div>
             <button type="submit" class="btn-form-submit">Submit Inquiry</button>
           </form>
@@ -1270,71 +1281,79 @@
   </section>
 
   <!-- Footer -->
-  <footer class="site-footer">
+  <footer class="footer-v2">
     <div class="container">
-      <div class="footer-grid">
-        <div>
-          <img src="Drikon Infratech Logo Final_1.png" alt="DRIKON Logo" class="footer-logo-img" style="filter: brightness(0) invert(1);">
-          <p class="footer-brand-desc">DRIKON Infratech Pvt. Ltd. delivers robust, efficient, and future-ready Pre-Engineered Buildings, roofing systems, and structural infrastructure solutions across India.</p>
-          <div class="footer-contact-items">
-            <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span>FF 412, S9 Square, Sama Savli Road, Vadodara - 390024, Gujarat, India.</span>
-            </div>
-            <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <a href="tel:+918140904857">+91 81409 04857</a> &nbsp;|&nbsp;
-              <a href="tel:+919714759141">+91 97147 59141</a>
-            </div>
-            <div class="footer-contact-item">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <div>
+      <div class="footer-grid-v2">
+        <!-- Col 1 -->
+        <div class="footer-col">
+          <div class="footer-logo-brand">
+            <a href="index.html">
+              <img src="Drikon Infratech Logo Final_1.png" alt="Drikon Infratech Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <p class="footer-brand-desc">
+            At DRIKON Infratech Pvt Ltd, we are committed to delivering high-performance structural systems, Pre-Engineered Buildings (PEBs), and roofing sheets.
+          </p>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-v2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products &amp; Services</a></li>
+            <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <h4>Our Products</h4>
+          <ul class="footer-links-v2">
+            <li><a href="service-detail.html?service=peb-systems">Pre-Engineered Buildings</a></li>
+            <li><a href="service-detail.html?service=roofing-sheets">Roofing Sheets</a></li>
+            <li><a href="service-detail.html?service=puf-panels">Insulated PUF Panels</a></li>
+            <li><a href="service-detail.html?service=polycarbonate">Polycarbonate Sheets</a></li>
+            <li><a href="service-detail.html?service=decking-sheets">Decking Sheet Systems</a></li>
+            <li><a href="service-detail.html?service=cz-purlins">Structural C &amp; Z Purlins</a></li>
+            <li><a href="service-detail.html?service=ventilators">Air Ventilation Systems</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col">
+          <h4>Contact &amp; Locations</h4>
+          <div class="footer-contact-info-v2">
+            <p class="contact-item" style="align-items: flex-start;">
+              <span class="icon">📞</span>
+              <span>
+                <a href="tel:+918140904857">+91 81409 04857</a><br>
+                <a href="tel:+919714759141">+91 97147 59141</a>
+              </span>
+            </p>
+            <p class="contact-item" style="align-items: flex-start;">
+              <span class="icon">✉️</span>
+              <span>
                 <a href="mailto:drikoninfratech2026@gmail.com">drikoninfratech2026@gmail.com</a><br>
                 <a href="mailto:kautik@drikoninfratech.com">kautik@drikoninfratech.com</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Quick Links</h4>
-          <div class="footer-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="products.html">Products Range</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact Us</a>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Core Products</h4>
-          <div class="footer-links">
-            <a href="service-detail.html?service=peb-systems">PEB Systems</a>
-            <a href="service-detail.html?service=roofing-sheets">Roofing Sheets</a>
-            <a href="service-detail.html?service=puf-panels">Insulated PUF Panels</a>
-            <a href="service-detail.html?service=polycarbonate">Polycarbonate Sheets</a>
-            <a href="service-detail.html?service=decking-sheets">Decking Sheets</a>
-            <a href="service-detail.html?service=cz-purlins">C &amp; Z Purlins</a>
-            <a href="service-detail.html?service=ventilators">Air Ventilators</a>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="footer-col-title">Manufacturing</h4>
-          <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); line-height: 1.6;">Survey No. 209, Rajli Gam, Vadodara, Dabhoi Road - 391107, Gujarat, India.</p>
-          <div class="footer-social">
-            <a href="#" class="social-icon"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+              </span>
+            </p>
+            <p class="contact-item" style="align-items: flex-start;">
+              <span class="icon">📍</span>
+              <span>
+                <strong>Corp. Office:</strong> FF 412, S9 Square, Sama Savli Road, Vadodara - 390024, Gujarat<br><br>
+                <strong>Factory Unit:</strong> Survey No. 209, Village Rajli, Dabhoi Road, Vadodara - 391107, Gujarat
+              </span>
+            </p>
           </div>
         </div>
       </div>
-
-      <div class="footer-bottom">
-        <div class="footer-copy">&copy; 2026 DRIKON Infratech Pvt. Ltd. All rights reserved.</div>
-        <div class="footer-legal">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-        </div>
+      
+      <div class="footer-bottom-v2">
+        <p>&copy; 2026 DRIKON Infratech Pvt. Ltd. All Rights Reserved. <span class="footer-credit-separator">|</span> Designed &amp; Developed by <a href="https://technomantra.in/" target="_blank" rel="noopener" class="technomantra-highlight">Technomantra</a></p>
       </div>
     </div>
   </footer>
@@ -1357,3 +1376,4 @@
   <script src="service-detail.js"></script>
 </body>
 </html>
+

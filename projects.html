@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="pages.css">
+<link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
 
@@ -44,7 +45,7 @@
         <img src="Drikon Infratech Logo Final_1.png" alt="Drikon Infratech Logo" class="logo-img">
       </a>
       
-      <nav class="nav-menu">
+      <nav class="nav-menu" id="navMenu">
         <ul class="nav-list">
           <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
@@ -65,7 +66,7 @@
         </ul>
       </nav>
       
-      <div class="header-cta">
+      <div class="header-right-actions">
         <a href="tel:+918140904857" class="cta-btn">
           <span class="phone-icon-wrapper">
             <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
@@ -74,16 +75,244 @@
           </span>
           <span class="cta-phone">Call Drikon</span>
         </a>
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle Navigation Menu" type="button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
       </div>
     </div>
   </header>
-  <nav class="mobile-nav" id="mobileNav"><button class="mobile-nav-close" id="mobileNavClose">&times;</button><a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="projects.html">Projects</a><a href="contact.html">Contact Us</a><a href="contact.html" class="btn-quote">Get a Quote</a></nav>
+
 
   <section class="page-hero"><div class="container"><div class="page-hero-breadcrumb"><a href="index.html">Home</a><span class="bc-sep">›</span><span>Projects</span></div><div class="page-hero-eyebrow">Our Portfolio</div><h1 class="page-hero-title">Structures Built for Performance</h1><p class="page-hero-desc">100+ industrial warehouses, factories, commercial structures and PEB sheds delivered with precision and engineering excellence across Gujarat and India.</p></div></section>
 
-  <main class="page-content"><div class="container"><div class="coming-soon"><div class="coming-soon-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg></div><h2>Content Coming Soon</h2><p>The Projects page will display our portfolio of completed industrial warehouses, factories, logistics facilities, commercial structures and PEB sheds. Verified project data will be added upon client approval.</p><a href="index.html" class="btn-back"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>Back to Home</a></div></div></main>
+  <!-- Featured Project Highlight Section -->
+  <section class="featured-project-highlight-section">
+    <div class="container">
+      <div class="featured-project-grid">
+        <div class="featured-project-img-box">
+          <img src="project-images/staircase-structure.jpg" alt="Featured Project - Multi-Story External Staircase Framework" class="featured-project-img">
+        </div>
+        <div class="featured-project-info">
+          <span class="featured-project-tag">Featured Landmark Engineering</span>
+          <h2 class="featured-project-title">Multi-Story External Structural Steel Staircase Framework</h2>
+          <p class="featured-project-desc">
+            Precision-engineered multi-tier external emergency exit and access framework constructed with heavy-duty structural steel columns, custom anti-slip treads, and weather-resistant protective coatings engineered for maximum safety and structural longevity.
+          </p>
+          <div class="featured-project-metrics">
+            <div class="metric-item">
+              <div class="metric-num">100%</div>
+              <div class="metric-lbl">Custom Steel Fabrication</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-num">Multi-Tier</div>
+              <div class="metric-lbl">Heavy Structural Framing</div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-num">Zero-Defect</div>
+              <div class="metric-lbl">On-Site Erection</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <footer class="site-footer"><div class="container"><div class="footer-grid"><div><img src="Drikon Infratech Logo Final_1.png" alt="DRIKON Infratech" class="footer-logo-img"><p class="footer-brand-desc">DRIKON Infratech Pvt. Ltd. delivers end-to-end Pre-Engineered Building, roofing and infrastructure solutions engineered for strength, efficiency and long-term performance.</p><div class="footer-contact-items"><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><a href="tel:+918140904857">+91 81409 04857</a> &nbsp;|&nbsp; <a href="tel:+919714759141">+91 97147 59141</a></div></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div><a href="mailto:drikoninfratech2026@gmail.com">drikoninfratech2026@gmail.com</a><br><a href="mailto:kautik@drikoninfratech.com">kautik@drikoninfratech.com</a></div></div><div class="footer-contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>FF 412, S9 Square, Sama Savli Road, Vadodara - 390024, Gujarat.</span></div></div><div class="footer-social"><a href="#" class="social-icon" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a><a href="#" class="social-icon" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="#" class="social-icon" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a><a href="https://wa.me/918140904857" class="social-icon" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a></div></div><div><h4 class="footer-col-title">Quick Links</h4><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="products.html">Products</a><a href="projects.html">Projects</a><a href="contact.html">Contact Us</a></div></div><div><h4 class="footer-col-title">Our Products</h4><div class="footer-links"><a href="products.html#peb-systems">PEB Systems</a><a href="products.html#roofing-sheets">Roofing Sheets</a><a href="products.html#puf-panels">Roof PUF Panels</a><a href="products.html#decking-sheets">Decking Sheets</a><a href="products.html#cz-purlins">C &amp; Z Purlins</a><a href="products.html#ventilators">Turbo Ventilators</a><a href="products.html#polycarbonate">Polycarbonate Sheets</a><a href="products.html#insulation">Insulation Solutions</a></div></div><div><h4 class="footer-col-title">Our Services</h4><div class="footer-links"><a href="products.html">PEB Design &amp; Engineering</a><a href="products.html">Structural Fabrication</a><a href="products.html">PEB Manufacturing</a><a href="products.html">Roofing &amp; Cladding</a><a href="products.html">Installation &amp; Erection</a><a href="products.html">Turnkey Execution</a><a href="products.html">Ventilation Solutions</a><a href="contact.html">Request a Quote</a></div></div></div><div class="footer-bottom"><p class="footer-copy">&copy; 2026 DRIKON Infratech Pvt. Ltd. All Rights Reserved.</p><div class="footer-legal"><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms &amp; Conditions</a><a href="sitemap.html">Sitemap</a></div></div></div></footer>
+  <main class="page-content">
+    <div class="container" style="padding: 60px 0;">
+      <h3 style="font-size: 24px; font-weight: 800; color: #0B121A; margin-bottom: 30px;">All Completed Projects</h3>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px;">
+        
+        <!-- Card 1 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/DJI_20260813172818_0171_D_SE.jpg" alt="Industrial Manufacturing Complex PEB Shed" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">PEB Structural Complex</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Industrial Manufacturing Plant &amp; High-Span PEB Shed</h4>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/staircase-structure.jpg" alt="Multi-Story External Staircase Framework" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Structural Steelwork</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Multi-Story External Staircase &amp; Access Framework</h4>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/WhatsApp Image 2026-08-21 at 14.16.19.jpeg" alt="Industrial Heavy PEB Shed Erection" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">PEB Erection</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Heavy-Duty Industrial Storage Warehouse Shed</h4>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/WhatsApp Image 2026-08-21 at 14.17.33.jpeg" alt="High-Span Roofing & Structural Framework" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Roofing Systems</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Wide-Span Metal Roofing &amp; Purlin Structure</h4>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/WhatsApp Image 2026-08-21 at 14.20.59.jpeg" alt="Factory Building Steel Fabrication" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Steel Fabrication</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Custom Industrial Steel Truss &amp; Column Assembly</h4>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/WhatsApp Image 2026-08-21 at 14.21.00.jpeg" alt="Insulated PUF Panel Cladding Shed" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">PUF Wall &amp; Roof</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Insulated Thermal PUF Panel Facility Shed</h4>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/WhatsApp Image 2026-08-21 at 14.22.26.jpeg" alt="Heavy Duty Industrial PEB Framework" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Primary Structural Framing</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">High-Load Steel Column &amp; Rafter Assembly</h4>
+          </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/WhatsApp Image 2026-08-21 at 14.16.34.jpeg" alt="Commercial PEB Facility" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Commercial Facility</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Precision Engineered Industrial Workshop</h4>
+          </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/1200px-thumbnail.jpg" alt="Industrial Manufacturing Complex" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Turnkey PEB Shed</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Turnkey Manufacturing Unit &amp; Storage Facility</h4>
+          </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/image copy 2.png" alt="Retail Distribution Mega Hub" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Logistics Park</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Retail Distribution Mega Hub</h4>
+          </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/image copy 3.png" alt="Cement Plant High-Span Decking" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Composite Framing</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Cement Plant High-Span Decking</h4>
+          </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="project-card" style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.08); position: relative; background: #fff;">
+          <img src="project-images/image copy.png" alt="Cargo Depot Heavy Steel Structure" style="width: 100%; height: 280px; object-fit: cover; display: block;">
+          <div style="padding: 24px;">
+            <span style="font-size: 12px; font-weight: 700; color: #E31837; text-transform: uppercase; letter-spacing: 1px;">Multi-Story Steel</span>
+            <h4 style="font-size: 19px; font-weight: 700; color: #0B121A; margin-top: 8px;">Cargo Depot Heavy Steel Structure</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer-v2">
+    <div class="container">
+      <div class="footer-grid-v2">
+        <!-- Col 1 -->
+        <div class="footer-col">
+          <div class="footer-logo-brand">
+            <a href="index.html">
+              <img src="Drikon Infratech Logo Final_1.png" alt="Drikon Infratech Logo" class="footer-logo-img">
+            </a>
+          </div>
+          <p class="footer-brand-desc">
+            At DRIKON Infratech Pvt Ltd, we are committed to delivering high-performance structural systems, Pre-Engineered Buildings (PEBs), and roofing sheets.
+          </p>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links-v2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products &amp; Services</a></li>
+            <li><a href="projects.html">Our Projects</a></li>
+            <li><a href="index.html#faq">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <h4>Our Products</h4>
+          <ul class="footer-links-v2">
+            <li><a href="products.html#peb-systems">Pre-Engineered Buildings</a></li>
+            <li><a href="products.html#roofing-sheets">Roofing Sheets</a></li>
+            <li><a href="products.html#puf-panels">Insulated PUF Panels</a></li>
+            <li><a href="products.html#polycarbonate">Polycarbonate Sheets</a></li>
+            <li><a href="products.html#decking-sheets">Decking Sheet Systems</a></li>
+            <li><a href="products.html#cz-purlins">Structural C &amp; Z Purlins</a></li>
+            <li><a href="products.html#ventilators">Air Ventilation Systems</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col">
+          <h4>Contact &amp; Locations</h4>
+          <div class="footer-contact-info-v2">
+            <p class="contact-item" style="align-items: flex-start;">
+              <span class="icon">📞</span>
+              <span>
+                <a href="tel:+918140904857">+91 81409 04857</a><br>
+                <a href="tel:+919714759141">+91 97147 59141</a>
+              </span>
+            </p>
+            <p class="contact-item" style="align-items: flex-start;">
+              <span class="icon">✉️</span>
+              <span>
+                <a href="mailto:drikoninfratech2026@gmail.com">drikoninfratech2026@gmail.com</a><br>
+                <a href="mailto:kautik@drikoninfratech.com">kautik@drikoninfratech.com</a>
+              </span>
+            </p>
+            <p class="contact-item" style="align-items: flex-start;">
+              <span class="icon">📍</span>
+              <span>
+                <strong>Corp. Office:</strong> FF 412, S9 Square, Sama Savli Road, Vadodara - 390024, Gujarat<br><br>
+                <strong>Factory Unit:</strong> Survey No. 209, Village Rajli, Dabhoi Road, Vadodara - 391107, Gujarat
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom-v2">
+        <p>&copy; 2026 DRIKON Infratech Pvt. Ltd. All Rights Reserved. <span class="footer-credit-separator">|</span> Designed &amp; Developed by <a href="https://technomantra.in/" target="_blank" rel="noopener" class="technomantra-highlight">Technomantra</a></p>
+      </div>
+    </div>
+  </footer>
   <!-- Floating WhatsApp Button -->
   <a href="https://wa.me/918140904857?text=Hello%20Drikon%20Infratech,%20I%20would%20like%20to%20inquire%20about%20your%20PEB%20and%20Roofing%20services." 
      class="whatsapp-float-btn" 
@@ -97,6 +326,7 @@
     </div>
     <span class="whatsapp-tooltip">Chat with us</span>
   </a>
-  <script>const hamburger=document.getElementById('hamburger'),mobileNav=document.getElementById('mobileNav'),closeBtn=document.getElementById('mobileNavClose');hamburger.addEventListener('click',()=>{hamburger.classList.toggle('open');mobileNav.classList.toggle('open');document.body.style.overflow=mobileNav.classList.contains('open')?'hidden':'';});closeBtn.addEventListener('click',()=>{hamburger.classList.remove('open');mobileNav.classList.remove('open');document.body.style.overflow='';});</script>
+  <script src="script.js"></script>
 </body>
 </html>
+
