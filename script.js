@@ -172,6 +172,17 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
+    // Slide Click Listener
+    slides.forEach((slide, idx) => {
+      slide.addEventListener('click', (e) => {
+        if (isDragging) return;
+        if (currentIndex !== idx) {
+          currentIndex = idx;
+          updateCarousel();
+        }
+      });
+    });
+
     // Drag / Swipe support
     let startX = 0;
     let currentX = 0;
@@ -188,65 +199,71 @@ document.addEventListener('DOMContentLoaded', () => {
     wrapper.addEventListener('mousedown', (e) => {
       // Don't drag if clicking buttons
       if (e.target.closest('.slider-arrow')) return;
-      isDragging = true;
+      isDragging = false;
       startX = e.clientX;
       startTranslate = getTranslateX();
       track.style.transition = 'none';
-      wrapper.style.cursor = 'grabbing';
     });
     
     window.addEventListener('mousemove', (e) => {
-      if (!isDragging) return;
-      currentX = e.clientX;
-      const diff = currentX - startX;
-      track.style.transform = `translateX(${startTranslate + diff}px)`;
+      if (startX === 0) return;
+      const diff = e.clientX - startX;
+      if (Math.abs(diff) > 5) {
+        isDragging = true;
+        currentX = e.clientX;
+        track.style.transform = `translateX(${startTranslate + diff}px)`;
+      }
     });
     
     window.addEventListener('mouseup', (e) => {
-      if (!isDragging) return;
-      isDragging = false;
+      if (startX === 0) return;
       track.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
-      wrapper.style.cursor = 'grab';
       
       const diff = e.clientX - startX;
-      if (Math.abs(diff) > 100) {
+      if (isDragging && Math.abs(diff) > 80) {
         if (diff > 0 && currentIndex > 0) {
           currentIndex--;
         } else if (diff < 0 && currentIndex < slides.length - 1) {
           currentIndex++;
         }
       }
+      startX = 0;
+      setTimeout(() => { isDragging = false; }, 50);
       updateCarousel();
     });
 
     // Touch Swiping (Mobile)
     wrapper.addEventListener('touchstart', (e) => {
-      isDragging = true;
+      isDragging = false;
       startX = e.touches[0].clientX;
       startTranslate = getTranslateX();
       track.style.transition = 'none';
     });
     
     wrapper.addEventListener('touchmove', (e) => {
-      if (!isDragging) return;
-      currentX = e.touches[0].clientX;
-      const diff = currentX - startX;
-      track.style.transform = `translateX(${startTranslate + diff}px)`;
+      if (startX === 0) return;
+      const diff = e.touches[0].clientX - startX;
+      if (Math.abs(diff) > 5) {
+        isDragging = true;
+        currentX = e.touches[0].clientX;
+        track.style.transform = `translateX(${startTranslate + diff}px)`;
+      }
     });
     
     wrapper.addEventListener('touchend', (e) => {
-      if (!isDragging) return;
-      isDragging = false;
+      if (startX === 0) return;
       track.style.transition = 'transform 0.5s cubic-bezier(0.25, 1, 0.5, 1)';
       
       const diff = e.changedTouches[0].clientX - startX;
-      if (Math.abs(diff) > 50) {
+      if (isDragging && Math.abs(diff) > 50) {
         if (diff > 0 && currentIndex > 0) {
           currentIndex--;
         } else if (diff < 0 && currentIndex < slides.length - 1) {
           currentIndex++;
         }
       }
+      startX = 0;
+      setTimeout(() => { isDragging = false; }, 50);
       updateCarousel();
     });
   }

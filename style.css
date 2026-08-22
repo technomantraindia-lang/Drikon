@@ -2177,11 +2177,7 @@ body {
   margin: 0 auto;
   overflow: hidden;
   padding: 40px 0;
-  cursor: grab;
-}
-
-.projects-carousel-wrapper:active {
-  cursor: grabbing;
+  cursor: default;
 }
 
 .projects-carousel-track {
@@ -2204,6 +2200,7 @@ body {
   flex-shrink: 0;
   opacity: 0.55;
   transform: scale(0.92);
+  cursor: default;
   transition: width 0.5s cubic-bezier(0.25, 1, 0.5, 1),
               opacity 0.5s ease,
               transform 0.5s ease,
@@ -2234,11 +2231,14 @@ body {
   position: absolute;
   bottom: 24px;
   left: 24px;
-  background-color: var(--color-white);
-  padding: 30px 65px 25px 30px;
-  border-radius: 20px;
-  max-width: 85%;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  right: 24px;
+  width: auto;
+  max-width: none;
+  background-color: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  padding: 20px 65px 20px 24px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
   z-index: 5;
   opacity: 0;
   visibility: hidden;
@@ -2259,49 +2259,53 @@ body {
   text-transform: uppercase;
   letter-spacing: 1px;
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 .project-overlay-box h4 {
   font-family: var(--font-main);
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 700;
   line-height: 1.35;
   color: var(--color-text-main);
-  letter-spacing: -0.5px;
+  letter-spacing: -0.3px;
+  margin: 0;
 }
 
 .overlay-arrow-badge {
   position: absolute;
-  top: -20px;
-  right: -20px;
-  width: 44px;
-  height: 44px;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: var(--color-primary); /* Corporate orange badge */
   color: var(--color-white);
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 8px 20px rgba(243, 106, 22, 0.3);
-  transition: transform 0.3s ease;
+  box-shadow: 0 6px 16px rgba(243, 106, 22, 0.35);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .project-slide:hover .overlay-arrow-badge {
-  transform: scale(1.1) rotate(45deg);
+  transform: translateY(-50%) scale(1.1) rotate(45deg);
 }
 
 /* Floating Navigation Arrows */
 .slider-nav-arrows {
   position: absolute;
-  top: calc(50% + 40px); /* Center aligned with the 480px height slider container */
-  left: 10px;
-  right: 10px;
+  top: calc(50% + 20px);
+  left: 0;
+  right: 0;
+  width: 100%;
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
   pointer-events: none;
   z-index: 30;
+  padding: 0 5px;
 }
 
 .slider-arrow {
@@ -2309,14 +2313,14 @@ body {
   height: 50px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.95);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   color: var(--color-text-main);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   pointer-events: auto;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
   transition: var(--transition-smooth);
 }
 
@@ -2324,7 +2328,7 @@ body {
   background: var(--color-primary);
   color: var(--color-white);
   border-color: var(--color-primary);
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
 /* Responsive Media Queries for Projects Carousel */
@@ -2347,14 +2351,20 @@ body {
   }
   
   .project-overlay-box {
-    padding: 20px 45px 15px 20px;
-    max-width: 90%;
+    padding: 16px 50px 16px 16px;
     bottom: 15px;
     left: 15px;
+    right: 15px;
   }
   
   .project-overlay-box h4 {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .overlay-arrow-badge {
+    width: 34px;
+    height: 34px;
+    right: 10px;
   }
 }
 
@@ -2756,7 +2766,7 @@ body {
 .clients-marquee-track {
   display: flex;
   gap: 50px;
-  animation: marquee-scroll 25s linear infinite;
+  animation: marquee-scroll 35s linear infinite;
   width: max-content;
 }
 
@@ -3858,11 +3868,11 @@ body.intro-active {
   gap: 24px;
   transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   will-change: transform;
-  cursor: grab;
+  cursor: default;
 }
 
 .frames-slider-track.dragging {
-  cursor: grabbing;
+  cursor: default;
   transition: none;
 }
 
